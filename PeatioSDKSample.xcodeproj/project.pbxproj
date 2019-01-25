@@ -1,0 +1,1584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01B21F1E48300775AC9 /* PriceItem.swift */; };
+		4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */; };
+		484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */; };
+		484D467D21E6F88700E7C3E2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467C21E6F88700E7C3E2 /* Address.swift */; };
+		484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */; };
+		484D468121E7272B00E7C3E2 /* CancelOrderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D468021E7272B00E7C3E2 /* CancelOrderOperation.swift */; };
+		484D468321E7296800E7C3E2 /* JustOK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D468221E7296800E7C3E2 /* JustOK.swift */; };
+		484D468521E730FB00E7C3E2 /* ViewerOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D468421E730FB00E7C3E2 /* ViewerOrdersOperation.swift */; };
+		484D468721E733BB00E7C3E2 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D468621E733BB00E7C3E2 /* OrderType.swift */; };
+		484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D468A21E7388500E7C3E2 /* AssetPairOperation.swift */; };
+		484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D468E21E7488600E7C3E2 /* CreateOrderOperation.swift */; };
+		484D469121E74FEA00E7C3E2 /* WithdrawalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469021E74FEA00E7C3E2 /* WithdrawalItem.swift */; };
+		484D469321E7534500E7C3E2 /* DepositItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469221E7534500E7C3E2 /* DepositItem.swift */; };
+		484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469421E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift */; };
+		484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */; };
+		484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */; };
+		484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */; };
+		484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469C21E8892100E7C3E2 /* APIErrorCode.swift */; };
+		484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */; };
+		484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */; };
+		484D46A521EC690600E7C3E2 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A421EC690600E7C3E2 /* Customer.swift */; };
+		485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */; };
+		485AE37C21CA8BAB005AFA5C /* ResourceSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */; };
+		4861311F21EDA85800E62D4E /* AssetDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */; };
+		486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146DB21CBA214006F7DF4 /* WebSocketTransport.swift */; };
+		486146E121CBA38C006F7DF4 /* WSClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146E021CBA38C006F7DF4 /* WSClientTests.swift */; };
+		486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146DE21CBA296006F7DF4 /* ProtobufWSTransport.swift */; };
+		486146E421CBA3B4006F7DF4 /* MockWSTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146E321CBA3B4006F7DF4 /* MockWSTransport.swift */; };
+		4861A13D21D235AE0047D662 /* ContiguousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861A13C21D235AE0047D662 /* ContiguousTask.swift */; };
+		486416B821D37E3B003853BB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486416B721D37E3B003853BB /* APIError.swift */; };
+		486E8C192284117B00F78DC8 /* WebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487598D521E0D2E700EB045D /* WebSocketObserver.swift */; };
+		486E8C1A2284117B00F78DC8 /* InerWebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56FA6821C9DEA8006F7E9A /* InerWebSocketObserver.swift */; };
+		486E8C1B2284117B00F78DC8 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
+		486E8C1C2284117B00F78DC8 /* WebSocketError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F158C21DCBFE6008CDB03 /* WebSocketError.swift */; };
+		486E8C1D2284117B00F78DC8 /* WebSocketTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146DB21CBA214006F7DF4 /* WebSocketTransport.swift */; };
+		486E8C1E2284117B00F78DC8 /* ProtobufWSTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146DE21CBA296006F7DF4 /* ProtobufWSTransport.swift */; };
+		486E8C1F2284117B00F78DC8 /* PeatioObjectIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84621C8EAB300EE85C0 /* PeatioObjectIdentifier.swift */; };
+		486E8C202284117B00F78DC8 /* WSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84721C8EAB300EE85C0 /* WSClient.swift */; };
+		486E8C212284117B00F78DC8 /* WebSocketConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84921C8EAB300EE85C0 /* WebSocketConstant.swift */; };
+		486E8C222284117B00F78DC8 /* Protobuf+ContinuityStreamable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84321C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift */; };
+		486E8C232284117B00F78DC8 /* websocket.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84421C8EAB300EE85C0 /* websocket.pb.swift */; };
+		486E8C242284117B00F78DC8 /* ResourceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */; };
+		486E8C252284117B00F78DC8 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */; };
+		486E8C262284117B00F78DC8 /* WebsocketTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */; };
+		486E8C272284117B00F78DC8 /* ContiguousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861A13C21D235AE0047D662 /* ContiguousTask.swift */; };
+		486E8C28228411A400F78DC8 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F157E21DC9230008CDB03 /* Cancellable.swift */; };
+		486E8C292284120800F78DC8 /* PeatioToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE85421C8EAE400EE85C0 /* PeatioToken.swift */; };
+		486E8C2A2284121C00F78DC8 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */; };
+		486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */; };
+		486E8C2C2284121C00F78DC8 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */; };
+		486E8C2D2284121C00F78DC8 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F158221DC980A008CDB03 /* String+Base64.swift */; };
+		486E8C2E2284121C00F78DC8 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
+		486E8C2F2284121C00F78DC8 /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */; };
+		487598D621E0D2E700EB045D /* WebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487598D521E0D2E700EB045D /* WebSocketObserver.swift */; };
+		487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487598D721E0D79100EB045D /* HTTPRequestExecutor.swift */; };
+		4879445621F9660B00617417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4879445421F9660B00617417 /* LaunchScreen.storyboard */; };
+		487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B70BF21F6C46F0091EC29 /* RequestContentType.swift */; };
+		487C7DE621E34BBC00BC8D8C /* AssetPairTradeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7DE521E34BBC00BC8D8C /* AssetPairTradeOperation.swift */; };
+		487C7DF021E37A4200BC8D8C /* AssetPairDepthOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7DEF21E37A4200BC8D8C /* AssetPairDepthOperation.swift */; };
+		487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7DF521E3922D00BC8D8C /* AssetPairCandleOperation.swift */; };
+		487C7DFA21E4771B00BC8D8C /* AllMarketsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7DF921E4771B00BC8D8C /* AllMarketsOperation.swift */; };
+		487C7DFC21E47AC700BC8D8C /* AssetPairTickerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7DFB21E47AC700BC8D8C /* AssetPairTickerOperation.swift */; };
+		487C7DFE21E47E7400BC8D8C /* RankAssetPairsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7DFD21E47E7400BC8D8C /* RankAssetPairsOperation.swift */; };
+		487C7E0821E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7E0721E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift */; };
+		487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7E0921E5DB4800BC8D8C /* AssetAccountOperation.swift */; };
+		487C7E0C21E5DB7500BC8D8C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7E0B21E5DB7500BC8D8C /* Account.swift */; };
+		487C7E0E21E5DC4600BC8D8C /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7E0D21E5DC4600BC8D8C /* Gateway.swift */; };
+		487C7E1021E5FE4000BC8D8C /* AddFavoriteAssetPairOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7E0F21E5FE4000BC8D8C /* AddFavoriteAssetPairOperation.swift */; };
+		487C7E1221E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C7E1121E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift */; };
+		487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F157E21DC9230008CDB03 /* Cancellable.swift */; };
+		487F158321DC980A008CDB03 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F158221DC980A008CDB03 /* String+Base64.swift */; };
+		487F158D21DCBFE6008CDB03 /* WebSocketError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F158C21DCBFE6008CDB03 /* WebSocketError.swift */; };
+		487F159021DCE404008CDB03 /* TickersSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F158F21DCE404008CDB03 /* TickersSubscription.swift */; };
+		487F159221DCE6E0008CDB03 /* TradeSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F159121DCE6E0008CDB03 /* TradeSubscription.swift */; };
+		487F159421DDE015008CDB03 /* CandleSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F159321DDE015008CDB03 /* CandleSubscription.swift */; };
+		487F159621DDE209008CDB03 /* DepthSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F159521DDE209008CDB03 /* DepthSubscription.swift */; };
+		487F159821DDE4A0008CDB03 /* ViewerOrderSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F159721DDE4A0008CDB03 /* ViewerOrderSubscription.swift */; };
+		487F159F21DE0000008CDB03 /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F159E21DE0000008CDB03 /* RequestOperation.swift */; };
+		487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A121DF5880008CDB03 /* RequestGenerator.swift */; };
+		487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A321DF902D008CDB03 /* RequestOperationResult.swift */; };
+		487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
+		487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
+		48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */; };
+		48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */; };
+		48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */; };
+		48AF7FFF227FDC8000A848A6 /* AssetsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF7FFE227FDC8000A848A6 /* AssetsOperation.swift */; };
+		48AF8002227FDCCC00A848A6 /* ViewerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8001227FDCCC00A848A6 /* ViewerOperation.swift */; };
+		48AF8004227FDD0C00A848A6 /* UpdateViewerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8003227FDD0C00A848A6 /* UpdateViewerOperation.swift */; };
+		48AF8006227FDEFA00A848A6 /* InspectAddressResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */; };
+		48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */; };
+		48AF800B2280207800A848A6 /* RefreshSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */; };
+		48DAF8642265B17B006D3598 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8632265B17B006D3598 /* Banner.swift */; };
+		48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8652265B203006D3598 /* BannersOperation.swift */; };
+		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
+		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
+		48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */; };
+		48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */; };
+		48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */; };
+		48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */; };
+		48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */; };
+		48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84321C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift */; };
+		48FFE84F21C8EAB300EE85C0 /* websocket.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84421C8EAB300EE85C0 /* websocket.pb.swift */; };
+		48FFE85021C8EAB300EE85C0 /* PeatioObjectIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84621C8EAB300EE85C0 /* PeatioObjectIdentifier.swift */; };
+		48FFE85121C8EAB300EE85C0 /* WSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84721C8EAB300EE85C0 /* WSClient.swift */; };
+		48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84921C8EAB300EE85C0 /* WebSocketConstant.swift */; };
+		48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE85421C8EAE400EE85C0 /* PeatioToken.swift */; };
+		48FFE85C21C92EEA00EE85C0 /* WebSocketTestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE85B21C92EEA00EE85C0 /* WebSocketTestFactory.swift */; };
+		5B0AD7FD1C2F159C3CD7885A /* Pods_PeatioSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A687B2DDC073CD810B7F899E /* Pods_PeatioSDKTests.framework */; };
+		659E0E964F4968AEB8D1BAD2 /* Pods_PeatioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7313CADC204FF7E813E5A276 /* Pods_PeatioSDK.framework */; };
+		790CCCB40A0225CFDB482CB7 /* Pods_PeatioSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDEB3D048EF8DFD56FC3904 /* Pods_PeatioSDKSample.framework */; };
+		FD38ED1821BE04A3000114CA /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38ED1721BE04A3000114CA /* DateFormatterTests.swift */; };
+		FD38ED1A21BE0687000114CA /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38ED1921BE0687000114CA /* URLQueryEncoder.swift */; };
+		FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56FA6821C9DEA8006F7E9A /* InerWebSocketObserver.swift */; };
+		FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC082821CA40BD009105DD /* TickerPatch.swift */; };
+		FDCC082D21CA487C009105DD /* TradePatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC082C21CA487C009105DD /* TradePatch.swift */; };
+		FDCC082F21CA4D65009105DD /* CandlePatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC082E21CA4D65009105DD /* CandlePatch.swift */; };
+		FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC083021CB35A6009105DD /* DepthPatch.swift */; };
+		FDCC083321CB36ED009105DD /* PriceLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC083221CB36ED009105DD /* PriceLevel.swift */; };
+		FDCC083521CB3AE4009105DD /* OrderPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC083421CB3AE4009105DD /* OrderPatch.swift */; };
+		FDCC083921CB3F25009105DD /* AccountPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC083821CB3F25009105DD /* AccountPatch.swift */; };
+		FDD3726A21B4C8080027DEBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3726921B4C8080027DEBD /* AppDelegate.swift */; };
+		FDD3727121B4C8090027DEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD3727021B4C8090027DEBD /* Assets.xcassets */; };
+		FDD3728921B4C82A0027DEBD /* PeatioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD3728021B4C8290027DEBD /* PeatioSDK.framework */; };
+		FDD3729221B4C82A0027DEBD /* PeatioSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD3728221B4C8290027DEBD /* PeatioSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDD3729521B4C82A0027DEBD /* PeatioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD3728021B4C8290027DEBD /* PeatioSDK.framework */; };
+		FDD3729621B4C82A0027DEBD /* PeatioSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDD3728021B4C8290027DEBD /* PeatioSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDD372AA21B4CC690027DEBD /* APIRequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD372A921B4CC690027DEBD /* APIRequestTask.swift */; };
+		FDD372AC21B4CCBF0027DEBD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD372AB21B4CCBF0027DEBD /* HTTPMethod.swift */; };
+		FDD372B021B4CE610027DEBD /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD372AF21B4CE610027DEBD /* RequestExecutor.swift */; };
+		FDD372B421B4D0E10027DEBD /* PeatioSDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD372B321B4D0E10027DEBD /* PeatioSDKError.swift */; };
+		FDD37B7E21B783F10027DEBD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B7D21B783F10027DEBD /* Log.swift */; };
+		FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B8B21B7E04C0027DEBD /* Trade.swift */; };
+		FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B8F21B8C8EE0027DEBD /* Candle.swift */; };
+		FDD37B9421B9091B0027DEBD /* PeatioAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9321B9091B0027DEBD /* PeatioAPIClient.swift */; };
+		FDD37B9A21BA105A0027DEBD /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */; };
+		FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9B21BA1C610027DEBD /* Page.swift */; };
+		FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9D21BA3C010027DEBD /* PeatioSDK.swift */; };
+		FDD37BCE21BA65190027DEBD /* AssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BCD21BA65190027DEBD /* AssetPair.swift */; };
+		FDD37BD021BA65FA0027DEBD /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BCF21BA65FA0027DEBD /* Asset.swift */; };
+		FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD121BA66290027DEBD /* Ticker.swift */; };
+		FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD321BA68BA0027DEBD /* Market.swift */; };
+		FDD37BD621BA69420027DEBD /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD521BA69420027DEBD /* Depth.swift */; };
+		FDD37BD821BA6B360027DEBD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD721BA6B360027DEBD /* Order.swift */; };
+		FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD921BA72050027DEBD /* OrderSide.swift */; };
+		FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */; };
+		FDD37BDE21BA7B1F0027DEBD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDD3728A21B4C82A0027DEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDD3725E21B4C8080027DEBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD3727F21B4C8290027DEBD;
+			remoteInfo = PeatioSDK;
+		};
+		FDD3728C21B4C82A0027DEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDD3725E21B4C8080027DEBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD3726521B4C8080027DEBD;
+			remoteInfo = PeatioSDKSample;
+		};
+		FDD3729321B4C82A0027DEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDD3725E21B4C8080027DEBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD3727F21B4C8290027DEBD;
+			remoteInfo = PeatioSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDD3729A21B4C82A0027DEBD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FDD3729621B4C82A0027DEBD /* PeatioSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D60CBA7DF545346D1F8C791 /* Pods-PeatioSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.release.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		17544EDCF8F21750D3986BFA /* Pods-PeatioSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
+		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
+		484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerAccountSubscription.swift; sourceTree = "<group>"; };
+		484D467C21E6F88700E7C3E2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAddressOperation.swift; sourceTree = "<group>"; };
+		484D468021E7272B00E7C3E2 /* CancelOrderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderOperation.swift; sourceTree = "<group>"; };
+		484D468221E7296800E7C3E2 /* JustOK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustOK.swift; sourceTree = "<group>"; };
+		484D468421E730FB00E7C3E2 /* ViewerOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerOrdersOperation.swift; sourceTree = "<group>"; };
+		484D468621E733BB00E7C3E2 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		484D468A21E7388500E7C3E2 /* AssetPairOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPairOperation.swift; sourceTree = "<group>"; };
+		484D468E21E7488600E7C3E2 /* CreateOrderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderOperation.swift; sourceTree = "<group>"; };
+		484D469021E74FEA00E7C3E2 /* WithdrawalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalItem.swift; sourceTree = "<group>"; };
+		484D469221E7534500E7C3E2 /* DepositItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositItem.swift; sourceTree = "<group>"; };
+		484D469421E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerWithdrawalsOperation.swift; sourceTree = "<group>"; };
+		484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerDepositsOperation.swift; sourceTree = "<group>"; };
+		484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWithdrawalOperation.swift; sourceTree = "<group>"; };
+		484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionByEmailOperation.swift; sourceTree = "<group>"; };
+		484D469C21E8892100E7C3E2 /* APIErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorCode.swift; sourceTree = "<group>"; };
+		484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError + Extension.swift"; sourceTree = "<group>"; };
+		484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
+		484D46A421EC690600E7C3E2 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSchedulerTests.swift; sourceTree = "<group>"; };
+		485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceSchedulerTests.swift; sourceTree = "<group>"; };
+		4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailOperation.swift; sourceTree = "<group>"; };
+		486146DB21CBA214006F7DF4 /* WebSocketTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTransport.swift; sourceTree = "<group>"; };
+		486146DE21CBA296006F7DF4 /* ProtobufWSTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtobufWSTransport.swift; sourceTree = "<group>"; };
+		486146E021CBA38C006F7DF4 /* WSClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSClientTests.swift; sourceTree = "<group>"; };
+		486146E321CBA3B4006F7DF4 /* MockWSTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWSTransport.swift; sourceTree = "<group>"; };
+		4861A13C21D235AE0047D662 /* ContiguousTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousTask.swift; sourceTree = "<group>"; };
+		486416B721D37E3B003853BB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		487598D521E0D2E700EB045D /* WebSocketObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketObserver.swift; sourceTree = "<group>"; };
+		487598D721E0D79100EB045D /* HTTPRequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestExecutor.swift; sourceTree = "<group>"; };
+		4879445521F9660B00617417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		487B70BF21F6C46F0091EC29 /* RequestContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContentType.swift; sourceTree = "<group>"; };
+		487C7DE521E34BBC00BC8D8C /* AssetPairTradeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPairTradeOperation.swift; sourceTree = "<group>"; };
+		487C7DEF21E37A4200BC8D8C /* AssetPairDepthOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPairDepthOperation.swift; sourceTree = "<group>"; };
+		487C7DF521E3922D00BC8D8C /* AssetPairCandleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPairCandleOperation.swift; sourceTree = "<group>"; };
+		487C7DF921E4771B00BC8D8C /* AllMarketsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMarketsOperation.swift; sourceTree = "<group>"; };
+		487C7DFB21E47AC700BC8D8C /* AssetPairTickerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPairTickerOperation.swift; sourceTree = "<group>"; };
+		487C7DFD21E47E7400BC8D8C /* RankAssetPairsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankAssetPairsOperation.swift; sourceTree = "<group>"; };
+		487C7E0721E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAssetPairsOperation.swift; sourceTree = "<group>"; };
+		487C7E0921E5DB4800BC8D8C /* AssetAccountOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetAccountOperation.swift; sourceTree = "<group>"; };
+		487C7E0B21E5DB7500BC8D8C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		487C7E0D21E5DC4600BC8D8C /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
+		487C7E0F21E5FE4000BC8D8C /* AddFavoriteAssetPairOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoriteAssetPairOperation.swift; sourceTree = "<group>"; };
+		487C7E1121E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteAssetPairOperation.swift; sourceTree = "<group>"; };
+		487F157E21DC9230008CDB03 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		487F158221DC980A008CDB03 /* String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		487F158C21DCBFE6008CDB03 /* WebSocketError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketError.swift; sourceTree = "<group>"; };
+		487F158F21DCE404008CDB03 /* TickersSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersSubscription.swift; sourceTree = "<group>"; };
+		487F159121DCE6E0008CDB03 /* TradeSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeSubscription.swift; sourceTree = "<group>"; };
+		487F159321DDE015008CDB03 /* CandleSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleSubscription.swift; sourceTree = "<group>"; };
+		487F159521DDE209008CDB03 /* DepthSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthSubscription.swift; sourceTree = "<group>"; };
+		487F159721DDE4A0008CDB03 /* ViewerOrderSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerOrderSubscription.swift; sourceTree = "<group>"; };
+		487F159E21DE0000008CDB03 /* RequestOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
+		487F15A121DF5880008CDB03 /* RequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		487F15A321DF902D008CDB03 /* RequestOperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationResult.swift; sourceTree = "<group>"; };
+		487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLEncode.swift"; sourceTree = "<group>"; };
+		487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOperation.swift; sourceTree = "<group>"; };
+		48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWhitelistAddressesOperation.swift; sourceTree = "<group>"; };
+		48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitelistAddress.swift; sourceTree = "<group>"; };
+		48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerWhitelistAddress.swift; sourceTree = "<group>"; };
+		48AF7FFE227FDC8000A848A6 /* AssetsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsOperation.swift; sourceTree = "<group>"; };
+		48AF8001227FDCCC00A848A6 /* ViewerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerOperation.swift; sourceTree = "<group>"; };
+		48AF8003227FDD0C00A848A6 /* UpdateViewerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewerOperation.swift; sourceTree = "<group>"; };
+		48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectAddressResult.swift; sourceTree = "<group>"; };
+		48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectAddressOperation.swift; sourceTree = "<group>"; };
+		48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshSessionOperation.swift; sourceTree = "<group>"; };
+		48DAF8632265B17B006D3598 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		48DAF8652265B203006D3598 /* BannersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersOperation.swift; sourceTree = "<group>"; };
+		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
+		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
+		48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
+		48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
+		48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceScheduler.swift; sourceTree = "<group>"; };
+		48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
+		48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketTask.swift; sourceTree = "<group>"; };
+		48FFE84321C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Protobuf+ContinuityStreamable.swift"; sourceTree = "<group>"; };
+		48FFE84421C8EAB300EE85C0 /* websocket.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = websocket.pb.swift; sourceTree = "<group>"; };
+		48FFE84621C8EAB300EE85C0 /* PeatioObjectIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeatioObjectIdentifier.swift; sourceTree = "<group>"; };
+		48FFE84721C8EAB300EE85C0 /* WSClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSClient.swift; sourceTree = "<group>"; };
+		48FFE84921C8EAB300EE85C0 /* WebSocketConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConstant.swift; sourceTree = "<group>"; };
+		48FFE85421C8EAE400EE85C0 /* PeatioToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeatioToken.swift; sourceTree = "<group>"; };
+		48FFE85B21C92EEA00EE85C0 /* WebSocketTestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTestFactory.swift; sourceTree = "<group>"; };
+		55087163257AD53166BD0A44 /* Pods-PeatioSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-PeatioSDKTests/Pods-PeatioSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7313CADC204FF7E813E5A276 /* Pods_PeatioSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeatioSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95255049080D411D13DA5A2F /* Pods-PeatioSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDK.release.xcconfig"; path = "Target Support Files/Pods-PeatioSDK/Pods-PeatioSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A65EC1ECADC8B344CCA1CD31 /* Pods-PeatioSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKTests.release.xcconfig"; path = "Target Support Files/Pods-PeatioSDKTests/Pods-PeatioSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		A687B2DDC073CD810B7F899E /* Pods_PeatioSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeatioSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDEB3D048EF8DFD56FC3904 /* Pods_PeatioSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeatioSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB36139BF63C42F487E73D01 /* Pods-PeatioSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDK.debug.xcconfig"; path = "Target Support Files/Pods-PeatioSDK/Pods-PeatioSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		FD38ED1721BE04A3000114CA /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		FD38ED1921BE0687000114CA /* URLQueryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoder.swift; sourceTree = "<group>"; };
+		FD56FA6821C9DEA8006F7E9A /* InerWebSocketObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InerWebSocketObserver.swift; sourceTree = "<group>"; };
+		FDCC082821CA40BD009105DD /* TickerPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerPatch.swift; sourceTree = "<group>"; };
+		FDCC082C21CA487C009105DD /* TradePatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradePatch.swift; sourceTree = "<group>"; };
+		FDCC082E21CA4D65009105DD /* CandlePatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandlePatch.swift; sourceTree = "<group>"; };
+		FDCC083021CB35A6009105DD /* DepthPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthPatch.swift; sourceTree = "<group>"; };
+		FDCC083221CB36ED009105DD /* PriceLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLevel.swift; sourceTree = "<group>"; };
+		FDCC083421CB3AE4009105DD /* OrderPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPatch.swift; sourceTree = "<group>"; };
+		FDCC083821CB3F25009105DD /* AccountPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPatch.swift; sourceTree = "<group>"; };
+		FDD3726621B4C8080027DEBD /* PeatioSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeatioSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD3726921B4C8080027DEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDD3727021B4C8090027DEBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDD3727521B4C8090027DEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD3728021B4C8290027DEBD /* PeatioSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PeatioSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD3728221B4C8290027DEBD /* PeatioSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeatioSDK.h; sourceTree = "<group>"; };
+		FDD3728321B4C8290027DEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD3728821B4C82A0027DEBD /* PeatioSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeatioSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD3729121B4C82A0027DEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD372A921B4CC690027DEBD /* APIRequestTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTask.swift; sourceTree = "<group>"; };
+		FDD372AB21B4CCBF0027DEBD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		FDD372AF21B4CE610027DEBD /* RequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		FDD372B321B4D0E10027DEBD /* PeatioSDKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeatioSDKError.swift; sourceTree = "<group>"; };
+		FDD37B7D21B783F10027DEBD /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		FDD37B8B21B7E04C0027DEBD /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		FDD37B8F21B8C8EE0027DEBD /* Candle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candle.swift; sourceTree = "<group>"; };
+		FDD37B9321B9091B0027DEBD /* PeatioAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeatioAPIClient.swift; sourceTree = "<group>"; };
+		FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		FDD37B9B21BA1C610027DEBD /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		FDD37B9D21BA3C010027DEBD /* PeatioSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeatioSDK.swift; sourceTree = "<group>"; };
+		FDD37BCD21BA65190027DEBD /* AssetPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPair.swift; sourceTree = "<group>"; };
+		FDD37BCF21BA65FA0027DEBD /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		FDD37BD121BA66290027DEBD /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		FDD37BD321BA68BA0027DEBD /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		FDD37BD521BA69420027DEBD /* Depth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depth.swift; sourceTree = "<group>"; };
+		FDD37BD721BA6B360027DEBD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FDD37BD921BA72050027DEBD /* OrderSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSide.swift; sourceTree = "<group>"; };
+		FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISO8601DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDD3726321B4C8080027DEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD3729521B4C82A0027DEBD /* PeatioSDK.framework in Frameworks */,
+				790CCCB40A0225CFDB482CB7 /* Pods_PeatioSDKSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3727D21B4C8290027DEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659E0E964F4968AEB8D1BAD2 /* Pods_PeatioSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3728521B4C82A0027DEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD3728921B4C82A0027DEBD /* PeatioSDK.framework in Frameworks */,
+				5B0AD7FD1C2F159C3CD7885A /* Pods_PeatioSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39DC711FE6BC94A6C3F45216 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB36139BF63C42F487E73D01 /* Pods-PeatioSDK.debug.xcconfig */,
+				95255049080D411D13DA5A2F /* Pods-PeatioSDK.release.xcconfig */,
+				17544EDCF8F21750D3986BFA /* Pods-PeatioSDKSample.debug.xcconfig */,
+				0D60CBA7DF545346D1F8C791 /* Pods-PeatioSDKSample.release.xcconfig */,
+				55087163257AD53166BD0A44 /* Pods-PeatioSDKTests.debug.xcconfig */,
+				A65EC1ECADC8B344CCA1CD31 /* Pods-PeatioSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4808142B227826AB00BCF09F /* Whitelist */ = {
+			isa = PBXGroup;
+			children = (
+				48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */,
+				48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */,
+				48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */,
+			);
+			path = Whitelist;
+			sourceTree = "<group>";
+		};
+		4843CD3321D729A4003352A3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FDD372B321B4D0E10027DEBD /* PeatioSDKError.swift */,
+				486416B721D37E3B003853BB /* APIError.swift */,
+				484D469C21E8892100E7C3E2 /* APIErrorCode.swift */,
+				484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4843CD3421D74C74003352A3 /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				487F15A821DF96DF008CDB03 /* URLEncoder */,
+				487F159D21DDFFEB008CDB03 /* RequestOperation */,
+				FDD37B9721B939AB0027DEBD /* Executor */,
+				4843CD3321D729A4003352A3 /* Error */,
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		484D46AA21EC74D600E7C3E2 /* AssetPair */ = {
+			isa = PBXGroup;
+			children = (
+				484D468A21E7388500E7C3E2 /* AssetPairOperation.swift */,
+				487C7DF521E3922D00BC8D8C /* AssetPairCandleOperation.swift */,
+				487C7DEF21E37A4200BC8D8C /* AssetPairDepthOperation.swift */,
+				487C7DFB21E47AC700BC8D8C /* AssetPairTickerOperation.swift */,
+				487C7DE521E34BBC00BC8D8C /* AssetPairTradeOperation.swift */,
+				487C7DFD21E47E7400BC8D8C /* RankAssetPairsOperation.swift */,
+				487C7E0721E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift */,
+				487C7E0F21E5FE4000BC8D8C /* AddFavoriteAssetPairOperation.swift */,
+				487C7E1121E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift */,
+			);
+			path = AssetPair;
+			sourceTree = "<group>";
+		};
+		4861311521EDA77200E62D4E /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				487C7DF921E4771B00BC8D8C /* AllMarketsOperation.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		4861311721EDA7A200E62D4E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				487C7E0921E5DB4800BC8D8C /* AssetAccountOperation.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		4861311821EDA7BB00E62D4E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				484D468021E7272B00E7C3E2 /* CancelOrderOperation.swift */,
+				484D468E21E7488600E7C3E2 /* CreateOrderOperation.swift */,
+				484D468421E730FB00E7C3E2 /* ViewerOrdersOperation.swift */,
+				48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		4861311B21EDA80300E62D4E /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */,
+				48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		4861311C21EDA81400E62D4E /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */,
+				484D469421E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift */,
+				484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		4861311D21EDA82600E62D4E /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */,
+				4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */,
+				48AF7FFE227FDC8000A848A6 /* AssetsOperation.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		486146DA21CBA20F006F7DF4 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				486146DB21CBA214006F7DF4 /* WebSocketTransport.swift */,
+				486146DE21CBA296006F7DF4 /* ProtobufWSTransport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		486146DD21CBA262006F7DF4 /* Supplement */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE85B21C92EEA00EE85C0 /* WebSocketTestFactory.swift */,
+				486146E321CBA3B4006F7DF4 /* MockWSTransport.swift */,
+			);
+			path = Supplement;
+			sourceTree = "<group>";
+		};
+		487598D421E0D2C800EB045D /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				487598D521E0D2E700EB045D /* WebSocketObserver.swift */,
+				FD56FA6821C9DEA8006F7E9A /* InerWebSocketObserver.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		487C7DE421E34B8E00BC8D8C /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				48AF8007227FDF5800A848A6 /* Address */,
+				48AF8000227FDCB900A848A6 /* Viewer */,
+				4808142B227826AB00BCF09F /* Whitelist */,
+				48DAF8622265B168006D3598 /* Banner */,
+				4861311D21EDA82600E62D4E /* Asset */,
+				4861311C21EDA81400E62D4E /* Transaction */,
+				4861311B21EDA80300E62D4E /* Session */,
+				4861311821EDA7BB00E62D4E /* Order */,
+				4861311721EDA7A200E62D4E /* Account */,
+				4861311521EDA77200E62D4E /* Market */,
+				484D46AA21EC74D600E7C3E2 /* AssetPair */,
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		487F157D21DC9220008CDB03 /* Cancellable */ = {
+			isa = PBXGroup;
+			children = (
+				487F157E21DC9230008CDB03 /* Cancellable.swift */,
+			);
+			path = Cancellable;
+			sourceTree = "<group>";
+		};
+		487F158021DC96A1008CDB03 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE85421C8EAE400EE85C0 /* PeatioToken.swift */,
+				484D467C21E6F88700E7C3E2 /* Address.swift */,
+				FDD37B9B21BA1C610027DEBD /* Page.swift */,
+				FDD37BD321BA68BA0027DEBD /* Market.swift */,
+				FDD37BCD21BA65190027DEBD /* AssetPair.swift */,
+				FDD37BCF21BA65FA0027DEBD /* Asset.swift */,
+				FDD37BD121BA66290027DEBD /* Ticker.swift */,
+				FDD37B8B21B7E04C0027DEBD /* Trade.swift */,
+				4819D01B21F1E48300775AC9 /* PriceItem.swift */,
+				FDD37BD921BA72050027DEBD /* OrderSide.swift */,
+				FDD37B8F21B8C8EE0027DEBD /* Candle.swift */,
+				FDCC083221CB36ED009105DD /* PriceLevel.swift */,
+				FDD37BD521BA69420027DEBD /* Depth.swift */,
+				484D46A421EC690600E7C3E2 /* Customer.swift */,
+				FDD37BD721BA6B360027DEBD /* Order.swift */,
+				487C7E0B21E5DB7500BC8D8C /* Account.swift */,
+				484D468621E733BB00E7C3E2 /* OrderType.swift */,
+				487C7E0D21E5DC4600BC8D8C /* Gateway.swift */,
+				484D469021E74FEA00E7C3E2 /* WithdrawalItem.swift */,
+				484D469221E7534500E7C3E2 /* DepositItem.swift */,
+				484D468221E7296800E7C3E2 /* JustOK.swift */,
+				48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */,
+				48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */,
+				48DAF8632265B17B006D3598 /* Banner.swift */,
+				48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		487F158121DC96AD008CDB03 /* Patch */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC082821CA40BD009105DD /* TickerPatch.swift */,
+				FDCC082C21CA487C009105DD /* TradePatch.swift */,
+				FDCC082E21CA4D65009105DD /* CandlePatch.swift */,
+				FDCC083021CB35A6009105DD /* DepthPatch.swift */,
+				FDCC083421CB3AE4009105DD /* OrderPatch.swift */,
+				FDCC083821CB3F25009105DD /* AccountPatch.swift */,
+			);
+			name = Patch;
+			sourceTree = "<group>";
+		};
+		487F158B21DCBFD5008CDB03 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				487F158C21DCBFE6008CDB03 /* WebSocketError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		487F159D21DDFFEB008CDB03 /* RequestOperation */ = {
+			isa = PBXGroup;
+			children = (
+				FDD372AB21B4CCBF0027DEBD /* HTTPMethod.swift */,
+				487F159E21DE0000008CDB03 /* RequestOperation.swift */,
+				487F15A321DF902D008CDB03 /* RequestOperationResult.swift */,
+				FDD372A921B4CC690027DEBD /* APIRequestTask.swift */,
+				487B70BF21F6C46F0091EC29 /* RequestContentType.swift */,
+			);
+			path = RequestOperation;
+			sourceTree = "<group>";
+		};
+		487F15A021DE167C008CDB03 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				487C7DE421E34B8E00BC8D8C /* HTTPRequest */,
+				487F15AC21E08793008CDB03 /* WebSocket */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		487F15A821DF96DF008CDB03 /* URLEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				FD38ED1921BE0687000114CA /* URLQueryEncoder.swift */,
+			);
+			path = URLEncoder;
+			sourceTree = "<group>";
+		};
+		487F15A921E05C71008CDB03 /* SubscriptionOperation */ = {
+			isa = PBXGroup;
+			children = (
+				487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */,
+			);
+			path = SubscriptionOperation;
+			sourceTree = "<group>";
+		};
+		487F15AC21E08793008CDB03 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */,
+				487F158F21DCE404008CDB03 /* TickersSubscription.swift */,
+				487F159121DCE6E0008CDB03 /* TradeSubscription.swift */,
+				487F159321DDE015008CDB03 /* CandleSubscription.swift */,
+				487F159521DDE209008CDB03 /* DepthSubscription.swift */,
+				487F159721DDE4A0008CDB03 /* ViewerOrderSubscription.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		48A89D0D224A0FCC004903BA /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		48AF8000227FDCB900A848A6 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				48AF8001227FDCCC00A848A6 /* ViewerOperation.swift */,
+				48AF8003227FDD0C00A848A6 /* UpdateViewerOperation.swift */,
+			);
+			path = Viewer;
+			sourceTree = "<group>";
+		};
+		48AF8007227FDF5800A848A6 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */,
+				48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		48DAF8622265B168006D3598 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				48DAF8652265B203006D3598 /* BannersOperation.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		48FFE83C21C8EAB300EE85C0 /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */,
+				48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */,
+			);
+			path = Scheduler;
+			sourceTree = "<group>";
+		};
+		48FFE83F21C8EAB300EE85C0 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */,
+				4861A13C21D235AE0047D662 /* ContiguousTask.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		48FFE84221C8EAB300EE85C0 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE84321C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift */,
+				48FFE84421C8EAB300EE85C0 /* websocket.pb.swift */,
+			);
+			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		48FFE84521C8EAB300EE85C0 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE84621C8EAB300EE85C0 /* PeatioObjectIdentifier.swift */,
+				48FFE84721C8EAB300EE85C0 /* WSClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		48FFE84821C8EAB300EE85C0 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE84921C8EAB300EE85C0 /* WebSocketConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		48FFE85821C920EB00EE85C0 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				486146E021CBA38C006F7DF4 /* WSClientTests.swift */,
+				485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */,
+				485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */,
+				486146DD21CBA262006F7DF4 /* Supplement */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		DD0D6D38AA91430ACFA6F820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7313CADC204FF7E813E5A276 /* Pods_PeatioSDK.framework */,
+				AFDEB3D048EF8DFD56FC3904 /* Pods_PeatioSDKSample.framework */,
+				A687B2DDC073CD810B7F899E /* Pods_PeatioSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDD3725D21B4C8080027DEBD = {
+			isa = PBXGroup;
+			children = (
+				FDD3726821B4C8080027DEBD /* PeatioSDKSample */,
+				FDD3728121B4C8290027DEBD /* PeatioSDK */,
+				FDD3728E21B4C82A0027DEBD /* PeatioSDKTests */,
+				FDD3726721B4C8080027DEBD /* Products */,
+				39DC711FE6BC94A6C3F45216 /* Pods */,
+				DD0D6D38AA91430ACFA6F820 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDD3726721B4C8080027DEBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3726621B4C8080027DEBD /* PeatioSDKSample.app */,
+				FDD3728021B4C8290027DEBD /* PeatioSDK.framework */,
+				FDD3728821B4C82A0027DEBD /* PeatioSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDD3726821B4C8080027DEBD /* PeatioSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				4879445421F9660B00617417 /* LaunchScreen.storyboard */,
+				FDD3726921B4C8080027DEBD /* AppDelegate.swift */,
+				FDD3727021B4C8090027DEBD /* Assets.xcassets */,
+				FDD3727521B4C8090027DEBD /* Info.plist */,
+			);
+			path = PeatioSDKSample;
+			sourceTree = "<group>";
+		};
+		FDD3728121B4C8290027DEBD /* PeatioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3728221B4C8290027DEBD /* PeatioSDK.h */,
+				FDD37B9D21BA3C010027DEBD /* PeatioSDK.swift */,
+				FDD372A821B4CC150027DEBD /* API */,
+				FDD3770B21B655E30027DEBD /* Extensions */,
+				FDD37B7821B7771B0027DEBD /* Utils */,
+				FDD3728321B4C8290027DEBD /* Info.plist */,
+			);
+			path = PeatioSDK;
+			sourceTree = "<group>";
+		};
+		FDD3728E21B4C82A0027DEBD /* PeatioSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				48FFE85821C920EB00EE85C0 /* WebSocket */,
+				FD38ED1721BE04A3000114CA /* DateFormatterTests.swift */,
+				FDD3729121B4C82A0027DEBD /* Info.plist */,
+			);
+			path = PeatioSDKTests;
+			sourceTree = "<group>";
+		};
+		FDD372A821B4CC150027DEBD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				487F15A021DE167C008CDB03 /* Operations */,
+				FDD3770221B645560027DEBD /* Model */,
+				487F157D21DC9220008CDB03 /* Cancellable */,
+				4843CD3421D74C74003352A3 /* HttpClient */,
+				FDD37B9821B939C50027DEBD /* WebSocket */,
+				FDD37B9321B9091B0027DEBD /* PeatioAPIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FDD3770221B645560027DEBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48A89D0D224A0FCC004903BA /* Assembly */,
+				487F158121DC96AD008CDB03 /* Patch */,
+				487F158021DC96A1008CDB03 /* Base */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDD3770B21B655E30027DEBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */,
+				FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */,
+				FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */,
+				487F158221DC980A008CDB03 /* String+Base64.swift */,
+				487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */,
+				484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDD37B7821B7771B0027DEBD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FDD37B7D21B783F10027DEBD /* Log.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FDD37B9721B939AB0027DEBD /* Executor */ = {
+			isa = PBXGroup;
+			children = (
+				FDD372AF21B4CE610027DEBD /* RequestExecutor.swift */,
+				487F15A121DF5880008CDB03 /* RequestGenerator.swift */,
+				487598D721E0D79100EB045D /* HTTPRequestExecutor.swift */,
+			);
+			path = Executor;
+			sourceTree = "<group>";
+		};
+		FDD37B9821B939C50027DEBD /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				487598D421E0D2C800EB045D /* Observer */,
+				487F15A921E05C71008CDB03 /* SubscriptionOperation */,
+				487F158B21DCBFD5008CDB03 /* Error */,
+				486146DA21CBA20F006F7DF4 /* Transport */,
+				48FFE84521C8EAB300EE85C0 /* Client */,
+				48FFE84821C8EAB300EE85C0 /* Constant */,
+				48FFE84221C8EAB300EE85C0 /* Protobuf */,
+				48FFE83C21C8EAB300EE85C0 /* Scheduler */,
+				48FFE83F21C8EAB300EE85C0 /* Task */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FDD3727B21B4C8290027DEBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD3729221B4C82A0027DEBD /* PeatioSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FDD3726521B4C8080027DEBD /* PeatioSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD3727821B4C8090027DEBD /* Build configuration list for PBXNativeTarget "PeatioSDKSample" */;
+			buildPhases = (
+				E8CD61A9F18058DBD478530A /* [CP] Check Pods Manifest.lock */,
+				FDD3726221B4C8080027DEBD /* Sources */,
+				FDD3726321B4C8080027DEBD /* Frameworks */,
+				FDD3726421B4C8080027DEBD /* Resources */,
+				FDD3729A21B4C82A0027DEBD /* Embed Frameworks */,
+				1DEBA9FF2DED8F5C4B62B4FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD3729421B4C82A0027DEBD /* PBXTargetDependency */,
+			);
+			name = PeatioSDKSample;
+			productName = PeatioSDKSample;
+			productReference = FDD3726621B4C8080027DEBD /* PeatioSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDD3727F21B4C8290027DEBD /* PeatioSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD3729721B4C82A0027DEBD /* Build configuration list for PBXNativeTarget "PeatioSDK" */;
+			buildPhases = (
+				235721E7C34A81C339D6FCD8 /* [CP] Check Pods Manifest.lock */,
+				FDD3727B21B4C8290027DEBD /* Headers */,
+				FDD3727C21B4C8290027DEBD /* Sources */,
+				FDD3727D21B4C8290027DEBD /* Frameworks */,
+				FDD3727E21B4C8290027DEBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeatioSDK;
+			productName = PeatioSDK;
+			productReference = FDD3728021B4C8290027DEBD /* PeatioSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDD3728721B4C82A0027DEBD /* PeatioSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD3729B21B4C82A0027DEBD /* Build configuration list for PBXNativeTarget "PeatioSDKTests" */;
+			buildPhases = (
+				498A4E8E6CE41C4B1204412B /* [CP] Check Pods Manifest.lock */,
+				FDD3728421B4C82A0027DEBD /* Sources */,
+				FDD3728521B4C82A0027DEBD /* Frameworks */,
+				FDD3728621B4C82A0027DEBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD3728B21B4C82A0027DEBD /* PBXTargetDependency */,
+				FDD3728D21B4C82A0027DEBD /* PBXTargetDependency */,
+			);
+			name = PeatioSDKTests;
+			productName = PeatioSDKTests;
+			productReference = FDD3728821B4C82A0027DEBD /* PeatioSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDD3725E21B4C8080027DEBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Peatio Inc.";
+				TargetAttributes = {
+					FDD3726521B4C8080027DEBD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FDD3727F21B4C8290027DEBD = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					FDD3728721B4C82A0027DEBD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FDD3726521B4C8080027DEBD;
+					};
+				};
+			};
+			buildConfigurationList = FDD3726121B4C8080027DEBD /* Build configuration list for PBXProject "PeatioSDKSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDD3725D21B4C8080027DEBD;
+			productRefGroup = FDD3726721B4C8080027DEBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDD3726521B4C8080027DEBD /* PeatioSDKSample */,
+				FDD3727F21B4C8290027DEBD /* PeatioSDK */,
+				FDD3728721B4C82A0027DEBD /* PeatioSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDD3726421B4C8080027DEBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD3727121B4C8090027DEBD /* Assets.xcassets in Resources */,
+				4879445621F9660B00617417 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3727E21B4C8290027DEBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3728621B4C82A0027DEBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEBA9FF2DED8F5C4B62B4FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		235721E7C34A81C339D6FCD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeatioSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		498A4E8E6CE41C4B1204412B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeatioSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CD61A9F18058DBD478530A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeatioSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDD3726221B4C8080027DEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD3726A21B4C8080027DEBD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3727C21B4C8290027DEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */,
+				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
+				484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */,
+				484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */,
+				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
+				48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */,
+				FDD372B421B4D0E10027DEBD /* PeatioSDKError.swift in Sources */,
+				487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */,
+				487F158D21DCBFE6008CDB03 /* WebSocketError.swift in Sources */,
+				487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */,
+				48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */,
+				FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */,
+				48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */,
+				486416B821D37E3B003853BB /* APIError.swift in Sources */,
+				487F159221DCE6E0008CDB03 /* TradeSubscription.swift in Sources */,
+				487F159621DDE209008CDB03 /* DepthSubscription.swift in Sources */,
+				487C7E1021E5FE4000BC8D8C /* AddFavoriteAssetPairOperation.swift in Sources */,
+				487C7DFC21E47AC700BC8D8C /* AssetPairTickerOperation.swift in Sources */,
+				487C7DF021E37A4200BC8D8C /* AssetPairDepthOperation.swift in Sources */,
+				48FFE85021C8EAB300EE85C0 /* PeatioObjectIdentifier.swift in Sources */,
+				487C7E1221E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift in Sources */,
+				48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */,
+				FDD37B7E21B783F10027DEBD /* Log.swift in Sources */,
+				FDD37BD821BA6B360027DEBD /* Order.swift in Sources */,
+				484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */,
+				484D467D21E6F88700E7C3E2 /* Address.swift in Sources */,
+				487F158321DC980A008CDB03 /* String+Base64.swift in Sources */,
+				FDCC082D21CA487C009105DD /* TradePatch.swift in Sources */,
+				487C7E0E21E5DC4600BC8D8C /* Gateway.swift in Sources */,
+				FDD37BD021BA65FA0027DEBD /* Asset.swift in Sources */,
+				487C7E0821E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift in Sources */,
+				FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */,
+				484D469321E7534500E7C3E2 /* DepositItem.swift in Sources */,
+				484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */,
+				484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */,
+				4861A13D21D235AE0047D662 /* ContiguousTask.swift in Sources */,
+				484D468721E733BB00E7C3E2 /* OrderType.swift in Sources */,
+				487C7DFA21E4771B00BC8D8C /* AllMarketsOperation.swift in Sources */,
+				484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */,
+				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
+				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
+				FDD37BDE21BA7B1F0027DEBD /* Date+Extensions.swift in Sources */,
+				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
+				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
+				487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */,
+				487C7DE621E34BBC00BC8D8C /* AssetPairTradeOperation.swift in Sources */,
+				4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */,
+				487C7DFE21E47E7400BC8D8C /* RankAssetPairsOperation.swift in Sources */,
+				484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */,
+				FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */,
+				484D468121E7272B00E7C3E2 /* CancelOrderOperation.swift in Sources */,
+				48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */,
+				FDCC082F21CA4D65009105DD /* CandlePatch.swift in Sources */,
+				48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */,
+				FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */,
+				48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */,
+				FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */,
+				FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */,
+				484D46A521EC690600E7C3E2 /* Customer.swift in Sources */,
+				487598D621E0D2E700EB045D /* WebSocketObserver.swift in Sources */,
+				484D468321E7296800E7C3E2 /* JustOK.swift in Sources */,
+				48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */,
+				4861311F21EDA85800E62D4E /* AssetDetailOperation.swift in Sources */,
+				48AF7FFF227FDC8000A848A6 /* AssetsOperation.swift in Sources */,
+				FDCC083321CB36ED009105DD /* PriceLevel.swift in Sources */,
+				FDD372AC21B4CCBF0027DEBD /* HTTPMethod.swift in Sources */,
+				484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */,
+				FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */,
+				48AF8002227FDCCC00A848A6 /* ViewerOperation.swift in Sources */,
+				484D469121E74FEA00E7C3E2 /* WithdrawalItem.swift in Sources */,
+				FDCC083921CB3F25009105DD /* AccountPatch.swift in Sources */,
+				48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */,
+				FDD37BCE21BA65190027DEBD /* AssetPair.swift in Sources */,
+				FDD372B021B4CE610027DEBD /* RequestExecutor.swift in Sources */,
+				48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */,
+				FDD37B9A21BA105A0027DEBD /* URLRequest+Extensions.swift in Sources */,
+				484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */,
+				487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */,
+				487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */,
+				48FFE84F21C8EAB300EE85C0 /* websocket.pb.swift in Sources */,
+				487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */,
+				48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */,
+				48FFE85121C8EAB300EE85C0 /* WSClient.swift in Sources */,
+				487F159F21DE0000008CDB03 /* RequestOperation.swift in Sources */,
+				487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */,
+				48AF800B2280207800A848A6 /* RefreshSessionOperation.swift in Sources */,
+				FD38ED1A21BE0687000114CA /* URLQueryEncoder.swift in Sources */,
+				487C7E0C21E5DB7500BC8D8C /* Account.swift in Sources */,
+				487F159021DCE404008CDB03 /* TickersSubscription.swift in Sources */,
+				486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */,
+				FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */,
+				48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */,
+				48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */,
+				FDD37B9421B9091B0027DEBD /* PeatioAPIClient.swift in Sources */,
+				FDD372AA21B4CC690027DEBD /* APIRequestTask.swift in Sources */,
+				487F159821DDE4A0008CDB03 /* ViewerOrderSubscription.swift in Sources */,
+				48AF8006227FDEFA00A848A6 /* InspectAddressResult.swift in Sources */,
+				48AF8004227FDD0C00A848A6 /* UpdateViewerOperation.swift in Sources */,
+				487F159421DDE015008CDB03 /* CandleSubscription.swift in Sources */,
+				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
+				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
+				487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */,
+				FDD37BD621BA69420027DEBD /* Depth.swift in Sources */,
+				487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */,
+				48DAF8642265B17B006D3598 /* Banner.swift in Sources */,
+				484D468521E730FB00E7C3E2 /* ViewerOrdersOperation.swift in Sources */,
+				FDCC083521CB3AE4009105DD /* OrderPatch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3728421B4C82A0027DEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486146E421CBA3B4006F7DF4 /* MockWSTransport.swift in Sources */,
+				486E8C262284117B00F78DC8 /* WebsocketTask.swift in Sources */,
+				486E8C192284117B00F78DC8 /* WebSocketObserver.swift in Sources */,
+				FD38ED1821BE04A3000114CA /* DateFormatterTests.swift in Sources */,
+				486E8C212284117B00F78DC8 /* WebSocketConstant.swift in Sources */,
+				486E8C2D2284121C00F78DC8 /* String+Base64.swift in Sources */,
+				486E8C1C2284117B00F78DC8 /* WebSocketError.swift in Sources */,
+				486E8C1A2284117B00F78DC8 /* InerWebSocketObserver.swift in Sources */,
+				486E8C292284120800F78DC8 /* PeatioToken.swift in Sources */,
+				486E8C2A2284121C00F78DC8 /* URLRequest+Extensions.swift in Sources */,
+				486E8C232284117B00F78DC8 /* websocket.pb.swift in Sources */,
+				486E8C1B2284117B00F78DC8 /* SubscriptionOperation.swift in Sources */,
+				486E8C2C2284121C00F78DC8 /* Date+Extensions.swift in Sources */,
+				486E8C2F2284121C00F78DC8 /* Decodable+Extension.swift in Sources */,
+				486E8C252284117B00F78DC8 /* TaskScheduler.swift in Sources */,
+				486E8C242284117B00F78DC8 /* ResourceScheduler.swift in Sources */,
+				485AE37C21CA8BAB005AFA5C /* ResourceSchedulerTests.swift in Sources */,
+				486E8C1D2284117B00F78DC8 /* WebSocketTransport.swift in Sources */,
+				486E8C222284117B00F78DC8 /* Protobuf+ContinuityStreamable.swift in Sources */,
+				486E8C272284117B00F78DC8 /* ContiguousTask.swift in Sources */,
+				486E8C202284117B00F78DC8 /* WSClient.swift in Sources */,
+				48FFE85C21C92EEA00EE85C0 /* WebSocketTestFactory.swift in Sources */,
+				486E8C1E2284117B00F78DC8 /* ProtobufWSTransport.swift in Sources */,
+				486E8C1F2284117B00F78DC8 /* PeatioObjectIdentifier.swift in Sources */,
+				486146E121CBA38C006F7DF4 /* WSClientTests.swift in Sources */,
+				486E8C2E2284121C00F78DC8 /* CharacterSet+URLEncode.swift in Sources */,
+				486E8C28228411A400F78DC8 /* Cancellable.swift in Sources */,
+				485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */,
+				486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDD3728B21B4C82A0027DEBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD3727F21B4C8290027DEBD /* PeatioSDK */;
+			targetProxy = FDD3728A21B4C82A0027DEBD /* PBXContainerItemProxy */;
+		};
+		FDD3728D21B4C82A0027DEBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD3726521B4C8080027DEBD /* PeatioSDKSample */;
+			targetProxy = FDD3728C21B4C82A0027DEBD /* PBXContainerItemProxy */;
+		};
+		FDD3729421B4C82A0027DEBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD3727F21B4C8290027DEBD /* PeatioSDK */;
+			targetProxy = FDD3729321B4C82A0027DEBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4879445421F9660B00617417 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4879445521F9660B00617417 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDD3727621B4C8090027DEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FDD3727721B4C8090027DEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDD3727921B4C8090027DEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17544EDCF8F21750D3986BFA /* Pods-PeatioSDKSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeatioSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDD3727A21B4C8090027DEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D60CBA7DF545346D1F8C791 /* Pods-PeatioSDKSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeatioSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDD3729821B4C82A0027DEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB36139BF63C42F487E73D01 /* Pods-PeatioSDK.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PeatioSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDD3729921B4C82A0027DEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95255049080D411D13DA5A2F /* Pods-PeatioSDK.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PeatioSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDD3729C21B4C82A0027DEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55087163257AD53166BD0A44 /* Pods-PeatioSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeatioSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeatioSDKSample.app/PeatioSDKSample";
+			};
+			name = Debug;
+		};
+		FDD3729D21B4C82A0027DEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65EC1ECADC8B344CCA1CD31 /* Pods-PeatioSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeatioSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeatioSDKSample.app/PeatioSDKSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDD3726121B4C8080027DEBD /* Build configuration list for PBXProject "PeatioSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD3727621B4C8090027DEBD /* Debug */,
+				FDD3727721B4C8090027DEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD3727821B4C8090027DEBD /* Build configuration list for PBXNativeTarget "PeatioSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD3727921B4C8090027DEBD /* Debug */,
+				FDD3727A21B4C8090027DEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD3729721B4C82A0027DEBD /* Build configuration list for PBXNativeTarget "PeatioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD3729821B4C82A0027DEBD /* Debug */,
+				FDD3729921B4C82A0027DEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD3729B21B4C82A0027DEBD /* Build configuration list for PBXNativeTarget "PeatioSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD3729C21B4C82A0027DEBD /* Debug */,
+				FDD3729D21B4C82A0027DEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDD3725E21B4C8080027DEBD /* Project object */;
+}

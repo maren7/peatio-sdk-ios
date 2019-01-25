@@ -1,0 +1,20 @@
+PODS:
+  - Starscream (3.1.0)
+  - SwiftProtobuf (1.5.0)
+
+DEPENDENCIES:
+  - Starscream
+  - SwiftProtobuf
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Starscream
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
+
+PODFILE CHECKSUM: 97fba1780d60b8147ce777ab2a30c4838f9cedf1
+
+COCOAPODS: 1.7.0.rc.1
