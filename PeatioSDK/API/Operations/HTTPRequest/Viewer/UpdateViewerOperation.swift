@@ -1,14 +1,14 @@
 import Foundation
 
 public final class UpdateViewerOperation: RequestOperation {
-    public typealias ResultData = JustOK
+    public typealias ResultData = Customer
 
     public let path: String = "/api/uc/v1/me/profile"
 
     public let httpMethod: HTTPMethod = .patch
 
     public var requestParams: [String: Any?]? {
-        return ["locale": param.locale]
+        return ["name": param.name, "locale": param.locale]
     }
 
     public let param: Param
@@ -21,9 +21,11 @@ public final class UpdateViewerOperation: RequestOperation {
 public extension UpdateViewerOperation {
     struct Param: Equatable {
 
+        public let name: String
         public let locale: String
 
-        public init(locale: String) {
+        public init(name: String, locale: String) {
+            self.name = name
             self.locale = locale
         }
     }

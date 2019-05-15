@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */; };
+		34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DE228ACC14004311CA /* VerificationResult.swift */; };
+		34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */; };
+		34A8E9E3228ACFAA004311CA /* RegisterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E2228ACFAA004311CA /* RegisterOperation.swift */; };
+		34A8E9F2228AD90B004311CA /* LoginOpration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9F1228AD90B004311CA /* LoginOpration.swift */; };
+		34A8E9F6228ADBF2004311CA /* LogoutOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9F5228ADBF2004311CA /* LogoutOperation.swift */; };
+		34A8E9FD228ADF49004311CA /* BindEmailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9FC228ADF49004311CA /* BindEmailOperation.swift */; };
+		34A8E9FF228AE10E004311CA /* RebindEmailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9FE228AE10E004311CA /* RebindEmailOperation.swift */; };
+		34A8EA01228AE27E004311CA /* BindPhoneOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA00228AE27E004311CA /* BindPhoneOperation.swift */; };
+		34A8EA03228BB39D004311CA /* RebindPhoneOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA02228BB39D004311CA /* RebindPhoneOperation.swift */; };
+		34A8EA0B228BBD3A004311CA /* UpdatePasswordOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA0A228BBD3A004311CA /* UpdatePasswordOperation.swift */; };
+		34A8EA0D228BBFDE004311CA /* ResetPasswordTokenOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA0C228BBFDE004311CA /* ResetPasswordTokenOperation.swift */; };
+		34A8EA11228BC639004311CA /* ResetPasswordOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA10228BC639004311CA /* ResetPasswordOperation.swift */; };
+		34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA12228BC771004311CA /* CreatePinOpration.swift */; };
+		34A8EA15228BE301004311CA /* UpdatePinOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA14228BE301004311CA /* UpdatePinOperation.swift */; };
+		34A8EA17228BE394004311CA /* ResetPinOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA16228BE394004311CA /* ResetPinOperation.swift */; };
+		34A8EA21228BED18004311CA /* ResetOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA20228BED18004311CA /* ResetOtpOperation.swift */; };
+		34A8EA23228BED7D004311CA /* CreateOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */; };
+		34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */; };
+		34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA28228BF24D004311CA /* VerificationType.swift */; };
 		4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01B21F1E48300775AC9 /* PriceItem.swift */; };
 		4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */; };
 		484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */; };
@@ -196,6 +216,26 @@
 /* Begin PBXFileReference section */
 		0D60CBA7DF545346D1F8C791 /* Pods-PeatioSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.release.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		17544EDCF8F21750D3986BFA /* Pods-PeatioSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVerificationsOperation.swift; sourceTree = "<group>"; };
+		34A8E9DE228ACC14004311CA /* VerificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
+		34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsOperation.swift; sourceTree = "<group>"; };
+		34A8E9E2228ACFAA004311CA /* RegisterOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOperation.swift; sourceTree = "<group>"; };
+		34A8E9F1228AD90B004311CA /* LoginOpration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOpration.swift; sourceTree = "<group>"; };
+		34A8E9F5228ADBF2004311CA /* LogoutOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutOperation.swift; sourceTree = "<group>"; };
+		34A8E9FC228ADF49004311CA /* BindEmailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindEmailOperation.swift; sourceTree = "<group>"; };
+		34A8E9FE228AE10E004311CA /* RebindEmailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebindEmailOperation.swift; sourceTree = "<group>"; };
+		34A8EA00228AE27E004311CA /* BindPhoneOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindPhoneOperation.swift; sourceTree = "<group>"; };
+		34A8EA02228BB39D004311CA /* RebindPhoneOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebindPhoneOperation.swift; sourceTree = "<group>"; };
+		34A8EA0A228BBD3A004311CA /* UpdatePasswordOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordOperation.swift; sourceTree = "<group>"; };
+		34A8EA0C228BBFDE004311CA /* ResetPasswordTokenOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordTokenOperation.swift; sourceTree = "<group>"; };
+		34A8EA10228BC639004311CA /* ResetPasswordOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordOperation.swift; sourceTree = "<group>"; };
+		34A8EA12228BC771004311CA /* CreatePinOpration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinOpration.swift; sourceTree = "<group>"; };
+		34A8EA14228BE301004311CA /* UpdatePinOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePinOperation.swift; sourceTree = "<group>"; };
+		34A8EA16228BE394004311CA /* ResetPinOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPinOperation.swift; sourceTree = "<group>"; };
+		34A8EA20228BED18004311CA /* ResetOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetOtpOperation.swift; sourceTree = "<group>"; };
+		34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOtpOperation.swift; sourceTree = "<group>"; };
+		34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateOtpOperation.swift; sourceTree = "<group>"; };
+		34A8EA28228BF24D004311CA /* VerificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationType.swift; sourceTree = "<group>"; };
 		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
 		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
 		484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerAccountSubscription.swift; sourceTree = "<group>"; };
@@ -358,6 +398,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34A8E9DB228AC876004311CA /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				34A8E9FB228ADEEE004311CA /* Setting */,
+				34A8E9EC228AD70A004311CA /* Session */,
+				34A8E9EB228AD6F8004311CA /* Register */,
+				34A8E9EA228AD6E5004311CA /* Utilities */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		34A8E9EA228AD6E5004311CA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */,
+				34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		34A8E9EB228AD6F8004311CA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				34A8E9E2228ACFAA004311CA /* RegisterOperation.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		34A8E9EC228AD70A004311CA /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				34A8E9F1228AD90B004311CA /* LoginOpration.swift */,
+				34A8E9F5228ADBF2004311CA /* LogoutOperation.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		34A8E9FB228ADEEE004311CA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				34A8E9FC228ADF49004311CA /* BindEmailOperation.swift */,
+				34A8E9FE228AE10E004311CA /* RebindEmailOperation.swift */,
+				34A8EA00228AE27E004311CA /* BindPhoneOperation.swift */,
+				34A8EA02228BB39D004311CA /* RebindPhoneOperation.swift */,
+				34A8EA0A228BBD3A004311CA /* UpdatePasswordOperation.swift */,
+				34A8EA0C228BBFDE004311CA /* ResetPasswordTokenOperation.swift */,
+				34A8EA10228BC639004311CA /* ResetPasswordOperation.swift */,
+				34A8EA12228BC771004311CA /* CreatePinOpration.swift */,
+				34A8EA14228BE301004311CA /* UpdatePinOperation.swift */,
+				34A8EA16228BE394004311CA /* ResetPinOperation.swift */,
+				34A8EA20228BED18004311CA /* ResetOtpOperation.swift */,
+				34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */,
+				34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		34A8EA2A228C0EB4004311CA /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				34A8E9DE228ACC14004311CA /* VerificationResult.swift */,
+				34A8EA28228BF24D004311CA /* VerificationType.swift */,
+			);
+			name = Verification;
+			sourceTree = "<group>";
+		};
 		39DC711FE6BC94A6C3F45216 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +611,7 @@
 		487C7DE421E34B8E00BC8D8C /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				34A8E9DB228AC876004311CA /* UserCenter */,
 				48AF8007227FDF5800A848A6 /* Address */,
 				48AF8000227FDCB900A848A6 /* Viewer */,
 				4808142B227826AB00BCF09F /* Whitelist */,
@@ -802,6 +909,7 @@
 		FDD3770221B645560027DEBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				34A8EA2A228C0EB4004311CA /* Verification */,
 				48A89D0D224A0FCC004903BA /* Assembly */,
 				487F158121DC96AD008CDB03 /* Patch */,
 				487F158021DC96A1008CDB03 /* Base */,
@@ -1098,9 +1206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */,
 				FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */,
 				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
 				484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */,
+				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
 				484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */,
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
 				48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */,
@@ -1119,6 +1229,7 @@
 				487C7DF021E37A4200BC8D8C /* AssetPairDepthOperation.swift in Sources */,
 				48FFE85021C8EAB300EE85C0 /* PeatioObjectIdentifier.swift in Sources */,
 				487C7E1221E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift in Sources */,
+				34A8EA11228BC639004311CA /* ResetPasswordOperation.swift in Sources */,
 				48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */,
 				FDD37B7E21B783F10027DEBD /* Log.swift in Sources */,
 				FDD37BD821BA6B360027DEBD /* Order.swift in Sources */,
@@ -1132,6 +1243,8 @@
 				FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */,
 				484D469321E7534500E7C3E2 /* DepositItem.swift in Sources */,
 				484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */,
+				34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */,
+				34A8EA17228BE394004311CA /* ResetPinOperation.swift in Sources */,
 				484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */,
 				4861A13D21D235AE0047D662 /* ContiguousTask.swift in Sources */,
 				484D468721E733BB00E7C3E2 /* OrderType.swift in Sources */,
@@ -1144,22 +1257,29 @@
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
 				487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */,
 				487C7DE621E34BBC00BC8D8C /* AssetPairTradeOperation.swift in Sources */,
+				34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */,
 				4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */,
 				487C7DFE21E47E7400BC8D8C /* RankAssetPairsOperation.swift in Sources */,
+				34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */,
 				484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */,
+				34A8EA0B228BBD3A004311CA /* UpdatePasswordOperation.swift in Sources */,
 				FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */,
+				34A8EA21228BED18004311CA /* ResetOtpOperation.swift in Sources */,
 				484D468121E7272B00E7C3E2 /* CancelOrderOperation.swift in Sources */,
 				48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */,
 				FDCC082F21CA4D65009105DD /* CandlePatch.swift in Sources */,
 				48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */,
 				FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */,
+				34A8EA0D228BBFDE004311CA /* ResetPasswordTokenOperation.swift in Sources */,
 				48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */,
 				FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */,
 				FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */,
 				484D46A521EC690600E7C3E2 /* Customer.swift in Sources */,
+				34A8E9F2228AD90B004311CA /* LoginOpration.swift in Sources */,
 				487598D621E0D2E700EB045D /* WebSocketObserver.swift in Sources */,
 				484D468321E7296800E7C3E2 /* JustOK.swift in Sources */,
 				48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */,
+				34A8E9F6228ADBF2004311CA /* LogoutOperation.swift in Sources */,
 				4861311F21EDA85800E62D4E /* AssetDetailOperation.swift in Sources */,
 				48AF7FFF227FDC8000A848A6 /* AssetsOperation.swift in Sources */,
 				FDCC083321CB36ED009105DD /* PriceLevel.swift in Sources */,
@@ -1178,6 +1298,7 @@
 				487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */,
 				487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */,
 				48FFE84F21C8EAB300EE85C0 /* websocket.pb.swift in Sources */,
+				34A8E9E3228ACFAA004311CA /* RegisterOperation.swift in Sources */,
 				487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */,
 				48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */,
 				48FFE85121C8EAB300EE85C0 /* WSClient.swift in Sources */,
@@ -1189,19 +1310,26 @@
 				487F159021DCE404008CDB03 /* TickersSubscription.swift in Sources */,
 				486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */,
 				FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */,
+				34A8E9FD228ADF49004311CA /* BindEmailOperation.swift in Sources */,
 				48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */,
+				34A8EA03228BB39D004311CA /* RebindPhoneOperation.swift in Sources */,
+				34A8EA01228AE27E004311CA /* BindPhoneOperation.swift in Sources */,
 				48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */,
 				FDD37B9421B9091B0027DEBD /* PeatioAPIClient.swift in Sources */,
+				34A8EA23228BED7D004311CA /* CreateOtpOperation.swift in Sources */,
 				FDD372AA21B4CC690027DEBD /* APIRequestTask.swift in Sources */,
+				34A8EA15228BE301004311CA /* UpdatePinOperation.swift in Sources */,
 				487F159821DDE4A0008CDB03 /* ViewerOrderSubscription.swift in Sources */,
 				48AF8006227FDEFA00A848A6 /* InspectAddressResult.swift in Sources */,
 				48AF8004227FDD0C00A848A6 /* UpdateViewerOperation.swift in Sources */,
 				487F159421DDE015008CDB03 /* CandleSubscription.swift in Sources */,
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
+				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
 				487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */,
 				FDD37BD621BA69420027DEBD /* Depth.swift in Sources */,
 				487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */,
+				34A8E9FF228AE10E004311CA /* RebindEmailOperation.swift in Sources */,
 				48DAF8642265B17B006D3598 /* Banner.swift in Sources */,
 				484D468521E730FB00E7C3E2 /* ViewerOrdersOperation.swift in Sources */,
 				FDCC083521CB3AE4009105DD /* OrderPatch.swift in Sources */,
