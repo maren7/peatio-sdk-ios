@@ -10,6 +10,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/peatio/peatio-sdk-ios.git", :tag => spec.version }
   spec.source_files  = "PeatioSDK", "PeatioSDK/**/*.swift", "PeatioSDK/**/**/*.swift"
   spec.swift_version = '5.0'
+  spec.resource_bundles = {
+    'Peatio' => ['PeatioSDK/Resource/Fonts/*.ttf']
+  }
  
   spec.dependency "Starscream"
   spec.dependency "SwiftProtobuf"
