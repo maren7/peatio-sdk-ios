@@ -26,12 +26,12 @@ public final class RegisterOperation: RequestOperation {
 }
 
 public extension RegisterOperation {
-    
+
     enum RegisterType: String, Codable {
         case email = "EMAIL"
         case mobile = "MOBILE"
     }
-    
+
     struct Param: Equatable {
         public let registerType: RegisterType // [EMAIL, MOBILE]
         public let email: String

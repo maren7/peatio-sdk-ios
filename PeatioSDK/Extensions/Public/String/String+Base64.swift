@@ -1,6 +1,6 @@
 import Foundation
 
-extension String {
+public extension String {
     var base64Data: Data? {
         let rem = self.count % 4
         let pending = rem > 0 ? String(repeating: "=", count: 4 - rem) : ""

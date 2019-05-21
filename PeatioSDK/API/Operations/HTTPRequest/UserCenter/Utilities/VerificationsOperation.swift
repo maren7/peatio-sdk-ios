@@ -24,12 +24,12 @@ public final class VerificationsOperation: RequestOperation {
 }
 
 public extension VerificationsOperation {
-    
+
     enum ChannelType: String, Codable {
         case email = "EMAIL"
         case sms = "SMS"
     }
-    
+
     struct Param: Equatable {
         public let channel: ChannelType // [EMAIL SMS]
         public let type: VerificationType

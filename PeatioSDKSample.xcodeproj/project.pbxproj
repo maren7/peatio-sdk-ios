@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		347154D6229252810041F48C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D5229252810041F48C /* Theme.swift */; };
+		347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D922929EE20041F48C /* UIColor+Hex.swift */; };
+		347154DC22929F800041F48C /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154DB22929F800041F48C /* UIFont+Custom.swift */; };
+		347154E52292CFA90041F48C /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E22292CFA90041F48C /* Oxygen-Regular.ttf */; };
+		347154E62292CFA90041F48C /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E32292CFA90041F48C /* Oxygen-Light.ttf */; };
+		347154E72292CFA90041F48C /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E42292CFA90041F48C /* Oxygen-Bold.ttf */; };
 		34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */; };
 		34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DE228ACC14004311CA /* VerificationResult.swift */; };
 		34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */; };
@@ -46,7 +52,7 @@
 		484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */; };
 		484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469C21E8892100E7C3E2 /* APIErrorCode.swift */; };
 		484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */; };
-		484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */; };
+		484D46A121EC3F9800E7C3E2 /* Decodable+Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */; };
 		484D46A521EC690600E7C3E2 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A421EC690600E7C3E2 /* Customer.swift */; };
 		485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */; };
 		485AE37C21CA8BAB005AFA5C /* ResourceSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */; };
@@ -74,12 +80,12 @@
 		486E8C272284117B00F78DC8 /* ContiguousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861A13C21D235AE0047D662 /* ContiguousTask.swift */; };
 		486E8C28228411A400F78DC8 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F157E21DC9230008CDB03 /* Cancellable.swift */; };
 		486E8C292284120800F78DC8 /* PeatioToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE85421C8EAE400EE85C0 /* PeatioToken.swift */; };
-		486E8C2A2284121C00F78DC8 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */; };
-		486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */; };
-		486E8C2C2284121C00F78DC8 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */; };
+		486E8C2A2284121C00F78DC8 /* URLRequest+Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9921BA105A0027DEBD /* URLRequest+Curl.swift */; };
+		486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+iso8601.swift */; };
+		486E8C2C2284121C00F78DC8 /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDD21BA7B1F0027DEBD /* Date+iso8601.swift */; };
 		486E8C2D2284121C00F78DC8 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F158221DC980A008CDB03 /* String+Base64.swift */; };
 		486E8C2E2284121C00F78DC8 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
-		486E8C2F2284121C00F78DC8 /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */; };
+		486E8C2F2284121C00F78DC8 /* Decodable+Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */; };
 		487598D621E0D2E700EB045D /* WebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487598D521E0D2E700EB045D /* WebSocketObserver.swift */; };
 		487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487598D721E0D79100EB045D /* HTTPRequestExecutor.swift */; };
 		4879445621F9660B00617417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4879445421F9660B00617417 /* LaunchScreen.storyboard */; };
@@ -161,7 +167,7 @@
 		FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B8B21B7E04C0027DEBD /* Trade.swift */; };
 		FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B8F21B8C8EE0027DEBD /* Candle.swift */; };
 		FDD37B9421B9091B0027DEBD /* PeatioAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9321B9091B0027DEBD /* PeatioAPIClient.swift */; };
-		FDD37B9A21BA105A0027DEBD /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */; };
+		FDD37B9A21BA105A0027DEBD /* URLRequest+Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9921BA105A0027DEBD /* URLRequest+Curl.swift */; };
 		FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9B21BA1C610027DEBD /* Page.swift */; };
 		FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37B9D21BA3C010027DEBD /* PeatioSDK.swift */; };
 		FDD37BCE21BA65190027DEBD /* AssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BCD21BA65190027DEBD /* AssetPair.swift */; };
@@ -171,8 +177,8 @@
 		FDD37BD621BA69420027DEBD /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD521BA69420027DEBD /* Depth.swift */; };
 		FDD37BD821BA6B360027DEBD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD721BA6B360027DEBD /* Order.swift */; };
 		FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BD921BA72050027DEBD /* OrderSide.swift */; };
-		FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */; };
-		FDD37BDE21BA7B1F0027DEBD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */; };
+		FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+iso8601.swift */; };
+		FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37BDD21BA7B1F0027DEBD /* Date+iso8601.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +222,12 @@
 /* Begin PBXFileReference section */
 		0D60CBA7DF545346D1F8C791 /* Pods-PeatioSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.release.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		17544EDCF8F21750D3986BFA /* Pods-PeatioSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		347154D5229252810041F48C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		347154D922929EE20041F48C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		347154DB22929F800041F48C /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		347154E22292CFA90041F48C /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
+		347154E32292CFA90041F48C /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
+		347154E42292CFA90041F48C /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
 		34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVerificationsOperation.swift; sourceTree = "<group>"; };
 		34A8E9DE228ACC14004311CA /* VerificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsOperation.swift; sourceTree = "<group>"; };
@@ -255,7 +267,7 @@
 		484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionByEmailOperation.swift; sourceTree = "<group>"; };
 		484D469C21E8892100E7C3E2 /* APIErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorCode.swift; sourceTree = "<group>"; };
 		484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError + Extension.swift"; sourceTree = "<group>"; };
-		484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
+		484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Overlap.swift"; sourceTree = "<group>"; };
 		484D46A421EC690600E7C3E2 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSchedulerTests.swift; sourceTree = "<group>"; };
 		485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceSchedulerTests.swift; sourceTree = "<group>"; };
@@ -354,7 +366,7 @@
 		FDD37B8B21B7E04C0027DEBD /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
 		FDD37B8F21B8C8EE0027DEBD /* Candle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candle.swift; sourceTree = "<group>"; };
 		FDD37B9321B9091B0027DEBD /* PeatioAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeatioAPIClient.swift; sourceTree = "<group>"; };
-		FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		FDD37B9921BA105A0027DEBD /* URLRequest+Curl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Curl.swift"; sourceTree = "<group>"; };
 		FDD37B9B21BA1C610027DEBD /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		FDD37B9D21BA3C010027DEBD /* PeatioSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeatioSDK.swift; sourceTree = "<group>"; };
 		FDD37BCD21BA65190027DEBD /* AssetPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPair.swift; sourceTree = "<group>"; };
@@ -364,8 +376,8 @@
 		FDD37BD521BA69420027DEBD /* Depth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depth.swift; sourceTree = "<group>"; };
 		FDD37BD721BA6B360027DEBD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FDD37BD921BA72050027DEBD /* OrderSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSide.swift; sourceTree = "<group>"; };
-		FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISO8601DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
-		FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISO8601DateFormatter+iso8601.swift"; sourceTree = "<group>"; };
+		FDD37BDD21BA7B1F0027DEBD /* Date+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+iso8601.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +410,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		347154DD2292B4370041F48C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				347154E12292CFA90041F48C /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		347154E12292CFA90041F48C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				347154E22292CFA90041F48C /* Oxygen-Regular.ttf */,
+				347154E32292CFA90041F48C /* Oxygen-Light.ttf */,
+				347154E42292CFA90041F48C /* Oxygen-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		347154E82292D01B0041F48C /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				347154D922929EE20041F48C /* UIColor+Hex.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		347154E92292D0430041F48C /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				347154DB22929F800041F48C /* UIFont+Custom.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		347154EA2292D05A0041F48C /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FDD37B9921BA105A0027DEBD /* URLRequest+Curl.swift */,
+			);
+			path = URLRequest;
+			sourceTree = "<group>";
+		};
+		347154EB2292D0850041F48C /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				FDD37BDD21BA7B1F0027DEBD /* Date+iso8601.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		347154EC2292D09E0041F48C /* String */ = {
+			isa = PBXGroup;
+			children = (
+				487F158221DC980A008CDB03 /* String+Base64.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		347154ED2292D0A60041F48C /* Decodable */ = {
+			isa = PBXGroup;
+			children = (
+				484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */,
+			);
+			path = Decodable;
+			sourceTree = "<group>";
+		};
+		347154EE2292D0F10041F48C /* CharacterSet */ = {
+			isa = PBXGroup;
+			children = (
+				487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */,
+			);
+			path = CharacterSet;
+			sourceTree = "<group>";
+		};
+		347154EF2292D0FC0041F48C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				347154E82292D01B0041F48C /* UIColor */,
+				347154E92292D0430041F48C /* UIFont */,
+				347154EC2292D09E0041F48C /* String */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		347154F02292D1020041F48C /* Interval */ = {
+			isa = PBXGroup;
+			children = (
+				347154EA2292D05A0041F48C /* URLRequest */,
+				347154F12292D1450041F48C /* DateFormatter */,
+				347154EB2292D0850041F48C /* Date */,
+				347154ED2292D0A60041F48C /* Decodable */,
+				347154EE2292D0F10041F48C /* CharacterSet */,
+			);
+			path = Interval;
+			sourceTree = "<group>";
+		};
+		347154F12292D1450041F48C /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+iso8601.swift */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
 		34A8E9DB228AC876004311CA /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -878,6 +994,7 @@
 				FDD372A821B4CC150027DEBD /* API */,
 				FDD3770B21B655E30027DEBD /* Extensions */,
 				FDD37B7821B7771B0027DEBD /* Utils */,
+				347154DD2292B4370041F48C /* Resource */,
 				FDD3728321B4C8290027DEBD /* Info.plist */,
 			);
 			path = PeatioSDK;
@@ -920,12 +1037,8 @@
 		FDD3770B21B655E30027DEBD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FDD37B9921BA105A0027DEBD /* URLRequest+Extensions.swift */,
-				FDD37BDB21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift */,
-				FDD37BDD21BA7B1F0027DEBD /* Date+Extensions.swift */,
-				487F158221DC980A008CDB03 /* String+Base64.swift */,
-				487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */,
-				484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */,
+				347154F02292D1020041F48C /* Interval */,
+				347154EF2292D0FC0041F48C /* Public */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -934,6 +1047,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD37B7D21B783F10027DEBD /* Log.swift */,
+				347154D5229252810041F48C /* Theme.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1095,6 +1209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347154E72292CFA90041F48C /* Oxygen-Bold.ttf in Resources */,
+				347154E52292CFA90041F48C /* Oxygen-Regular.ttf in Resources */,
+				347154E62292CFA90041F48C /* Oxygen-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,7 +1369,7 @@
 				484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */,
 				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
 				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
-				FDD37BDE21BA7B1F0027DEBD /* Date+Extensions.swift in Sources */,
+				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
 				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
 				487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */,
@@ -1261,7 +1378,7 @@
 				4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */,
 				487C7DFE21E47E7400BC8D8C /* RankAssetPairsOperation.swift in Sources */,
 				34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */,
-				484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */,
+				484D46A121EC3F9800E7C3E2 /* Decodable+Overlap.swift in Sources */,
 				34A8EA0B228BBD3A004311CA /* UpdatePasswordOperation.swift in Sources */,
 				FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */,
 				34A8EA21228BED18004311CA /* ResetOtpOperation.swift in Sources */,
@@ -1272,7 +1389,7 @@
 				FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */,
 				34A8EA0D228BBFDE004311CA /* ResetPasswordTokenOperation.swift in Sources */,
 				48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */,
-				FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */,
+				FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+iso8601.swift in Sources */,
 				FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */,
 				484D46A521EC690600E7C3E2 /* Customer.swift in Sources */,
 				34A8E9F2228AD90B004311CA /* LoginOpration.swift in Sources */,
@@ -1293,7 +1410,8 @@
 				FDD37BCE21BA65190027DEBD /* AssetPair.swift in Sources */,
 				FDD372B021B4CE610027DEBD /* RequestExecutor.swift in Sources */,
 				48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */,
-				FDD37B9A21BA105A0027DEBD /* URLRequest+Extensions.swift in Sources */,
+				FDD37B9A21BA105A0027DEBD /* URLRequest+Curl.swift in Sources */,
+				347154DC22929F800041F48C /* UIFont+Custom.swift in Sources */,
 				484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */,
 				487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */,
 				487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */,
@@ -1308,6 +1426,7 @@
 				FD38ED1A21BE0687000114CA /* URLQueryEncoder.swift in Sources */,
 				487C7E0C21E5DB7500BC8D8C /* Account.swift in Sources */,
 				487F159021DCE404008CDB03 /* TickersSubscription.swift in Sources */,
+				347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */,
 				486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */,
 				FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */,
 				34A8E9FD228ADF49004311CA /* BindEmailOperation.swift in Sources */,
@@ -1331,6 +1450,7 @@
 				487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */,
 				34A8E9FF228AE10E004311CA /* RebindEmailOperation.swift in Sources */,
 				48DAF8642265B17B006D3598 /* Banner.swift in Sources */,
+				347154D6229252810041F48C /* Theme.swift in Sources */,
 				484D468521E730FB00E7C3E2 /* ViewerOrdersOperation.swift in Sources */,
 				FDCC083521CB3AE4009105DD /* OrderPatch.swift in Sources */,
 			);
@@ -1349,11 +1469,11 @@
 				486E8C1C2284117B00F78DC8 /* WebSocketError.swift in Sources */,
 				486E8C1A2284117B00F78DC8 /* InerWebSocketObserver.swift in Sources */,
 				486E8C292284120800F78DC8 /* PeatioToken.swift in Sources */,
-				486E8C2A2284121C00F78DC8 /* URLRequest+Extensions.swift in Sources */,
+				486E8C2A2284121C00F78DC8 /* URLRequest+Curl.swift in Sources */,
 				486E8C232284117B00F78DC8 /* websocket.pb.swift in Sources */,
 				486E8C1B2284117B00F78DC8 /* SubscriptionOperation.swift in Sources */,
-				486E8C2C2284121C00F78DC8 /* Date+Extensions.swift in Sources */,
-				486E8C2F2284121C00F78DC8 /* Decodable+Extension.swift in Sources */,
+				486E8C2C2284121C00F78DC8 /* Date+iso8601.swift in Sources */,
+				486E8C2F2284121C00F78DC8 /* Decodable+Overlap.swift in Sources */,
 				486E8C252284117B00F78DC8 /* TaskScheduler.swift in Sources */,
 				486E8C242284117B00F78DC8 /* ResourceScheduler.swift in Sources */,
 				485AE37C21CA8BAB005AFA5C /* ResourceSchedulerTests.swift in Sources */,
@@ -1368,7 +1488,7 @@
 				486E8C2E2284121C00F78DC8 /* CharacterSet+URLEncode.swift in Sources */,
 				486E8C28228411A400F78DC8 /* Cancellable.swift in Sources */,
 				485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */,
-				486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+Extensions.swift in Sources */,
+				486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+iso8601.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,11 +20,11 @@ public final class CreateOtpOperation: RequestOperation {
 }
 
 public extension CreateOtpOperation {
-    
+
     enum TwoFaType: String, Codable {
         case ga = "GA"
     }
-    
+
     struct Param: Equatable {
         public let twoFaType: TwoFaType
         public let twoFaCode: String
