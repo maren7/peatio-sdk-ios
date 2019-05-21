@@ -1,5 +1,10 @@
 import Foundation
 
+public enum ChannelType: String, Codable {
+    case email = "EMAIL"
+    case sms = "SMS"
+}
+
 public enum TwoFAChannelType: String, Codable {
     case email = "EMAIL"
     case sms = "SMS"
@@ -15,4 +20,8 @@ public struct TwoFAChannelPrompt: Codable {
 
     public let channelType: TwoFAChannelType
     public let prompt: String
+}
+
+public struct VerificationToken: Codable {
+    public let token: String
 }

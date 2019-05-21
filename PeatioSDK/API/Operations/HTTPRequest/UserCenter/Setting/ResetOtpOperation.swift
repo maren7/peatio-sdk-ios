@@ -14,16 +14,24 @@ public final class ResetOtpOperation: RequestOperation {
     }
 
     public var requestParams: [String: Any?]? {
-        return ["token": param.token]
+        return ["token": param.token,
+                "secret": param.secret,
+                "otp_code": param.otpCode]
     }
 }
 
 public extension ResetOtpOperation {
     struct Param: Equatable {
         public let token: String
+        public let secret: String
+        public let otpCode: String
 
-        public init(token: String) {
+        public init(token: String,
+                    secret: String,
+                    otpCode: String) {
             self.token = token
+            self.secret = secret
+            self.otpCode = otpCode
         }
     }
 }

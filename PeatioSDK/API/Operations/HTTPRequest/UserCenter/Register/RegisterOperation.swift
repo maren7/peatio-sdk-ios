@@ -20,7 +20,7 @@ public final class RegisterOperation: RequestOperation {
                 "mobile": param.mobile,
                 "verification_code": param.verificationCode,
                 "password": param.password,
-                "locale": param.locale,
+                "verification_token": param.verificationToken,
                 "invitation_code": param.invitationCode]
     }
 }
@@ -33,14 +33,14 @@ public extension RegisterOperation {
     }
 
     struct Param: Equatable {
-        public let registerType: RegisterType // [EMAIL, MOBILE]
-        public let email: String
-        public let nationCode: String
-        public let mobile: String
-        public let verificationCode: String
+        public let registerType: RegisterType
+        public let email: String?
+        public let nationCode: String?
+        public let mobile: String?
+        public let verificationCode: String?
         public let password: String
-        public let locale: String
-        public let invitationCode: String
+        public let verificationToken: String?
+        public let invitationCode: String?
 
         public init(registerType: RegisterType,
                     email: String,
@@ -48,7 +48,7 @@ public extension RegisterOperation {
                     mobile: String,
                     verificationCode: String,
                     password: String,
-                    locale: String,
+                    verificationToken: String,
                     invitationCode: String) {
 
             self.registerType = registerType
@@ -57,7 +57,7 @@ public extension RegisterOperation {
             self.mobile = mobile
             self.verificationCode = verificationCode
             self.password = password
-            self.locale = locale
+            self.verificationToken = verificationToken
             self.invitationCode = invitationCode
         }
     }

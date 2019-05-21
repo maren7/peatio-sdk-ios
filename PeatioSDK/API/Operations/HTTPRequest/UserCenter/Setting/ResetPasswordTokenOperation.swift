@@ -19,7 +19,8 @@ public final class ResetPasswordTokenOperation: RequestOperation {
                 "two_fa_code": param.twoFaCode,
                 "nation_code": param.nationCode,
                 "identity": param.identity,
-                "verification_code": param.verificationCode]
+                "verification_code": param.verificationCode,
+                "two_fa_token": param.twoFAToken]
     }
 }
 
@@ -30,17 +31,20 @@ public extension ResetPasswordTokenOperation {
         public let nationCode: String
         public let identity: String
         public let verificationCode: String
+        public let twoFAToken: String
 
         public init(twoFaChannel: TwoFAChannelType,
                     twoFaCode: String,
                     nationCode: String,
                     identity: String,
-                    verificationCode: String) {
+                    verificationCode: String,
+                    twoFAToken: String) {
             self.twoFaCode = twoFaCode
             self.twoFaChannel = twoFaChannel
             self.nationCode = nationCode
             self.identity = identity
             self.verificationCode = verificationCode
+            self.twoFAToken = twoFAToken
         }
     }
 }

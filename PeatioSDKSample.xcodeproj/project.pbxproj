@@ -13,6 +13,7 @@
 		347154E52292CFA90041F48C /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E22292CFA90041F48C /* Oxygen-Regular.ttf */; };
 		347154E62292CFA90041F48C /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E32292CFA90041F48C /* Oxygen-Light.ttf */; };
 		347154E72292CFA90041F48C /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E42292CFA90041F48C /* Oxygen-Bold.ttf */; };
+		3471553A2293D5DC0041F48C /* VerifyCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347155392293D5DC0041F48C /* VerifyCodeOperation.swift */; };
 		34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */; };
 		34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DE228ACC14004311CA /* VerificationResult.swift */; };
 		34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */; };
@@ -228,6 +229,7 @@
 		347154E22292CFA90041F48C /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
 		347154E32292CFA90041F48C /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		347154E42292CFA90041F48C /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		347155392293D5DC0041F48C /* VerifyCodeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeOperation.swift; sourceTree = "<group>"; };
 		34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVerificationsOperation.swift; sourceTree = "<group>"; };
 		34A8E9DE228ACC14004311CA /* VerificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsOperation.swift; sourceTree = "<group>"; };
@@ -530,6 +532,7 @@
 			children = (
 				34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */,
 				34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */,
+				347155392293D5DC0041F48C /* VerifyCodeOperation.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1362,6 +1365,7 @@
 				484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */,
 				34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */,
 				34A8EA17228BE394004311CA /* ResetPinOperation.swift in Sources */,
+				3471553A2293D5DC0041F48C /* VerifyCodeOperation.swift in Sources */,
 				484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */,
 				4861A13D21D235AE0047D662 /* ContiguousTask.swift in Sources */,
 				484D468721E733BB00E7C3E2 /* OrderType.swift in Sources */,
