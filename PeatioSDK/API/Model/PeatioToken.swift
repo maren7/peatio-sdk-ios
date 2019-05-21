@@ -79,7 +79,7 @@ public struct PeatioToken: Hashable, Decodable {
     }
 
     private enum CodingKeys: String, CodingKey {
-        case jwtValue = "accessToken"
+        case jwtValue = "token"
     }
 
     public init(from decoder: Decoder) throws {
