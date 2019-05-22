@@ -3,9 +3,9 @@ import Foundation
 public final class VerifyCodeOperation: RequestOperation {
     public typealias ResultData = VerificationToken
 
-    public let path: String = "/api/uc/v1/verifications"
+    public let path: String = "/api/uc/v1/verifications/verify"
 
-    public let httpMethod: HTTPMethod = .put
+    public let httpMethod: HTTPMethod = .patch
 
     public let param: Param
 
