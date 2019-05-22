@@ -21,10 +21,10 @@ public final class UpdateViewerOperation: RequestOperation {
 public extension UpdateViewerOperation {
     struct Param: Equatable {
 
-        public let name: String
-        public let locale: String
+        public let name: String?
+        public let locale: String?
 
-        public init(name: String, locale: String) {
+        public init(name: String?, locale: String?) {
             self.name = name
             self.locale = locale
         }
