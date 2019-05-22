@@ -36,6 +36,7 @@
 		34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA28228BF24D004311CA /* VerificationType.swift */; };
 		4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01B21F1E48300775AC9 /* PriceItem.swift */; };
 		4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */; };
+		481CFFA52295311B000DA86F /* Peatio.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 481CFFA42295311B000DA86F /* Peatio.podspec */; };
 		484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */; };
 		484D467D21E6F88700E7C3E2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467C21E6F88700E7C3E2 /* Address.swift */; };
 		484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */; };
@@ -252,6 +253,7 @@
 		34A8EA28228BF24D004311CA /* VerificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationType.swift; sourceTree = "<group>"; };
 		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
 		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
+		481CFFA42295311B000DA86F /* Peatio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Peatio.podspec; sourceTree = "<group>"; };
 		484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerAccountSubscription.swift; sourceTree = "<group>"; };
 		484D467C21E6F88700E7C3E2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAddressOperation.swift; sourceTree = "<group>"; };
@@ -959,6 +961,7 @@
 		FDD3725D21B4C8080027DEBD = {
 			isa = PBXGroup;
 			children = (
+				481CFFA42295311B000DA86F /* Peatio.podspec */,
 				FDD3726821B4C8080027DEBD /* PeatioSDKSample */,
 				FDD3728121B4C8290027DEBD /* PeatioSDK */,
 				FDD3728E21B4C82A0027DEBD /* PeatioSDKTests */,
@@ -1204,6 +1207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD3727121B4C8090027DEBD /* Assets.xcassets in Resources */,
+				481CFFA52295311B000DA86F /* Peatio.podspec in Resources */,
 				4879445621F9660B00617417 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
