@@ -25,10 +25,12 @@ public protocol Colors {
     var errorToast: UIColor { get }
     var warnToast: UIColor { get }
 
-    var seperateLine: UIColor { get }
+    var seperate: UIColor { get }
 
     var segmentLine: UIColor { get }
     var textFieldError: UIColor { get }
+    var textFieldTitle: UIColor { get }
+    var background: UIColor { get }
 
 }
 
@@ -45,10 +47,12 @@ private struct _DarkThemeColors: Colors {
     let errorToast = UIColor(hex: "#FF6262")
     let warnToast = UIColor(hex: "#F5A624")
 
-    let seperateLine = UIColor(hex: "#394551")
+    let seperate = UIColor(hex: "#394551")
 
     let segmentLine = UIColor(hex: "#5F99DA")
     let textFieldError = UIColor(hex: "#FF614C")
+    let textFieldTitle = UIColor(hex: "#8C99A6")
+    let background = UIColor(hex: "#0B1013")
 }
 
 public protocol Fonts {
