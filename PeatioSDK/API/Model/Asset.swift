@@ -23,6 +23,7 @@ public struct Asset: Codable {
     public let isMemoRequired: Bool
     public let isStub: Bool
     public let defaultGateway: Gateway?
+    public let gateways: [Gateway]
     public let logo: Logo
 
     public init(uuid: String,
@@ -36,6 +37,7 @@ public struct Asset: Codable {
                 isMemoRequired: Bool,
                 isStub: Bool,
                 defaultGateway: Gateway,
+                gateways: [Gateway],
                 logo: Logo) {
         self.uuid = uuid
         self.symbol = symbol
@@ -48,6 +50,7 @@ public struct Asset: Codable {
         self.isMemoRequired = isMemoRequired
         self.isStub = isStub
         self.defaultGateway = defaultGateway
+        self.gateways = gateways
         self.logo = logo
     }
 }
