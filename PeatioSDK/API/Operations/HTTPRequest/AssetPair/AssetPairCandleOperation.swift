@@ -3,7 +3,7 @@ import Foundation
 public final class AssetPairCandleOperation: RequestOperation {
     public typealias ResultData = Page<Candle>
 
-    public lazy private(set) var path: String = "/api/xn/v1/asset_pairs/\(param.assetPairUUID)/candles"
+    public lazy private(set) var path: String = "/api/xn/v2/asset_pairs/\(param.assetPairUUID)/candles"
 
     public var requestParams: [String: Any?]? {
         return [

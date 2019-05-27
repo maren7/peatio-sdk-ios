@@ -4,7 +4,7 @@ public final class ResetPasswordTokenOperation: RequestOperation {
 
     public typealias ResultData = PasswordResult
 
-    public let path: String = "/api/uc/v1/reset/password"
+    public let path: String = "/api/uc/v2/reset/password"
 
     public let httpMethod: HTTPMethod = .post
 

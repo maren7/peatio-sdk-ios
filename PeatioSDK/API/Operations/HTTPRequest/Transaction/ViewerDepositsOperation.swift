@@ -3,7 +3,7 @@ import Foundation
 public final class ViewerDepositsOperation: RequestOperation {
     public typealias ResultData = Page<DepositItem>
 
-    public var path: String = "/api/uc/v1/me/deposits"
+    public var path: String = "/api/uc/v2/me/deposits"
 
     public var requestParams: [String: Any?]? {
         return [

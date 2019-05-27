@@ -3,7 +3,7 @@ import Foundation
 public final class LogoutOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/logout"
+    public let path: String = "/api/uc/v2/logout"
 
     public let httpMethod: HTTPMethod = .delete
 

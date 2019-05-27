@@ -3,7 +3,7 @@ import Foundation
 public final class CreateAssetWhitelistAddressOperation: RequestOperation {
     public typealias ResultData = WhitelistAddress
 
-    public let path: String = "/api/uc/v1/me/whitelist_addresses"
+    public let path: String = "/api/uc/v2/me/whitelist_addresses"
 
     public let httpMethod: HTTPMethod = .post
 

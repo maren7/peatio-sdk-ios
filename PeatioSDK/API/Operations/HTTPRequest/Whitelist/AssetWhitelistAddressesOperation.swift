@@ -3,7 +3,7 @@ import Foundation
 public final class AssetWhitelistAddressesOperation: RequestOperation {
     public typealias ResultData = [ViewerWhitelistAddress]
 
-    public lazy private(set) var path: String = "/api/uc/v1/me/whitelist_addresses"
+    public lazy private(set) var path: String = "/api/uc/v2/me/whitelist_addresses"
 
     public let param: Param
 

@@ -3,7 +3,7 @@ import Foundation
 public final class UpdatePinOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/me/pin"
+    public let path: String = "/api/uc/v2/me/pin"
 
     public let httpMethod: HTTPMethod = .put
 

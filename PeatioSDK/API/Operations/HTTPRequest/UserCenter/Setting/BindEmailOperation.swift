@@ -3,7 +3,7 @@ import Foundation
 public final class BindEmailOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/me/email"
+    public let path: String = "/api/uc/v2/me/email"
 
     public let httpMethod: HTTPMethod = .post
 

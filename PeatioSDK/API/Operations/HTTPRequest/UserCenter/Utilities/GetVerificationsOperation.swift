@@ -3,7 +3,7 @@ import Foundation
 public final class GetVerificationsOperation: RequestOperation {
     public typealias ResultData = [TwoFAChannelPrompt]
 
-    public let path: String = "/api/uc/v1/verifications"
+    public let path: String = "/api/uc/v2/verifications"
 
     public var requestParams: [String: Any?]? {
         return ["type": param.type.rawValue,

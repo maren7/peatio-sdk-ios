@@ -3,7 +3,7 @@ import Foundation
 public final class RegisterOperation: RequestOperation {
     public typealias ResultData = PeatioToken
 
-    public let path: String = "/api/uc/v1/register"
+    public let path: String = "/api/uc/v2/register"
 
     public let httpMethod: HTTPMethod = .post
 

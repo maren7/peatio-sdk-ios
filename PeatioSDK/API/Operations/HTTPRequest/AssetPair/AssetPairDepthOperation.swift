@@ -3,7 +3,7 @@ import Foundation
 public final class AssetPairDepthOperation: RequestOperation {
     public typealias ResultData = Depth
 
-    public lazy private(set) var path: String = "/api/xn/v1/asset_pairs/\(param.assetPairUUID)/depth"
+    public lazy private(set) var path: String = "/api/xn/v2/asset_pairs/\(param.assetPairUUID)/depth"
 
     public var requestParams: [String: Any?]? {
         return ["limit": param.limit]

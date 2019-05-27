@@ -3,7 +3,7 @@ import Foundation
 public final class DepositAddressOperation: RequestOperation {
     public typealias ResultData = [Address]
 
-    public lazy private(set) var path: String = "/api/uc/v1/me/assets/\(param.assetPairUUID)/addresses"
+    public lazy private(set) var path: String = "/api/uc/v2/me/assets/\(param.assetPairUUID)/addresses"
 
     public let param: Param
 

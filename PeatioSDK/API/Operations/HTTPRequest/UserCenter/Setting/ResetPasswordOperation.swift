@@ -3,7 +3,7 @@ import Foundation
 public final class ResetPasswordOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/reset/password"
+    public let path: String = "/api/uc/v2/reset/password"
 
     public let httpMethod: HTTPMethod = .patch
 

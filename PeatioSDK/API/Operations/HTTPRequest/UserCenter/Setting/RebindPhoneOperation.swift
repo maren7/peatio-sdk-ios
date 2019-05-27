@@ -3,7 +3,7 @@ import Foundation
 public final class RebindPhoneOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/me/mobile"
+    public let path: String = "/api/uc/v2/me/mobile"
 
     public let httpMethod: HTTPMethod = .put
 

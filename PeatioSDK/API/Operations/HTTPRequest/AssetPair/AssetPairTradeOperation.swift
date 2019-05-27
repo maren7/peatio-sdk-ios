@@ -3,7 +3,7 @@ import Foundation
 public final class AssetPairTradeOperation: RequestOperation {
     public typealias ResultData = [Trade]
 
-    public lazy private(set) var path: String = "/api/xn/v1/asset_pairs/\(param.assetPairUUID)/trades"
+    public lazy private(set) var path: String = "/api/xn/v2/asset_pairs/\(param.assetPairUUID)/trades"
 
     public var requestParams: [String: Any?]? {
         return ["limit": param.limit]

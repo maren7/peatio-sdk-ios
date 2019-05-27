@@ -4,7 +4,7 @@ public final class RefreshSessionOperation: RequestOperation {
     public typealias ResultData = PeatioToken
 
     public var path: String {
-        return "/api/uc/v1/me/session"
+        return "/api/uc/v2/me/session"
     }
 
     public let param: Param

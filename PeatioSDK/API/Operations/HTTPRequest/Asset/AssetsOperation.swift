@@ -3,7 +3,7 @@ import Foundation
 public final class AssetsOperation: RequestOperation {
     public typealias ResultData = [Asset]
 
-    public lazy private(set) var path: String = "/api/uc/v1/"
+    public lazy private(set) var path: String = "/api/uc/v2/"
 
     public let param: Param
 

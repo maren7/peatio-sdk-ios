@@ -3,7 +3,7 @@ import Foundation
 public final class CreateWithdrawalOperation: RequestOperation {
     public typealias ResultData = WithdrawalItem
 
-    public let path: String = "/api/uc/v1/me/withdrawals"
+    public let path: String = "/api/uc/v2/me/withdrawals"
 
     public let httpMethod: HTTPMethod = .post
 

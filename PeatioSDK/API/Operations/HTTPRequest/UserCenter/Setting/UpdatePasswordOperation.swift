@@ -4,7 +4,7 @@ public final class UpdatePasswordOperation: RequestOperation {
 
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/me/password"
+    public let path: String = "/api/uc/v2/me/password"
 
     public let httpMethod: HTTPMethod = .put
 

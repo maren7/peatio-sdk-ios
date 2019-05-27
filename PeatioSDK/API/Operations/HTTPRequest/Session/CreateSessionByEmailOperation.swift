@@ -4,7 +4,7 @@ public final class CreateSessionByEmailOperation: RequestOperation {
     public typealias ResultData = PeatioToken
 
     public var path: String {
-        return "/api/uc/v1/session/email"
+        return "/api/uc/v2/session/email"
     }
 
     public let httpMethod: HTTPMethod = .post

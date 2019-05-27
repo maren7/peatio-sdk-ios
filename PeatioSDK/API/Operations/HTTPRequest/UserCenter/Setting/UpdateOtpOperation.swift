@@ -3,7 +3,7 @@ import Foundation
 public final class UpdateOtpOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/me/otp"
+    public let path: String = "/api/uc/v2/me/otp"
 
     public let httpMethod: HTTPMethod = .put
 

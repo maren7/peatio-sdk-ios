@@ -3,7 +3,7 @@ import Foundation
 public final class VerificationsOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/uc/v1/verifications"
+    public let path: String = "/api/uc/v2/verifications"
 
     public let httpMethod: HTTPMethod = .post
 
@@ -28,16 +28,16 @@ public extension VerificationsOperation {
         public let channel: ChannelType
         public let type: VerificationType
         public let email: String?
-        public let nationCode: String
+        public let nationCode: String?
         public let mobile: String?
-        public let token: String
+        public let token: String?
 
         public init(channel: ChannelType,
                     type: VerificationType,
-                    email: String,
-                    nationCode: String,
-                    mobile: String,
-                    token: String) {
+                    email: String?,
+                    nationCode: String?,
+                    mobile: String?,
+                    token: String?) {
             self.channel = channel
             self.type = type
             self.email = email

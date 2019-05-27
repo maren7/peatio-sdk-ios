@@ -3,7 +3,7 @@ import Foundation
 public final class LoginOperation: RequestOperation {
     public typealias ResultData = LoginResult
 
-    public let path: String = "/api/uc/v1/login"
+    public let path: String = "/api/uc/v2/login"
 
     public let httpMethod: HTTPMethod = .post
 
