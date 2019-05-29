@@ -10,7 +10,7 @@ enum Authentication: Hashable {
     case user(PeatioToken)
 }
 
-public struct PeatioToken: Hashable, Decodable {
+public struct PeatioToken: Hashable, Codable {
 
     static let expirationTimeInterval: TimeInterval = 300
 

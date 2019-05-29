@@ -4,15 +4,19 @@ import UIKit
 public protocol Theme {
     var colors: Colors { get }
     var fonts: Fonts { get }
+    var keyboardAppearance: UIKeyboardAppearance { get }
 }
 
 private struct _DarkTheme: Theme {
     let fonts: Fonts = _DarkThemeFonts()
-
     let colors: Colors = _DarkThemeColors()
+    let keyboardAppearance: UIKeyboardAppearance = .dark
 }
 
 public protocol Colors {
+
+    var pageBackgroundColor: UIColor { get }
+
 
     var textWhite: UIColor { get }
     var placeholder: UIColor { get }
@@ -30,9 +34,13 @@ public protocol Colors {
     var segmentLine: UIColor { get }
     var textFieldError: UIColor { get }
 
+    var inputTintColor: UIColor { get }
+
 }
 
 private struct _DarkThemeColors: Colors {
+
+    let pageBackgroundColor: UIColor = UIColor(hex: "#0B1013")
 
     let textWhite: UIColor = .white
     let placeholder = UIColor(hex: "#52616D")
@@ -49,6 +57,8 @@ private struct _DarkThemeColors: Colors {
 
     let segmentLine = UIColor(hex: "#5F99DA")
     let textFieldError = UIColor(hex: "#FF614C")
+
+    let inputTintColor: UIColor = UIColor(hex: "#5F99DA")
 }
 
 public protocol Fonts {
@@ -64,6 +74,8 @@ public protocol Fonts {
 
     var textfield: UIFont { get }
     var textfieldInvalid: UIFont { get }
+
+    var gaInput: UIFont { get }
 }
 
 private struct _DarkThemeFonts: Fonts {
@@ -79,6 +91,8 @@ private struct _DarkThemeFonts: Fonts {
 
     let textfield = UIFont.oxygen(ofSize: 13)
     let textfieldInvalid = UIFont.oxygen(ofSize: 12)
+
+    let gaInput: UIFont = UIFont.systemFont(ofSize: 20)
 }
 
 public class ThemeManager {

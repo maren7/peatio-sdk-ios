@@ -14,7 +14,7 @@ public final class LoginOperation: RequestOperation {
     }
 
     public var requestParams: [String: Any?]? {
-        return ["two_fa_channel": param.twoFaChannel.rawValue,
+        return ["two_fa_channel": param.twoFaChannel?.rawValue,
                 "two_fa_code": param.twoFaCode,
                 "nation_code": param.nationCode,
                 "identity": param.identity,
@@ -24,15 +24,15 @@ public final class LoginOperation: RequestOperation {
 
 public extension LoginOperation {
     struct Param: Equatable {
-        public let twoFaChannel: TwoFAChannelType
-        public let twoFaCode: String
-        public let nationCode: String
+        public let twoFaChannel: TwoFAChannelType?
+        public let twoFaCode: String?
+        public let nationCode: String?
         public let identity: String
         public let password: String
 
-        public init(twoFaChannel: TwoFAChannelType,
-                    twoFaCode: String,
-                    nationCode: String,
+        public init(twoFaChannel: TwoFAChannelType?,
+                    twoFaCode: String?,
+                    nationCode: String?,
                     identity: String,
                     password: String) {
             self.twoFaChannel = twoFaChannel
@@ -46,19 +46,32 @@ public extension LoginOperation {
 
 public extension LoginOperation {
     struct LoginResult: Codable {
-        public let token: String
+        public let token: PeatioToken?
         public let twoFaVerified: Bool
-        public let verificationToken: String
+        public let verificationToken: String?
         public let channels: [TwoFAChannelPrompt]
 
-        public init(token: String,
+        public init(token: PeatioToken?,
                     twoFaVerified: Bool,
-                    verificationToken: String,
+                    verificationToken: String?,
                     channels: [TwoFAChannelPrompt]) {
             self.token = token
             self.twoFaVerified = twoFaVerified
             self.verificationToken = verificationToken
             self.channels = channels
+        }
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            let value = try? container.decode(String.self, forKey: .token)
+            if let tokenValue = value {
+                self.token = try PeatioToken.estimatedDeserialize(jwtToken: tokenValue)
+            } else {
+                self.token = nil
+            }
+            self.twoFaVerified = try container.decode(Bool.self, forKey: .twoFaVerified)
+            self.verificationToken = try? container.decode(String.self, forKey: .verificationToken)
+            self.channels = try container.decode([TwoFAChannelPrompt].self, forKey: .channels)
         }
     }
 }

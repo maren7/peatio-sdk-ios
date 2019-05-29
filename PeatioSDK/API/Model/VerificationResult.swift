@@ -19,7 +19,7 @@ public struct TwoFAChannelPrompt: Codable {
     }
 
     public let channelType: TwoFAChannelType
-    public let prompt: String
+    public let prompt: String?
 }
 
 public struct VerificationToken: Codable {
