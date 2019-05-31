@@ -1,6 +1,6 @@
 import Foundation
 
-public final class ViewerOperation: RequestOperation {
+public final class ViewerProfileOperation: RequestOperation {
     public typealias ResultData = Customer
 
     public let path: String = "/api/uc/v2/me/profile"
@@ -12,7 +12,7 @@ public final class ViewerOperation: RequestOperation {
     }
 }
 
-public extension ViewerOperation {
+public extension ViewerProfileOperation {
     struct Param: Equatable {
         public init() { }
     }

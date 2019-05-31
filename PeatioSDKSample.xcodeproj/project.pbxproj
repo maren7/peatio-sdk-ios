@@ -117,11 +117,12 @@
 		487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A321DF902D008CDB03 /* RequestOperationResult.swift */; };
 		487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
 		487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
+		48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A33A2922A004590060BBDE /* FeeRateOperation.swift */; };
 		48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */; };
 		48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */; };
 		48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */; };
 		48AF7FFF227FDC8000A848A6 /* AssetsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF7FFE227FDC8000A848A6 /* AssetsOperation.swift */; };
-		48AF8002227FDCCC00A848A6 /* ViewerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8001227FDCCC00A848A6 /* ViewerOperation.swift */; };
+		48AF8002227FDCCC00A848A6 /* ViewerProfileOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8001227FDCCC00A848A6 /* ViewerProfileOperation.swift */; };
 		48AF8004227FDD0C00A848A6 /* UpdateViewerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8003227FDD0C00A848A6 /* UpdateViewerOperation.swift */; };
 		48AF8006227FDEFA00A848A6 /* InspectAddressResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */; };
 		48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */; };
@@ -311,11 +312,12 @@
 		487F15A321DF902D008CDB03 /* RequestOperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationResult.swift; sourceTree = "<group>"; };
 		487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLEncode.swift"; sourceTree = "<group>"; };
 		487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOperation.swift; sourceTree = "<group>"; };
+		48A33A2922A004590060BBDE /* FeeRateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeRateOperation.swift; sourceTree = "<group>"; };
 		48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWhitelistAddressesOperation.swift; sourceTree = "<group>"; };
 		48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitelistAddress.swift; sourceTree = "<group>"; };
 		48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerWhitelistAddress.swift; sourceTree = "<group>"; };
 		48AF7FFE227FDC8000A848A6 /* AssetsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsOperation.swift; sourceTree = "<group>"; };
-		48AF8001227FDCCC00A848A6 /* ViewerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerOperation.swift; sourceTree = "<group>"; };
+		48AF8001227FDCCC00A848A6 /* ViewerProfileOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerProfileOperation.swift; sourceTree = "<group>"; };
 		48AF8003227FDD0C00A848A6 /* UpdateViewerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewerOperation.swift; sourceTree = "<group>"; };
 		48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectAddressResult.swift; sourceTree = "<group>"; };
 		48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectAddressOperation.swift; sourceTree = "<group>"; };
@@ -870,8 +872,9 @@
 		48AF8000227FDCB900A848A6 /* Viewer */ = {
 			isa = PBXGroup;
 			children = (
-				48AF8001227FDCCC00A848A6 /* ViewerOperation.swift */,
+				48AF8001227FDCCC00A848A6 /* ViewerProfileOperation.swift */,
 				48AF8003227FDD0C00A848A6 /* UpdateViewerOperation.swift */,
+				48A33A2922A004590060BBDE /* FeeRateOperation.swift */,
 			);
 			path = Viewer;
 			sourceTree = "<group>";
@@ -1332,6 +1335,7 @@
 			files = (
 				34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */,
 				FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */,
+				48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */,
 				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
 				484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */,
 				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
@@ -1411,7 +1415,7 @@
 				FDD372AC21B4CCBF0027DEBD /* HTTPMethod.swift in Sources */,
 				484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */,
 				FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */,
-				48AF8002227FDCCC00A848A6 /* ViewerOperation.swift in Sources */,
+				48AF8002227FDCCC00A848A6 /* ViewerProfileOperation.swift in Sources */,
 				484D469121E74FEA00E7C3E2 /* WithdrawalItem.swift in Sources */,
 				FDCC083921CB3F25009105DD /* AccountPatch.swift in Sources */,
 				48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */,

@@ -8,8 +8,12 @@ struct RequestOperationResult<T: Decodable> {
     let pageToken: String?
 
     var isSuccessful: Bool {
-        return code == 0
+        return isSucceedCode(code)
     }
+}
+
+private func isSucceedCode(_ code:  Int64) -> Bool  {
+    return code == 0
 }
 
 extension RequestOperationResult: Decodable {
@@ -30,7 +34,7 @@ extension RequestOperationResult: Decodable {
             pageTokenValue = nil
         }
         self.pageToken = pageTokenValue
-        if (T.self as? OverlapDecodable.Type) != nil {
+        if !isSucceedCode(code) || (T.self as? OverlapDecodable.Type) != nil {
             self.data = nil
         } else {
             do {

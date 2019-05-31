@@ -1,6 +1,7 @@
 import Foundation
 
 public enum VerificationType: String, Codable {
+    case register
     case login
     case bindEmail
     case bindMobile

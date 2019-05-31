@@ -11,7 +11,7 @@ struct Log {
         _ file: String = #file,
         _ function: String = #function,
         _ line: Int = #line) {
-        assert({ print("\n☘️ \(Level.debug.rawValue) [\(file) `\(function)` #\(line)]\n\(message())\n"); return true }())
+        print("\n☘️ \(Level.debug.rawValue) [\(file) `\(function)` #\(line)]\n\(message())\n")
     }
 
     static func error(
