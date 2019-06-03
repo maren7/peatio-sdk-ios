@@ -3,7 +3,7 @@ import Foundation
 public final class AssetAccountOperation: RequestOperation {
     public typealias ResultData = [Account]
 
-    public let path: String = "/api/xn/v2/me/accounts"
+    public let path: String = "/api/xn/v1/me/accounts"
 
     public var requestParams: [String: Any?]? {
         return ["asset_ids": param.assetUUIDs]

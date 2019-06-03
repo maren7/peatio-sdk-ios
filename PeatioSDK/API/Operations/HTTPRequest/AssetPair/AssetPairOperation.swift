@@ -3,7 +3,7 @@ import Foundation
 public final class AssetPairOperation: RequestOperation {
     public typealias ResultData = AssetPair
 
-    public lazy private(set) var path: String = "/api/xn/v2/asset_pairs/\(param.assetPairUUID)"
+    public lazy private(set) var path: String = "/api/xn/v1/asset_pairs/\(param.assetPairUUID)"
 
     public let param: Param
 

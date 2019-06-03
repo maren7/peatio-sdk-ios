@@ -3,7 +3,7 @@ import Foundation
 public final class CancelOrderOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public lazy private(set) var path: String = "/api/xn/v2/me/orders/\(param.orderID)/cancel"
+    public lazy private(set) var path: String = "/api/xn/v1/me/orders/\(param.orderID)/cancel"
 
     public let httpMethod: HTTPMethod = .post
 

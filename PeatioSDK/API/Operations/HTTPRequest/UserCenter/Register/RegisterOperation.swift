@@ -1,7 +1,13 @@
 import Foundation
 
 public final class RegisterOperation: RequestOperation {
-    public typealias ResultData = PeatioToken
+
+    public struct Result: Decodable {
+        public let token: PeatioToken
+        public let customer: Customer
+    }
+
+    public typealias ResultData = Result
 
     public let path: String = "/api/uc/v2/register"
 
@@ -38,18 +44,18 @@ public extension RegisterOperation {
         public let nationCode: String?
         public let mobile: String?
         public let verificationCode: String?
-        public let password: String
+        public let password: String?
         public let verificationToken: String?
         public let invitationCode: String?
 
         public init(registerType: RegisterType,
-                    email: String,
-                    nationCode: String,
-                    mobile: String,
-                    verificationCode: String,
-                    password: String,
-                    verificationToken: String,
-                    invitationCode: String) {
+                    email: String?,
+                    nationCode: String?,
+                    mobile: String?,
+                    verificationCode: String?,
+                    password: String?,
+                    verificationToken: String?,
+                    invitationCode: String?) {
 
             self.registerType = registerType
             self.email = email

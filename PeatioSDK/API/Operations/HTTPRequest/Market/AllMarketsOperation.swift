@@ -3,7 +3,7 @@ import Foundation
 public final class AllMarketsOperation: RequestOperation {
     public typealias ResultData = [Market]
 
-    public let path: String = "/api/xn/v2/markets"
+    public let path: String = "/api/xn/v1/markets"
 
     public let param: Param
 

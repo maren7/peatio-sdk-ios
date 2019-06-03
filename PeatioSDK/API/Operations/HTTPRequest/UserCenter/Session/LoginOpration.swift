@@ -50,16 +50,7 @@ public extension LoginOperation {
         public let twoFaVerified: Bool
         public let verificationToken: String?
         public let channels: [TwoFAChannelPrompt]
-
-        public init(token: PeatioToken?,
-                    twoFaVerified: Bool,
-                    verificationToken: String?,
-                    channels: [TwoFAChannelPrompt]) {
-            self.token = token
-            self.twoFaVerified = twoFaVerified
-            self.verificationToken = verificationToken
-            self.channels = channels
-        }
+        public let customer: Customer?
 
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -72,6 +63,7 @@ public extension LoginOperation {
             self.twoFaVerified = try container.decode(Bool.self, forKey: .twoFaVerified)
             self.verificationToken = try? container.decode(String.self, forKey: .verificationToken)
             self.channels = try container.decode([TwoFAChannelPrompt].self, forKey: .channels)
+            self.customer = try? container.decode(Customer.self, forKey: .customer)
         }
     }
 }

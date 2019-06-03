@@ -3,7 +3,7 @@ import Foundation
 public final class AddFavoriteAssetPairOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/xn/v2/me/fave_asset_pairs"
+    public let path: String = "/api/xn/v1/me/fave_asset_pairs"
 
     public let httpMethod: HTTPMethod = .post
 

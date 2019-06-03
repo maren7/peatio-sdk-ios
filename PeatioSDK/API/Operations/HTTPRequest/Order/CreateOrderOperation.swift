@@ -3,7 +3,7 @@ import Foundation
 public final class CreateOrderOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/xn/v2/me/orders"
+    public let path: String = "/api/xn/v1/me/orders"
 
     public let httpMethod: HTTPMethod = .post
 

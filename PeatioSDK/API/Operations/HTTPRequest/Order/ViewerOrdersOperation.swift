@@ -3,7 +3,7 @@ import Foundation
 public final class ViewerOrdersOperation: RequestOperation {
     public typealias ResultData = Page<Order>
 
-    public let path: String = "/api/xn/v2/me/orders"
+    public let path: String = "/api/xn/v1/me/orders"
 
     public var requestParams: [String: Any?]? {
         return [
