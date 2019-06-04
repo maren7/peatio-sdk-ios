@@ -5,6 +5,18 @@ public final class RegisterOperation: RequestOperation {
     public struct Result: Decodable {
         public let token: PeatioToken
         public let customer: Customer
+
+        private enum CodingKeys: String, CodingKey {
+            case token
+            case customer
+        }
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            let value = try container.decode(String.self, forKey: .token)
+            self.token = try PeatioToken.estimatedDeserialize(jwtToken: value)
+            self.customer = try container.decode(Customer.self, forKey: .customer)
+        }
     }
 
     public typealias ResultData = Result

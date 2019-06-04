@@ -12,7 +12,7 @@ public final class CreateOrderOperation: RequestOperation {
             "amount": param.amount,
             "type": param.type.rawValue,
             "asset_pair_uuid": param.assetPairUUID,
-            "type": param.type.rawValue,
+            "price": param.price,
             "side": param.side.rawValue,
             "hidden": param.hidden
         ]

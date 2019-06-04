@@ -50,9 +50,9 @@ open class RequestExecutor: HTTPRequestExecutor {
                     let resultInfo: String
                     switch blockResult {
                     case .success(let value):
-                        resultInfo = "\n\tValue: {\n\n\t\(value)\n\n\t}\n"
+                        resultInfo = "\n\(value)\n\n"
                     case .failure(let error):
-                        resultInfo = "\n\tFailure: {\n\n\t\t\(error.localizedDescription)\n\n\t}\n"
+                        resultInfo = "\n\(error.localizedDescription)\n\n\t"
                     }
                     let tail = "\t=========== Execution Finished ================\n\t"
                     Log.debug(header + subT1 + requestInfo + subT2 + resultInfo + tail)

@@ -43,7 +43,7 @@ extension APIError: CustomDebugStringConvertible, CustomStringConvertible {
     }
 
     public var localizedDescription: String {
-        return message
+        return "code: \(code), " + message
     }
 }
 

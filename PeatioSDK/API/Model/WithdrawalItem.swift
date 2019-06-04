@@ -3,9 +3,10 @@ import Foundation
 public struct WithdrawalItem: Codable {
 
     public enum State: String, Codable {
-        case transactionCreated = "TRANSACTION_CREATED"
         case pending = "PENDING"
         case completed = "COMPLETED"
+        case withhold = "WITHHOLD"
+        case cancelled = "CANCELLED"
         case failed = "FAILED"
     }
 

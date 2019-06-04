@@ -1,3 +1,3 @@
 import Foundation
 
-protocol OverlapDecodable: Decodable { }
+protocol PageDecodable: Decodable {}

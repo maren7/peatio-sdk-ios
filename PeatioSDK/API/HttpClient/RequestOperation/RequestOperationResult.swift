@@ -6,7 +6,7 @@ struct RequestOperationResult<T: Decodable> {
     var data: T?
     var decodeDataError: Error?
     let pageToken: String?
-
+    
     var isSuccessful: Bool {
         return isSucceedCode(code)
     }
@@ -17,14 +17,14 @@ private func isSucceedCode(_ code:  Int64) -> Bool  {
 }
 
 extension RequestOperationResult: Decodable {
-
+    
     fileprivate enum CodingKeys: String, CodingKey {
         case code
         case message
         case data
         case pageToken
     }
-
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.code = try container.decode(Int64.self, forKey: .code)
@@ -34,8 +34,15 @@ extension RequestOperationResult: Decodable {
             pageTokenValue = nil
         }
         self.pageToken = pageTokenValue
-        if !isSucceedCode(code) || (T.self as? OverlapDecodable.Type) != nil {
+        
+        guard isSucceedCode(code) else {
             self.data = nil
+            return
+        }
+        
+        if let pageType = T.self as? PageDecodable.Type {
+            let val = try pageType.init(from: decoder)
+            self.data = val as? T
         } else {
             do {
                 self.data = try container.decode(T.self, forKey: .data)
@@ -48,7 +55,7 @@ extension RequestOperationResult: Decodable {
 }
 
 extension RequestOperationResult where T == JustOK {
-
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let code = try container.decode(Int64.self, forKey: .code)

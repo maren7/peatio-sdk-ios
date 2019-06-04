@@ -4,23 +4,24 @@ public struct DepositItem: Codable {
 
     public enum State: String, Codable, Equatable {
         case pending = "PENDING"
-        case confirmed = "CONFIRMED"
+        case completed = "COMPLETED"
         case withhold = "WITHHOLD"
         case cancelled = "CANCELLED"
+        case failed = "FAILED"
     }
 
     public enum Kind: String, Codable {
-        case airdrop = "AIR_DROP"
-        case bigHolderDividend = "BIG_HOLDER_DIVIDEND"
-        case `default` = "DEFAULT"
-        case eoscToEos = "EOSC_TO_EOS"
-        case equallyAirdrop = "EQUALLY_AIRDROP"
-        case `internal` = "INTERNAL"
-        case oneHolderDividend = "ONE_HOLDER_DIVIDEND"
-        case referralMining = "REFERRAL_MINING"
-        case singleCustomer = "SINGLE_CUSTOMER"
-        case snapshottedAirdrop = "SNAPSHOTTED_AIRDROP"
-        case tradeMining = "TRADE_MINING"
+        case airdrop = "airdrop"
+        case bigHolderDividend = "big_holder_dividend"
+        case `default` = "default"
+        case eoscToEos = "eosc_to_eos"
+        case equallyAirdrop = "equally_airdrop"
+        case `internal` = "internal"
+        case oneHolderDividend = "one_holder_dividend"
+        case referralMining = "referral_mining"
+        case singleCustomer = "single_customer"
+        case snapshottedAirdrop = "snapshotted_airdrop"
+        case tradeMining = "trade_mining"
     }
 
     public let id: Int

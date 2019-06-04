@@ -38,21 +38,21 @@ public extension Order {
 
     struct AssetPairInfo: Codable {
         private enum CodingKeys: String, CodingKey {
-            case uuid
+            case id
             case name
             case baseScale
             case quoteScale
-            case baseAssetUUID = "baseAssetUuid"
-            case quoteAssetUUID = "quoteAssetUuid"
+            case baseAssetID = "baseAssetId"
+            case quoteAssetID = "quoteAssetId"
             case minQuoteValue
         }
 
-        public let uuid: String
+        public let id: String
         public let name: String
         public let baseScale: Int
         public let quoteScale: Int
-        public let baseAssetUUID: String
-        public let quoteAssetUUID: String
+        public let baseAssetID: String
+        public let quoteAssetID: String
         public let minQuoteValue: String
     }
 }
