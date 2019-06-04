@@ -9,7 +9,9 @@ public extension APIError {
         case invalidPin = 40104
         case requireOtp = 40001
         case unauthenticated = 40004
-        case accountExist = 40005
         case invalidTwoFaVerification = 40306
+        case tooManyRequest = 42901
+        case customerUnexist = 40007
+        case customerExist = 40005
     }
 }

@@ -36,6 +36,8 @@ public protocol Colors {
 
     var inputTintColor: UIColor { get }
 
+    var nextStepHint: UIColor { get }
+
 }
 
 private struct _DarkThemeColors: Colors {
@@ -59,6 +61,8 @@ private struct _DarkThemeColors: Colors {
     let textFieldError = UIColor(hex: "#FF614C")
 
     let inputTintColor: UIColor = UIColor(hex: "#5F99DA")
+
+    let nextStepHint: UIColor = UIColor(hex: "#8C99A6")
 }
 
 public protocol Fonts {
