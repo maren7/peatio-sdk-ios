@@ -17,7 +17,7 @@ public struct Asset: Codable {
     public let scale: Int
     public let name: String
     public let isWithdrawalEnabled: Bool
-    public let withdrawalFee: String
+    public let withdrawalFee: String?
     public let contractAddress: String
     public let isDepositEnabled: Bool
     public let isMemoRequired: Bool
@@ -31,7 +31,7 @@ public struct Asset: Codable {
                 scale: Int,
                 name: String,
                 isWithdrawalEnabled: Bool,
-                withdrawalFee: String,
+                withdrawalFee: String?,
                 contractAddress: String,
                 isDepositEnabled: Bool,
                 isMemoRequired: Bool,

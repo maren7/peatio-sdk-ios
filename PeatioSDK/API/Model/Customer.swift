@@ -14,7 +14,7 @@ public struct Customer: Codable {
     public let email: String?
     public let mobile: String?
     public let name: String?
-    public let locale: String
+    public let locale: String?
     public let securityLevel: Int
     public let verificationState: VerificationState
     public let twoFactorEnabled: Bool

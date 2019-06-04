@@ -254,7 +254,7 @@
 		34A8EA28228BF24D004311CA /* VerificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationType.swift; sourceTree = "<group>"; };
 		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
 		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
-		481CFFA42295311B000DA86F /* Peatio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Peatio.podspec; sourceTree = "<group>"; };
+		481CFFA42295311B000DA86F /* Peatio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Peatio.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerAccountSubscription.swift; sourceTree = "<group>"; };
 		484D467C21E6F88700E7C3E2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAddressOperation.swift; sourceTree = "<group>"; };
