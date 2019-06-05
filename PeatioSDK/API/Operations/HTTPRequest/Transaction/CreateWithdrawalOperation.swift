@@ -3,14 +3,14 @@ import Foundation
 public final class CreateWithdrawalOperation: RequestOperation {
     public typealias ResultData = WithdrawalItem
 
-    public let path: String = "/api/uc/v1/me/withdrawals"
+    public let path: String = "/api/uc/v2/me/withdrawals"
 
     public let httpMethod: HTTPMethod = .post
 
     public var requestParams: [String: Any?]? {
         return [
             "asset_uuid": param.assetUUID,
-            "amount_content_fee": param.amountContentFee,
+            "amount": param.amountContentFee,
             "target_address": param.targetAddress,
             "asset_pin": param.assetPin,
             "otp_code": param.otpCode,
