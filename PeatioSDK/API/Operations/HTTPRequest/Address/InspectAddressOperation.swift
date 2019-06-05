@@ -32,7 +32,7 @@ public extension InspectAddressOperation {
 
         public init(assetPairUUID: String,
                     address: String,
-                    memo: String?,
+                    memo: String,
                     gatwayName: String) {
             self.assetPairUUID = assetPairUUID
             self.address = address
