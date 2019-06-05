@@ -22,12 +22,12 @@ public extension GetVerificationsOperation {
 
     struct Param: Equatable {
         public let type: VerificationType
-        public let nationCode: String
-        public let identity: String
+        public let nationCode: String?
+        public let identity: String?
 
         public init(type: VerificationType,
-                    nationCode: String,
-                    identity: String) {
+                    nationCode: String?,
+                    identity: String?) {
             self.type = type
             self.nationCode = nationCode
             self.identity = identity

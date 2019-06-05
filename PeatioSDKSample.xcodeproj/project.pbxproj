@@ -117,6 +117,8 @@
 		487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A321DF902D008CDB03 /* RequestOperationResult.swift */; };
 		487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
 		487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
+		48A236EB22A7DE04001E8E67 /* KYCStatusOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */; };
+		48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A236EC22A7E7C3001E8E67 /* DateTools.swift */; };
 		48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A33A2922A004590060BBDE /* FeeRateOperation.swift */; };
 		48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */; };
 		48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */; };
@@ -312,6 +314,8 @@
 		487F15A321DF902D008CDB03 /* RequestOperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationResult.swift; sourceTree = "<group>"; };
 		487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLEncode.swift"; sourceTree = "<group>"; };
 		487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOperation.swift; sourceTree = "<group>"; };
+		48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCStatusOperation.swift; sourceTree = "<group>"; };
+		48A236EC22A7E7C3001E8E67 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTools.swift; sourceTree = "<group>"; };
 		48A33A2922A004590060BBDE /* FeeRateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeRateOperation.swift; sourceTree = "<group>"; };
 		48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWhitelistAddressesOperation.swift; sourceTree = "<group>"; };
 		48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitelistAddress.swift; sourceTree = "<group>"; };
@@ -523,6 +527,7 @@
 		34A8E9DB228AC876004311CA /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				48A236E922A7DDF6001E8E67 /* KYC */,
 				34A8E9FB228ADEEE004311CA /* Setting */,
 				34A8E9EC228AD70A004311CA /* Session */,
 				34A8E9EB228AD6F8004311CA /* Register */,
@@ -861,6 +866,14 @@
 			path = WebSocket;
 			sourceTree = "<group>";
 		};
+		48A236E922A7DDF6001E8E67 /* KYC */ = {
+			isa = PBXGroup;
+			children = (
+				48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */,
+			);
+			path = KYC;
+			sourceTree = "<group>";
+		};
 		48A89D0D224A0FCC004903BA /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -1055,6 +1068,7 @@
 		FDD37B7821B7771B0027DEBD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				48A236EC22A7E7C3001E8E67 /* DateTools.swift */,
 				FDD37B7D21B783F10027DEBD /* Log.swift */,
 				347154D5229252810041F48C /* Theme.swift */,
 			);
@@ -1386,6 +1400,7 @@
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
 				487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */,
 				487C7DE621E34BBC00BC8D8C /* AssetPairTradeOperation.swift in Sources */,
+				48A236EB22A7DE04001E8E67 /* KYCStatusOperation.swift in Sources */,
 				34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */,
 				4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */,
 				487C7DFE21E47E7400BC8D8C /* RankAssetPairsOperation.swift in Sources */,
@@ -1457,6 +1472,7 @@
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
+				48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */,
 				487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */,
 				FDD37BD621BA69420027DEBD /* Depth.swift in Sources */,
 				487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */,

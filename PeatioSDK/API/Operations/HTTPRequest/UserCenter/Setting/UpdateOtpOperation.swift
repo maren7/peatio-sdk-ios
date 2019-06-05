@@ -28,13 +28,13 @@ public extension UpdateOtpOperation {
         public let twoFaCode: String
         public let secret: String?
         public let otpCode: String?
-        public let oldOtpVerifiedToken: String
+        public let oldOtpVerifiedToken: String?
 
         public init(twoFaChannel: TwoFAChannelType,
                     twoFaCode: String,
                     secret: String?,
                     otpCode: String?,
-                    oldOtpVerifiedToken: String) {
+                    oldOtpVerifiedToken: String?) {
             self.twoFaChannel = twoFaChannel
             self.twoFaCode = twoFaCode
             self.secret = secret

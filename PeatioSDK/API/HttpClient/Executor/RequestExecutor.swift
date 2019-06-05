@@ -1,10 +1,17 @@
 import Foundation
 
 let requestDecoder: JSONDecoder = {
-    let result = JSONDecoder()
-    result.dateDecodingStrategy = .iso8601
-    result.keyDecodingStrategy = .convertFromSnakeCase
-    return result
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    decoder.dateDecodingStrategy = .custom({ (decoder) -> Date in
+        let container = try decoder.singleValueContainer()
+        let dateString = try container.decode(String.self)
+        guard let date = DateTools.dateFrom(string: dateString) else {
+            throw DecodingError.dataCorruptedError(in: container, debugDescription: "\(dateString) can not be converted to date")
+        }
+        return date
+    })
+    return decoder
 }()
 
 open class RequestExecutor: HTTPRequestExecutor {
