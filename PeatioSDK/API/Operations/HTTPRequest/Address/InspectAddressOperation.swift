@@ -14,6 +14,8 @@ public final class InspectAddressOperation: RequestOperation {
             ]
     }
 
+    public var httpMethod: HTTPMethod = .post
+
     public let param: Param
 
     public init(param: Param) {
