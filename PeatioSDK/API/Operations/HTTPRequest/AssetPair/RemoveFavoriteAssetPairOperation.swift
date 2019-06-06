@@ -3,13 +3,9 @@ import Foundation
 public final class RemoveFavoriteAssetPairOperation: RequestOperation {
     public typealias ResultData = JustOK
 
-    public let path: String = "/api/xn/v1/me/fave_asset_pairs"
+    public private(set) lazy var path: String = "/api/xn/v1/me/fave_asset_pairs/\(param.assetPairUUID)"
 
     public let httpMethod: HTTPMethod = .delete
-
-    public var requestParams: [String: Any?]? {
-        return ["asset_pair_uuid": param.assetPairUUID]
-    }
 
     public let param: Param
 
