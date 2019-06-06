@@ -3,7 +3,7 @@ import Foundation
 public final class ViewerWithdrawalsOperation: RequestOperation {
     public typealias ResultData = Page<WithdrawalItem>
 
-    public var path: String = "/api/uc/v2/me/withdrawals"
+    public var path: String = "/api/uc/v1/me/withdrawals"
 
     public var requestParams: [String: Any?]? {
         return [

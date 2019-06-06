@@ -10,13 +10,14 @@ public final class CreateWithdrawalOperation: RequestOperation {
     public var requestParams: [String: Any?]? {
         return [
             "asset_uuid": param.assetUUID,
-            "amount": param.amountContentFee,
+            "amount_content_fee": param.amountContentFee,
             "target_address": param.targetAddress,
             "asset_pin": param.assetPin,
             "otp_code": param.otpCode,
             "gateway_name": param.gatewayName,
             "memo": param.memo,
-            "note": param.note
+            "note": param.note,
+            "is_whitelist": param.isWhitelist
         ]
     }
 
@@ -38,6 +39,7 @@ public extension CreateWithdrawalOperation {
         public let gatewayName: String?
         public let memo: String?
         public let note: String?
+        public let isWhitelist: Bool
 
         public init(assetUUID: String,
                     amountContentFee: String,
@@ -46,7 +48,8 @@ public extension CreateWithdrawalOperation {
                     otpCode: String,
                     gatewayName: String,
                     memo: String?,
-                    note: String?) {
+                    note: String?,
+                    isWhitelist: Bool) {
             self.assetUUID = assetUUID
             self.amountContentFee = amountContentFee
             self.targetAddress = targetAddress
@@ -55,6 +58,7 @@ public extension CreateWithdrawalOperation {
             self.gatewayName = gatewayName
             self.memo = memo
             self.note = note
+            self.isWhitelist = isWhitelist
         }
     }
 }
