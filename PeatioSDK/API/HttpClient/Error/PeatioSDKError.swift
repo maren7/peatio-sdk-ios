@@ -60,3 +60,24 @@ extension PeatioSDKError: LocalizedError {
         }
     }
 }
+
+public func formateSDKError(_ error: PeatioSDKError) -> String {
+    guard let apiError = error.apiError else {
+        return error.networkError?.localizedDescription ?? ""
+    }
+    return """
+    APIError {
+
+    code: \(apiError.code)
+
+    message: \(apiError.message)
+
+    response: \(apiError.response?.debugDescription ?? "null")
+
+    data: \(apiError.data?.debugDescription ?? "null")
+
+    JSONValue: \(String(describing: apiError.dataJSONValue))
+
+    }
+    """
+}

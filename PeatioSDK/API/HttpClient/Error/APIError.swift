@@ -25,25 +25,11 @@ extension APIError: CustomDebugStringConvertible, CustomStringConvertible {
     }
 
     public var debugDescription: String {
-        return """
-        APIError {
-
-          code: \(code)
-
-          message: \(message)
-
-          response: \(response?.debugDescription ?? "null")
-
-          data: \(data?.debugDescription ?? "null")
-
-          JSONValue: \(String(describing: dataJSONValue))
-
-        }
-        """
+        return message
     }
 
     public var localizedDescription: String {
-        return "code: \(code), " + message
+        return message
     }
 }
 
