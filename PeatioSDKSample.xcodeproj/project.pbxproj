@@ -51,7 +51,6 @@
 		484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469421E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift */; };
 		484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */; };
 		484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */; };
-		484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */; };
 		484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469C21E8892100E7C3E2 /* APIErrorCode.swift */; };
 		484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */; };
 		484D46A121EC3F9800E7C3E2 /* Decodable+Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */; };
@@ -271,7 +270,6 @@
 		484D469421E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerWithdrawalsOperation.swift; sourceTree = "<group>"; };
 		484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerDepositsOperation.swift; sourceTree = "<group>"; };
 		484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWithdrawalOperation.swift; sourceTree = "<group>"; };
-		484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionByEmailOperation.swift; sourceTree = "<group>"; };
 		484D469C21E8892100E7C3E2 /* APIErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorCode.swift; sourceTree = "<group>"; };
 		484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError + Extension.swift"; sourceTree = "<group>"; };
 		484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Overlap.swift"; sourceTree = "<group>"; };
@@ -683,7 +681,6 @@
 		4861311B21EDA80300E62D4E /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				484D469A21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift */,
 				48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */,
 			);
 			path = Session;
@@ -1351,7 +1348,6 @@
 				FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */,
 				48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */,
 				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
-				484D469B21E884A900E7C3E2 /* CreateSessionByEmailOperation.swift in Sources */,
 				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
 				484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */,
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,

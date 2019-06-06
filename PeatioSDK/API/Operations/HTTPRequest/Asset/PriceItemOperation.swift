@@ -3,7 +3,7 @@ import Foundation
 public final class PriceItemOperation: RequestOperation {
     public typealias ResultData = [PriceItem]
 
-    public let path: String = "/api/uc/v2/price"
+    public let path: String = "/api/uc/v1/price"
 
     public var requestParams: [String: Any?]? {
         return [

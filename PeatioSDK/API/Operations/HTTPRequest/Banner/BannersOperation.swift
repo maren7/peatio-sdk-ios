@@ -3,7 +3,7 @@ import Foundation
 public final class BannersOperation: RequestOperation {
     public typealias ResultData = [Banner]
 
-    public let path: String = "/api/uc/v2/banners"
+    public let path: String = "/api/uc/v1/banners"
 
     public var requestParams: [String: Any?]? {
         return [
