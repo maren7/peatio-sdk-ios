@@ -8,7 +8,7 @@ public protocol WebSocketObserver {
 
     func reset()
 
-    func observeStatus(onConnect: (() -> Void)?, onDisconnect: ((Error?) -> Void)?)
+    func observeStatus(handler: ((WebSocketStatus) -> Void)?) 
 
     @discardableResult
     func subscribe<OP>(_ operation: OP, onReceive: @escaping (WebSocketEvent<OP>) -> Void) -> WebSocketTask where OP: SubscriptionOperation

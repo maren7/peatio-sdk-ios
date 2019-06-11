@@ -4,10 +4,6 @@ import Starscream
 /// An implementation for peatio websocket execution
 final class WSClient {
 
-    /// invoked on disconnet
-    var onDisConnect: ((Error?) -> Void)?
-    /// invoked on connect
-    var onConnect: (() -> Void)?
     /// authentication status
     private(set) var authentication: Authentication = .guest
     /// Observe status
@@ -111,11 +107,9 @@ extension WSClient: WebSocketTransportDelegate {
     func transportDidConnect(transport: WebSocketTransport) {
         scheduler.online()
         status = .connected
-        onConnect?()
     }
 
     func transportDidDisconnect(transport: WebSocketTransport, error: Error?) {
-        defer { onDisConnect?(error) }
         scheduler.offline()
         status = .awaiting
         guard error != nil else { return }

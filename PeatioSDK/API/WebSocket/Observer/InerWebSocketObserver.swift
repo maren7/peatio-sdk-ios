@@ -29,8 +29,7 @@ final class InnerWebSocketObserver: WebSocketObserver {
     }
 
     func observeStatus(handler: ((WebSocketStatus) -> Void)?) {
-        wsClient.onConnect = onConnect
-        wsClient.onDisConnect = onDisconnect
+        wsClient.onStatus = handler
     }
 
     @discardableResult
