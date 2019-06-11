@@ -132,6 +132,7 @@
 		48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8652265B203006D3598 /* BannersOperation.swift */; };
 		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
+		48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5499922AF8D090062E28F /* WebSocketStatus.swift */; };
 		48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */; };
 		48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */; };
 		48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */; };
@@ -328,6 +329,7 @@
 		48DAF8652265B203006D3598 /* BannersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersOperation.swift; sourceTree = "<group>"; };
 		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
 		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
+		48F5499922AF8D090062E28F /* WebSocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketStatus.swift; sourceTree = "<group>"; };
 		48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
 		48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
 		48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceScheduler.swift; sourceTree = "<group>"; };
@@ -938,6 +940,7 @@
 			children = (
 				48FFE84621C8EAB300EE85C0 /* PeatioObjectIdentifier.swift */,
 				48FFE84721C8EAB300EE85C0 /* WSClient.swift */,
+				48F5499922AF8D090062E28F /* WebSocketStatus.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -1465,6 +1468,7 @@
 				48AF8006227FDEFA00A848A6 /* InspectAddressResult.swift in Sources */,
 				48AF8004227FDD0C00A848A6 /* UpdateViewerOperation.swift in Sources */,
 				487F159421DDE015008CDB03 /* CandleSubscription.swift in Sources */,
+				48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */,
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,

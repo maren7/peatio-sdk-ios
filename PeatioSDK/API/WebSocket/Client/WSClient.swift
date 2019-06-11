@@ -4,25 +4,16 @@ import Starscream
 /// An implementation for peatio websocket execution
 final class WSClient {
 
-    /// Connection status
-    ///
-    /// - awaiting: connection is offline
-    /// - connecting: is trying to connect
-    /// - connected: connection is online
-    enum Status {
-        case awaiting
-        case connecting
-        case connected
-    }
-
     /// invoked on disconnet
     var onDisConnect: ((Error?) -> Void)?
     /// invoked on connect
     var onConnect: (() -> Void)?
     /// authentication status
     private(set) var authentication: Authentication = .guest
+    /// Observe status
+    var onStatus: ((WebSocketStatus) -> Void)?
     /// Client's connection status
-    private(set) var status: WSClient.Status = .awaiting
+    private(set) var status: WebSocketStatus = .awaiting { didSet { onStatus?(status) } }
     /// retry interval, client retry connect after pow(retryInterval, 2) secondes, it would be doulbed next time
     /// once it's greater than 9 or connected, it would be reset to initial value 1
     private(set) var retryInterval = WebSocketConstant.retryInitialInterval
