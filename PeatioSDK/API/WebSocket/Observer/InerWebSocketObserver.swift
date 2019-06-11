@@ -28,7 +28,7 @@ final class InnerWebSocketObserver: WebSocketObserver {
         wsClient.authorize(.user(token))
     }
 
-    func observeStatus(onConnect: (() -> Void)?, onDisconnect: ((Error?) -> Void)?) {
+    func observeStatus(handler: ((WebSocketStatus) -> Void)?) {
         wsClient.onConnect = onConnect
         wsClient.onDisConnect = onDisconnect
     }
