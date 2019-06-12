@@ -14,6 +14,10 @@
 		347154E62292CFA90041F48C /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E32292CFA90041F48C /* Oxygen-Light.ttf */; };
 		347154E72292CFA90041F48C /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E42292CFA90041F48C /* Oxygen-Bold.ttf */; };
 		3471553A2293D5DC0041F48C /* VerifyCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347155392293D5DC0041F48C /* VerifyCodeOperation.swift */; };
+		3484B0BE22AF46E500FC9A2E /* KYCBasicStartOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0BD22AF46E500FC9A2E /* KYCBasicStartOperation.swift */; };
+		3484B0C022AF493B00FC9A2E /* KYCBasicIdentityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0BF22AF493B00FC9A2E /* KYCBasicIdentityOperation.swift */; };
+		3484B0C222AF4DE000FC9A2E /* KYCBasicSubmitOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0C122AF4DE000FC9A2E /* KYCBasicSubmitOperation.swift */; };
+		3484B0C422AF4E9D00FC9A2E /* KYCBasicImagesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0C322AF4E9D00FC9A2E /* KYCBasicImagesOperation.swift */; };
 		34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */; };
 		34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DE228ACC14004311CA /* VerificationResult.swift */; };
 		34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */; };
@@ -234,6 +238,10 @@
 		347154E32292CFA90041F48C /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		347154E42292CFA90041F48C /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
 		347155392293D5DC0041F48C /* VerifyCodeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeOperation.swift; sourceTree = "<group>"; };
+		3484B0BD22AF46E500FC9A2E /* KYCBasicStartOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBasicStartOperation.swift; sourceTree = "<group>"; };
+		3484B0BF22AF493B00FC9A2E /* KYCBasicIdentityOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBasicIdentityOperation.swift; sourceTree = "<group>"; };
+		3484B0C122AF4DE000FC9A2E /* KYCBasicSubmitOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBasicSubmitOperation.swift; sourceTree = "<group>"; };
+		3484B0C322AF4E9D00FC9A2E /* KYCBasicImagesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBasicImagesOperation.swift; sourceTree = "<group>"; };
 		34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVerificationsOperation.swift; sourceTree = "<group>"; };
 		34A8E9DE228ACC14004311CA /* VerificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsOperation.swift; sourceTree = "<group>"; };
@@ -869,6 +877,10 @@
 			isa = PBXGroup;
 			children = (
 				48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */,
+				3484B0BD22AF46E500FC9A2E /* KYCBasicStartOperation.swift */,
+				3484B0BF22AF493B00FC9A2E /* KYCBasicIdentityOperation.swift */,
+				3484B0C322AF4E9D00FC9A2E /* KYCBasicImagesOperation.swift */,
+				3484B0C122AF4DE000FC9A2E /* KYCBasicSubmitOperation.swift */,
 			);
 			path = KYC;
 			sourceTree = "<group>";
@@ -1361,6 +1373,7 @@
 				487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */,
 				48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */,
 				FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */,
+				3484B0C222AF4DE000FC9A2E /* KYCBasicSubmitOperation.swift in Sources */,
 				48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */,
 				486416B821D37E3B003853BB /* APIError.swift in Sources */,
 				487F159221DCE6E0008CDB03 /* TradeSubscription.swift in Sources */,
@@ -1371,6 +1384,7 @@
 				48FFE85021C8EAB300EE85C0 /* PeatioObjectIdentifier.swift in Sources */,
 				487C7E1221E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift in Sources */,
 				34A8EA11228BC639004311CA /* ResetPasswordOperation.swift in Sources */,
+				3484B0C422AF4E9D00FC9A2E /* KYCBasicImagesOperation.swift in Sources */,
 				48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */,
 				FDD37B7E21B783F10027DEBD /* Log.swift in Sources */,
 				FDD37BD821BA6B360027DEBD /* Order.swift in Sources */,
@@ -1394,6 +1408,7 @@
 				484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */,
 				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
 				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
+				3484B0C022AF493B00FC9A2E /* KYCBasicIdentityOperation.swift in Sources */,
 				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
 				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
@@ -1461,6 +1476,7 @@
 				34A8EA01228AE27E004311CA /* BindPhoneOperation.swift in Sources */,
 				48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */,
 				FDD37B9421B9091B0027DEBD /* PeatioAPIClient.swift in Sources */,
+				3484B0BE22AF46E500FC9A2E /* KYCBasicStartOperation.swift in Sources */,
 				34A8EA23228BED7D004311CA /* CreateOtpOperation.swift in Sources */,
 				FDD372AA21B4CC690027DEBD /* APIRequestTask.swift in Sources */,
 				34A8EA15228BE301004311CA /* UpdatePinOperation.swift in Sources */,
