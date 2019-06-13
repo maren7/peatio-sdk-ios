@@ -58,6 +58,7 @@ public extension CreateWithdrawalOperation {
             self.targetAddress = targetAddress
             self.assetPin = assetPin
             self.twoFaChannel = twoFaChannel
+            self.twoFaCode = twoFaCode
             self.gatewayName = gatewayName
             self.memo = memo
             self.note = note
