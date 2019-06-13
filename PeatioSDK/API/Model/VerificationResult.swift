@@ -5,6 +5,11 @@ public enum ChannelType: String, Codable {
     case sms = "SMS"
 }
 
+public enum PinChannelType: String, Codable {
+    case sms = "SMS"
+    case ga = "GA"
+}
+
 public enum TwoFAChannelType: String, Codable {
     case email = "EMAIL"
     case sms = "SMS"
