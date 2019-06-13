@@ -23,12 +23,12 @@ public final class UpdatePinOperation: RequestOperation {
 
 public extension UpdatePinOperation {
     struct Param: Equatable {
-        public let twoFaType: PinChannelType
+        public let twoFaType: TwoFAChannelType
         public let twoFaCode: String
         public let assetPin: String
         public let oldAssetPin: String
 
-        public init(twoFaType: PinChannelType,
+        public init(twoFaType: TwoFAChannelType,
                     twoFaCode: String,
                     assetPin: String,
                     oldAssetPin: String) {

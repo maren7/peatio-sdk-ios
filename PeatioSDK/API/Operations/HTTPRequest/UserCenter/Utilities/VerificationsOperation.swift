@@ -25,14 +25,14 @@ public final class VerificationsOperation: RequestOperation {
 
 public extension VerificationsOperation {
     struct Param: Equatable {
-        public let channel: ChannelType
+        public let channel: VerificationChannelType
         public let type: VerificationType
         public let email: String?
         public let nationCode: String?
         public let mobile: String?
         public let token: String?
 
-        public init(channel: ChannelType,
+        public init(channel: VerificationChannelType,
                     type: VerificationType,
                     email: String?,
                     nationCode: String?,

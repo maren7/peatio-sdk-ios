@@ -1,11 +1,11 @@
 import Foundation
 
-public enum ChannelType: String, Codable {
+public enum VerificationChannelType: String, Codable {
     case email = "EMAIL"
     case sms = "SMS"
 }
 
-public enum PinChannelType: String, Codable {
+public enum TwoFaChannelType: String, Codable {
     case sms = "SMS"
     case ga = "GA"
 }
