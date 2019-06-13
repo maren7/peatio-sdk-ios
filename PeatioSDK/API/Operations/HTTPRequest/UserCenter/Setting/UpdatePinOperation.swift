@@ -14,10 +14,9 @@ public final class UpdatePinOperation: RequestOperation {
     }
 
     public var requestParams: [String: Any?]? {
-        return ["two_fa_type": param.twoFaType.rawValue,
+        return ["two_fa_channel": param.twoFaType.rawValue,
                 "two_fa_code": param.twoFaCode,
                 "asset_pin": param.assetPin,
-                "otp_code": param.otpCode,
                 "old_asset_pin": param.oldAssetPin]
     }
 }
@@ -27,18 +26,15 @@ public extension UpdatePinOperation {
         public let twoFaType: ChannelType
         public let twoFaCode: String
         public let assetPin: String
-        public let otpCode: String
         public let oldAssetPin: String
 
         public init(twoFaType: ChannelType,
                     twoFaCode: String,
                     assetPin: String,
-                    otpCode: String,
                     oldAssetPin: String) {
             self.twoFaCode = twoFaCode
             self.twoFaType = twoFaType
             self.assetPin = assetPin
-            self.otpCode = otpCode
             self.oldAssetPin = oldAssetPin
         }
     }

@@ -16,8 +16,7 @@ public final class CreatePinOperation: RequestOperation {
     public var requestParams: [String: Any?]? {
         return ["two_fa_channel": param.twoFaChannel.rawValue,
                 "two_fa_code": param.twoFaCode,
-                "asset_pin": param.assetPin,
-                "otp_code": param.otpCode]
+                "asset_pin": param.assetPin]
     }
 }
 
@@ -30,12 +29,10 @@ public extension CreatePinOperation {
 
         public init(twoFaChannel: TwoFAChannelType,
                     twoFaCode: String,
-                    assetPin: String,
-                    otpCode: String) {
+                    assetPin: String) {
             self.twoFaCode = twoFaCode
             self.twoFaChannel = twoFaChannel
             self.assetPin = assetPin
-            self.otpCode = otpCode
         }
     }
 }
