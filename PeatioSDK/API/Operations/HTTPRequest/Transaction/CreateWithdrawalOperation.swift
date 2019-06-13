@@ -13,7 +13,7 @@ public final class CreateWithdrawalOperation: RequestOperation {
             "amount": param.amountContentFee,
             "target_address": param.targetAddress,
             "asset_pin": param.assetPin,
-            "two_fa_channel": param.twoFaChannel.rawValue,
+            "two_fa_channel": param.twoFaChannel?.rawValue,
             "two_fa_code": param.twoFaCode,
             "gateway_name": param.gatewayName,
             "memo": param.memo,
@@ -35,9 +35,9 @@ public extension CreateWithdrawalOperation {
         public let assetUUID: String
         public let amountContentFee: String
         public let targetAddress: String
-        public let assetPin: String
-        public let twoFaChannel: TwoFaChannelType
-        public let twoFaCode: String
+        public let assetPin: String?
+        public let twoFaChannel: TwoFaChannelType?
+        public let twoFaCode: String?
         public let gatewayName: String?
         public let memo: String?
         public let note: String?
@@ -46,9 +46,9 @@ public extension CreateWithdrawalOperation {
         public init(assetUUID: String,
                     amountContentFee: String,
                     targetAddress: String,
-                    assetPin: String,
-                    twoFaChannel: TwoFaChannelType,
-                    twoFaCode: String,
+                    assetPin: String?,
+                    twoFaChannel: TwoFaChannelType?,
+                    twoFaCode: String?,
                     gatewayName: String,
                     memo: String?,
                     note: String?,
