@@ -1,6 +1,6 @@
 import Foundation
 
-public final class KYCBasicIdentityOperation: RequestOperation {
+public final class KYCIdentityVerifyOperation: RequestOperation {
     public typealias ResultData = JustOK
     
     public lazy private(set) var path: String = "/api/uc/v2/me/kyc_requests/\(param.id)/identity"
@@ -19,7 +19,7 @@ public final class KYCBasicIdentityOperation: RequestOperation {
     }
 }
 
-public extension KYCBasicIdentityOperation {
+public extension KYCIdentityVerifyOperation {
     
     enum IndentityType: String, Codable{
         case idCard = "ID_CARD"

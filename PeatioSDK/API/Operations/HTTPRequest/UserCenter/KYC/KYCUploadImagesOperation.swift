@@ -1,6 +1,6 @@
 import Foundation
 
-public final class KYCBasicImagesOperation: RequestOperation {
+public final class KYCUploadImagesOperation: RequestOperation {
     public typealias ResultData = JustOK
     
     public lazy private(set) var path: String = "/api/uc/v2/me/kyc_requests/\(param.id)/images"
@@ -19,7 +19,7 @@ public final class KYCBasicImagesOperation: RequestOperation {
     }
 }
 
-public extension KYCBasicImagesOperation {
+public extension KYCUploadImagesOperation {
     
     enum UploadImageType: String, Codable{
         case front

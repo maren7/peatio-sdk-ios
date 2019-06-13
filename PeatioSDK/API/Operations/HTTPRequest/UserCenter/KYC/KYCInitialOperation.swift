@@ -1,6 +1,6 @@
 import Foundation
 
-public final class KYCBasicStartOperation: RequestOperation {
+public final class KYCInitialOperation: RequestOperation {
     public typealias ResultData = KYCStartRequest
     
     public let path: String = "/api/uc/v2/me/kyc_requests/start"
@@ -19,7 +19,7 @@ public final class KYCBasicStartOperation: RequestOperation {
     }
 }
 
-public extension KYCBasicStartOperation {
+public extension KYCInitialOperation {
     struct Param: Equatable {
         public let nation: String
         public let name: String
@@ -32,7 +32,7 @@ public extension KYCBasicStartOperation {
     }
 }
 
-public extension KYCBasicStartOperation {
+public extension KYCInitialOperation {
     struct KYCStartRequestDetail: Codable {
         public let id: Int
     }
