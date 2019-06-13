@@ -25,7 +25,6 @@ public extension CreatePinOperation {
         public let twoFaChannel: TwoFAChannelType
         public let twoFaCode: String
         public let assetPin: String
-        public let otpCode: String
 
         public init(twoFaChannel: TwoFAChannelType,
                     twoFaCode: String,
