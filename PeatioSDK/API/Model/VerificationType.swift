@@ -14,4 +14,5 @@ public enum VerificationType: String, Codable {
     case setOtp = "set_otp"
     case addApiToken = "add_api_token"
     case addWhiteAddress = "add_white_address"
+    case withdrawal
 }
