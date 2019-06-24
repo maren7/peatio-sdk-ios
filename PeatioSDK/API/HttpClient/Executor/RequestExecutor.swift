@@ -44,7 +44,7 @@ open class RequestExecutor: HTTPRequestExecutor {
 
     @discardableResult
     public func request<O>(_ operation: O, debug: Bool = false, completion: @escaping (Result<O.ResultData, PeatioSDKError>) -> Void) -> APIRequestTask where O: RequestOperation {
-        guard let expectRequest = try? RequestGenerator.buildRequest(baseURL: endpoint, operation: operation, additionalHeaders: customerHeaders) else { fatalError() }
+        guard let expectRequest = try? RequestGenerator.buildRequest(baseURL: endpoint, operation: operation, commonHeaders: customerHeaders) else { fatalError() }
 
         let task = session.dataTask(with: expectRequest) { (data, response, error) in
             let blockResult = RequestExecutor.buildResult(operation: operation, data: data, error: error, response: response)
@@ -52,7 +52,7 @@ open class RequestExecutor: HTTPRequestExecutor {
                 if debug {
                     let header = "\t=========== Execution Finished ================\n\n\n\t"
                     let subT1 = "Request Infomation ================\n\t"
-                    let requestInfo = expectRequest.peatio_cURLString
+                    let requestInfo = expectRequest.curlLog
                     let subT2 = "\n\n\t=========== Request Result ================\n\t"
                     let resultInfo: String
                     switch blockResult {

@@ -7,6 +7,10 @@ public final class CancelAllOrdersOperation: RequestOperation {
 
     public let httpMethod: HTTPMethod = .post
 
+    public var requestParams: [String : Any?]? {
+        return ["asset_pair_uuid": param.assetPairUUID]
+    }
+
     public let param: Param
 
     public init(param: Param) {
@@ -17,6 +21,10 @@ public final class CancelAllOrdersOperation: RequestOperation {
 public extension CancelAllOrdersOperation {
     struct Param: Equatable {
 
-        public init() { }
+        public let assetPairUUID: String?
+
+        public init(assetPairUUID: String?) {
+            self.assetPairUUID = assetPairUUID
+        }
     }
 }

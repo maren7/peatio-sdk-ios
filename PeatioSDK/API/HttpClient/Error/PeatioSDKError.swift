@@ -61,10 +61,15 @@ extension PeatioSDKError: LocalizedError {
     }
 }
 
-public func formateSDKError(_ error: PeatioSDKError) -> String {
+public func formateSDKError(_ error: PeatioSDKError, detail: Bool = false) -> String {
     guard let apiError = error.apiError else {
         return error.networkError?.localizedDescription ?? ""
     }
+
+    guard detail else {
+        return "code: \(apiError.code), msg: \(apiError.message)"
+    }
+
     return """
     APIError {
 

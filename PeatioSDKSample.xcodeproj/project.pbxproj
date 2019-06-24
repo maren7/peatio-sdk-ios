@@ -136,6 +136,7 @@
 		48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8652265B203006D3598 /* BannersOperation.swift */; };
 		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
+		48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */; };
 		48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5499922AF8D090062E28F /* WebSocketStatus.swift */; };
 		48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */; };
 		48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */; };
@@ -337,6 +338,7 @@
 		48DAF8652265B203006D3598 /* BannersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersOperation.swift; sourceTree = "<group>"; };
 		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
 		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
+		48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouseElderUserOperation.swift; sourceTree = "<group>"; };
 		48F5499922AF8D090062E28F /* WebSocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketStatus.swift; sourceTree = "<group>"; };
 		48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
 		48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 		34A8E9DB228AC876004311CA /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				48ECBE6022C0AF39001D206A /* Rouse */,
 				48A236E922A7DDF6001E8E67 /* KYC */,
 				34A8E9FB228ADEEE004311CA /* Setting */,
 				34A8E9EC228AD70A004311CA /* Session */,
@@ -918,6 +921,14 @@
 				48DAF8652265B203006D3598 /* BannersOperation.swift */,
 			);
 			path = Banner;
+			sourceTree = "<group>";
+		};
+		48ECBE6022C0AF39001D206A /* Rouse */ = {
+			isa = PBXGroup;
+			children = (
+				48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */,
+			);
+			path = Rouse;
 			sourceTree = "<group>";
 		};
 		48FFE83C21C8EAB300EE85C0 /* Scheduler */ = {
@@ -1397,6 +1408,7 @@
 				487C7E0821E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift in Sources */,
 				FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */,
 				484D469321E7534500E7C3E2 /* DepositItem.swift in Sources */,
+				48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */,
 				484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */,
 				34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */,
 				34A8EA17228BE394004311CA /* ResetPinOperation.swift in Sources */,

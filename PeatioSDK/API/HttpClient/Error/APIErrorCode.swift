@@ -13,5 +13,6 @@ public extension APIError {
         case tooManyRequest = 42901
         case customerUnexist = 40007
         case customerExist = 40005
+        case notElderUser = 40420
     }
 }

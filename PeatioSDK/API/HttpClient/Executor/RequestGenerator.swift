@@ -6,7 +6,7 @@ public final class RequestGenerator {
         case invalidURL
     }
 
-    public static func buildRequest<O>(baseURL: URL?, operation: O, additionalHeaders: [String: String] = [:]) throws -> URLRequest where O: RequestOperation {
+    public static func buildRequest<O>(baseURL: URL?, operation: O, commonHeaders: [String: String] = [:]) throws -> URLRequest where O: RequestOperation {
         let requestURL: URL
         if let absoluteURL = operation.absoluteURL {
             requestURL = absoluteURL
@@ -17,12 +17,13 @@ public final class RequestGenerator {
 
         var urlRequest = URLRequest(url: requestURL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: operation.timeoutInterval)
         urlRequest.httpMethod = operation.httpMethod.rawValue
-        urlRequest.setValue(operation.contentType.rawValue, forHTTPHeaderField: RequestContentType.headerName)
-        operation.additionalHeaders?.forEach {
+        urlRequest.setValue(operation.contentType.rawValue, forHTTPHeaderField: RequestContentType.contentType)
+
+        commonHeaders.forEach {
             urlRequest.setValue($0.value, forHTTPHeaderField: $0.key)
         }
 
-        additionalHeaders.forEach {
+        operation.additionalHeaders?.forEach {
             urlRequest.setValue($0.value, forHTTPHeaderField: $0.key)
         }
 

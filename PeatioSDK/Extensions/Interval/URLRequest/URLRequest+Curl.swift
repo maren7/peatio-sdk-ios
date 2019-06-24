@@ -1,7 +1,7 @@
 import Foundation
 
-extension URLRequest {
-    var peatio_cURLString: String {
+public extension URLRequest {
+    var curlLog: String {
         guard let url = url else { return "" }
 
         var lines = [
