@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341453E322C6216A0087C98D /* IdentityStatusOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E222C6216A0087C98D /* IdentityStatusOperation.swift */; };
+		341453E522C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */; };
+		341453E722C628600087C98D /* KYCBizTokenOpration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E622C628600087C98D /* KYCBizTokenOpration.swift */; };
+		341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */; };
+		342BB91F22C782E8004427F8 /* KYCSubmitInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */; };
 		347154D6229252810041F48C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D5229252810041F48C /* Theme.swift */; };
 		347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D922929EE20041F48C /* UIColor+Hex.swift */; };
 		347154DC22929F800041F48C /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154DB22929F800041F48C /* UIFont+Custom.swift */; };
@@ -14,10 +19,6 @@
 		347154E62292CFA90041F48C /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E32292CFA90041F48C /* Oxygen-Light.ttf */; };
 		347154E72292CFA90041F48C /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E42292CFA90041F48C /* Oxygen-Bold.ttf */; };
 		3471553A2293D5DC0041F48C /* VerifyCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347155392293D5DC0041F48C /* VerifyCodeOperation.swift */; };
-		3484B0BE22AF46E500FC9A2E /* KYCInitialOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0BD22AF46E500FC9A2E /* KYCInitialOperation.swift */; };
-		3484B0C022AF493B00FC9A2E /* KYCIdentityVerifyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0BF22AF493B00FC9A2E /* KYCIdentityVerifyOperation.swift */; };
-		3484B0C222AF4DE000FC9A2E /* KYCSubmitOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0C122AF4DE000FC9A2E /* KYCSubmitOperation.swift */; };
-		3484B0C422AF4E9D00FC9A2E /* KYCUploadImagesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484B0C322AF4E9D00FC9A2E /* KYCUploadImagesOperation.swift */; };
 		34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */; };
 		34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DE228ACC14004311CA /* VerificationResult.swift */; };
 		34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */; };
@@ -120,7 +121,6 @@
 		487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A321DF902D008CDB03 /* RequestOperationResult.swift */; };
 		487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
 		487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
-		48A236EB22A7DE04001E8E67 /* KYCStatusOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */; };
 		48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A236EC22A7E7C3001E8E67 /* DateTools.swift */; };
 		48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A33A2922A004590060BBDE /* FeeRateOperation.swift */; };
 		48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */; };
@@ -232,6 +232,11 @@
 /* Begin PBXFileReference section */
 		0D60CBA7DF545346D1F8C791 /* Pods-PeatioSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.release.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		17544EDCF8F21750D3986BFA /* Pods-PeatioSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeatioSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-PeatioSDKSample/Pods-PeatioSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		341453E222C6216A0087C98D /* IdentityStatusOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityStatusOperation.swift; sourceTree = "<group>"; };
+		341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCUpdateBasicIdentityOperation.swift; sourceTree = "<group>"; };
+		341453E622C628600087C98D /* KYCBizTokenOpration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBizTokenOpration.swift; sourceTree = "<group>"; };
+		341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCFaceIDVerifyOperation.swift; sourceTree = "<group>"; };
+		342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCSubmitInfoOperation.swift; sourceTree = "<group>"; };
 		347154D5229252810041F48C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		347154D922929EE20041F48C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		347154DB22929F800041F48C /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
@@ -239,10 +244,6 @@
 		347154E32292CFA90041F48C /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		347154E42292CFA90041F48C /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
 		347155392293D5DC0041F48C /* VerifyCodeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeOperation.swift; sourceTree = "<group>"; };
-		3484B0BD22AF46E500FC9A2E /* KYCInitialOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCInitialOperation.swift; sourceTree = "<group>"; };
-		3484B0BF22AF493B00FC9A2E /* KYCIdentityVerifyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCIdentityVerifyOperation.swift; sourceTree = "<group>"; };
-		3484B0C122AF4DE000FC9A2E /* KYCSubmitOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCSubmitOperation.swift; sourceTree = "<group>"; };
-		3484B0C322AF4E9D00FC9A2E /* KYCUploadImagesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCUploadImagesOperation.swift; sourceTree = "<group>"; };
 		34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVerificationsOperation.swift; sourceTree = "<group>"; };
 		34A8E9DE228ACC14004311CA /* VerificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsOperation.swift; sourceTree = "<group>"; };
@@ -322,7 +323,6 @@
 		487F15A321DF902D008CDB03 /* RequestOperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationResult.swift; sourceTree = "<group>"; };
 		487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLEncode.swift"; sourceTree = "<group>"; };
 		487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOperation.swift; sourceTree = "<group>"; };
-		48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCStatusOperation.swift; sourceTree = "<group>"; };
 		48A236EC22A7E7C3001E8E67 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTools.swift; sourceTree = "<group>"; };
 		48A33A2922A004590060BBDE /* FeeRateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeRateOperation.swift; sourceTree = "<group>"; };
 		48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWhitelistAddressesOperation.swift; sourceTree = "<group>"; };
@@ -879,11 +879,11 @@
 		48A236E922A7DDF6001E8E67 /* KYC */ = {
 			isa = PBXGroup;
 			children = (
-				48A236EA22A7DE04001E8E67 /* KYCStatusOperation.swift */,
-				3484B0BD22AF46E500FC9A2E /* KYCInitialOperation.swift */,
-				3484B0BF22AF493B00FC9A2E /* KYCIdentityVerifyOperation.swift */,
-				3484B0C322AF4E9D00FC9A2E /* KYCUploadImagesOperation.swift */,
-				3484B0C122AF4DE000FC9A2E /* KYCSubmitOperation.swift */,
+				341453E222C6216A0087C98D /* IdentityStatusOperation.swift */,
+				341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */,
+				341453E622C628600087C98D /* KYCBizTokenOpration.swift */,
+				341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */,
+				342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */,
 			);
 			path = KYC;
 			sourceTree = "<group>";
@@ -1384,7 +1384,7 @@
 				487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */,
 				48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */,
 				FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */,
-				3484B0C222AF4DE000FC9A2E /* KYCSubmitOperation.swift in Sources */,
+				342BB91F22C782E8004427F8 /* KYCSubmitInfoOperation.swift in Sources */,
 				48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */,
 				486416B821D37E3B003853BB /* APIError.swift in Sources */,
 				487F159221DCE6E0008CDB03 /* TradeSubscription.swift in Sources */,
@@ -1395,7 +1395,6 @@
 				48FFE85021C8EAB300EE85C0 /* PeatioObjectIdentifier.swift in Sources */,
 				487C7E1221E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift in Sources */,
 				34A8EA11228BC639004311CA /* ResetPasswordOperation.swift in Sources */,
-				3484B0C422AF4E9D00FC9A2E /* KYCUploadImagesOperation.swift in Sources */,
 				48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */,
 				FDD37B7E21B783F10027DEBD /* Log.swift in Sources */,
 				FDD37BD821BA6B360027DEBD /* Order.swift in Sources */,
@@ -1420,19 +1419,18 @@
 				484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */,
 				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
 				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
-				3484B0C022AF493B00FC9A2E /* KYCIdentityVerifyOperation.swift in Sources */,
 				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
 				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
 				487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */,
 				487C7DE621E34BBC00BC8D8C /* AssetPairTradeOperation.swift in Sources */,
-				48A236EB22A7DE04001E8E67 /* KYCStatusOperation.swift in Sources */,
 				34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */,
 				4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */,
 				487C7DFE21E47E7400BC8D8C /* RankAssetPairsOperation.swift in Sources */,
 				34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */,
 				484D46A121EC3F9800E7C3E2 /* Decodable+Overlap.swift in Sources */,
 				34A8EA0B228BBD3A004311CA /* UpdatePasswordOperation.swift in Sources */,
+				341453E722C628600087C98D /* KYCBizTokenOpration.swift in Sources */,
 				FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */,
 				34A8EA21228BED18004311CA /* ResetOtpOperation.swift in Sources */,
 				484D468121E7272B00E7C3E2 /* CancelOrderOperation.swift in Sources */,
@@ -1473,6 +1471,7 @@
 				487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */,
 				48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */,
 				48FFE85121C8EAB300EE85C0 /* WSClient.swift in Sources */,
+				341453E322C6216A0087C98D /* IdentityStatusOperation.swift in Sources */,
 				487F159F21DE0000008CDB03 /* RequestOperation.swift in Sources */,
 				487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */,
 				48AF800B2280207800A848A6 /* RefreshSessionOperation.swift in Sources */,
@@ -1482,13 +1481,13 @@
 				347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */,
 				486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */,
 				FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */,
+				341453E522C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift in Sources */,
 				34A8E9FD228ADF49004311CA /* BindEmailOperation.swift in Sources */,
 				48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */,
 				34A8EA03228BB39D004311CA /* RebindPhoneOperation.swift in Sources */,
 				34A8EA01228AE27E004311CA /* BindPhoneOperation.swift in Sources */,
 				48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */,
 				FDD37B9421B9091B0027DEBD /* PeatioAPIClient.swift in Sources */,
-				3484B0BE22AF46E500FC9A2E /* KYCInitialOperation.swift in Sources */,
 				34A8EA23228BED7D004311CA /* CreateOtpOperation.swift in Sources */,
 				FDD372AA21B4CC690027DEBD /* APIRequestTask.swift in Sources */,
 				34A8EA15228BE301004311CA /* UpdatePinOperation.swift in Sources */,
@@ -1500,6 +1499,7 @@
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
+				341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */,
 				48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */,
 				487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */,
 				FDD37BD621BA69420027DEBD /* Depth.swift in Sources */,
