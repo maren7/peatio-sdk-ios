@@ -58,7 +58,7 @@ public extension KYCUpdateBasicIdentityOperation {
 }
 
 public extension KYCUpdateBasicIdentityOperation {
-    public struct UpdatedIdentityInfo: Codable {
+    struct UpdatedIdentityInfo: Codable {
         public let nation: String?
         public let name: String?
         public let docNumber: String?
