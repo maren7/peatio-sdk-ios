@@ -113,6 +113,9 @@ open class RequestExecutor: HTTPRequestExecutor {
         }
 
         guard grainedResult.isSuccessful else {
+            if let requestError = error {
+                return .failure(.network(requestError))
+            }
             let supplement = grainedResult.decodeDataError?.peatio_debugDescription ?? "null"
             let error = APIError(code: grainedResult.code, message: grainedResult.message + "  ,supplement: \(supplement)", response: httpResponse, data: data)
             return .failure(.api(error))
