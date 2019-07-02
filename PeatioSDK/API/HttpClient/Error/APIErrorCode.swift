@@ -14,7 +14,8 @@ public extension APIError {
         case customerUnexist = 40007
         case customerExist = 40005
         case notElderUser = 40420
-        case identityInfoExist = 40017
-        case identityFormatError = 42201
+        case kycIdentityExisted = 40017
+        case kycIdentityFormatError = 42212
+        case kycIdentityUnmatch = 42201
     }
 }
