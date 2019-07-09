@@ -2,7 +2,7 @@ import Foundation
 
 public struct Asset: Codable {
 
-    let bindingGateways: [BindingGateway]
+    public let bindingGateways: [BindingGateway]
     public let uuid: String
     public let symbol: String
     public let scale: Int
