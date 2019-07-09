@@ -73,15 +73,15 @@ public extension Asset {
             case withdrawalFee
         }
 
-        let contractAddress: String
-        let displayName: String
-        let gateway: Gateway
-        let isDepositEnabled: Bool
-        let isMemoRequired: Bool
-        let isWithdrawalEnabled: Bool
-        let miniWithdrawalAmount: Decimal
-        let scale: Int
-        let withdrawalFee: Decimal
+        public let contractAddress: String
+        public let displayName: String
+        public let gateway: Gateway
+        public let isDepositEnabled: Bool
+        public let isMemoRequired: Bool
+        public let isWithdrawalEnabled: Bool
+        public let miniWithdrawalAmount: Decimal
+        public let scale: Int
+        public let withdrawalFee: Decimal
 
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
