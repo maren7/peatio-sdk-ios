@@ -3,7 +3,7 @@ import Foundation
 public final class DepositAddressOperation: RequestOperation {
     public typealias ResultData = [Address]
 
-    public lazy private(set) var path: String = "/api/uc/v1/me/assets/\(param.assetPairUUID)/addresses"
+    public lazy private(set) var path: String = "/api/uc/v1/me/assets/\(param.assetUUID)/addresses"
 
     public let param: Param
 
@@ -15,10 +15,10 @@ public final class DepositAddressOperation: RequestOperation {
 public extension DepositAddressOperation {
      struct Param: Equatable {
 
-        public let assetPairUUID: String
+        public let assetUUID: String
 
-        public init(assetPairUUID: String) {
-            self.assetPairUUID = assetPairUUID
+        public init(assetUUID: String) {
+            self.assetUUID = assetUUID
         }
     }
 }
