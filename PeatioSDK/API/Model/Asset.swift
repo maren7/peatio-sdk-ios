@@ -2,16 +2,7 @@ import Foundation
 
 public struct Asset: Codable {
 
-    public struct Logo: Codable {
-        public let `default`: String?
-        public let white: String?
-
-        public init(`default`: String?, `white`: String?) {
-            self.default = `default`
-            self.white = white
-        }
-    }
-
+    let bindingGateways: [BindingGateway]
     public let uuid: String
     public let symbol: String
     public let scale: Int
@@ -26,7 +17,8 @@ public struct Asset: Codable {
     public let gateways: [Gateway]
     public let logo: Logo
 
-    public init(uuid: String,
+    public init(bindingGateways: [BindingGateway],
+                uuid: String,
                 symbol: String,
                 scale: Int,
                 name: String,
@@ -39,6 +31,7 @@ public struct Asset: Codable {
                 defaultGateway: Gateway,
                 gateways: [Gateway],
                 logo: Logo) {
+        self.bindingGateways = bindingGateways
         self.uuid = uuid
         self.symbol = symbol
         self.scale = scale
@@ -52,5 +45,59 @@ public struct Asset: Codable {
         self.defaultGateway = defaultGateway
         self.gateways = gateways
         self.logo = logo
+    }
+}
+
+public extension Asset {
+    struct Logo: Codable {
+        public let `default`: String?
+        public let white: String?
+
+        public init(`default`: String?, `white`: String?) {
+            self.default = `default`
+            self.white = white
+        }
+    }
+
+    struct BindingGateway: Codable {
+
+        private enum CodingKeys: String, CodingKey {
+            case contractAddress
+            case displayName
+            case gateway
+            case isDepositEnabled
+            case isMemoRequired
+            case isWithdrawalEnabled
+            case miniWithdrawalAmount
+            case scale
+            case withdrawalFee
+        }
+
+        let contractAddress: String
+        let displayName: String
+        let gateway: Gateway
+        let isDepositEnabled: Bool
+        let isMemoRequired: Bool
+        let isWithdrawalEnabled: Bool
+        let miniWithdrawalAmount: Decimal
+        let scale: Int
+        let withdrawalFee: Decimal
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            self.contractAddress = try container.decode(String.self, forKey: .contractAddress)
+            let gatewayStore = try container.decode(Gateway.self, forKey: .gateway)
+            let displayNameStore = try container.decode(String.self, forKey: .displayName)
+            self.displayName = displayNameStore.isEmpty ? gatewayStore.name : displayNameStore
+            self.gateway = gatewayStore
+            self.isDepositEnabled = try container.decode(Bool.self, forKey: .isDepositEnabled)
+            self.isMemoRequired = try container.decode(Bool.self, forKey: .isMemoRequired)
+            self.isWithdrawalEnabled = try container.decode(Bool.self, forKey: .isWithdrawalEnabled)
+            let miniWithdrawalStringValue = try container.decode(String.self, forKey: .miniWithdrawalAmount)
+            self.miniWithdrawalAmount = Decimal(string: miniWithdrawalStringValue) ?? 0
+            self.scale = try container.decode(Int.self, forKey: .scale)
+            let withdrawalFeeStringValue = try container.decode(String.self, forKey: .withdrawalFee)
+            self.withdrawalFee = Decimal(string: withdrawalFeeStringValue) ?? 0
+        }
     }
 }
