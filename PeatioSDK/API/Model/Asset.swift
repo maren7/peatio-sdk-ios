@@ -68,7 +68,7 @@ public extension Asset {
             case isDepositEnabled
             case isMemoRequired
             case isWithdrawalEnabled
-            case miniWithdrawalAmount
+            case minWithdrawalAmount
             case scale
             case withdrawalFee
         }
@@ -79,7 +79,7 @@ public extension Asset {
         public let isDepositEnabled: Bool
         public let isMemoRequired: Bool
         public let isWithdrawalEnabled: Bool
-        public let miniWithdrawalAmount: Decimal
+        public let minWithdrawalAmount: Decimal
         public let scale: Int
         public let withdrawalFee: Decimal
 
@@ -93,8 +93,8 @@ public extension Asset {
             self.isDepositEnabled = try container.decode(Bool.self, forKey: .isDepositEnabled)
             self.isMemoRequired = try container.decode(Bool.self, forKey: .isMemoRequired)
             self.isWithdrawalEnabled = try container.decode(Bool.self, forKey: .isWithdrawalEnabled)
-            let miniWithdrawalStringValue = try container.decode(String.self, forKey: .miniWithdrawalAmount)
-            self.miniWithdrawalAmount = Decimal(string: miniWithdrawalStringValue) ?? 0
+            let minWithdrawalStringValue = try container.decode(String.self, forKey: .minWithdrawalAmount)
+            self.minWithdrawalAmount = Decimal(string: minWithdrawalStringValue) ?? 0
             self.scale = try container.decode(Int.self, forKey: .scale)
             let withdrawalFeeStringValue = try container.decode(String.self, forKey: .withdrawalFee)
             self.withdrawalFee = Decimal(string: withdrawalFeeStringValue) ?? 0
