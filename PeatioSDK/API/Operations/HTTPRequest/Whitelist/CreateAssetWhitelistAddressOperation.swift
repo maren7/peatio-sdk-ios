@@ -11,11 +11,12 @@ public final class CreateAssetWhitelistAddressOperation: RequestOperation {
         return [
             "asset_uuid": param.assetUUID,
             "tag": param.tag,
+            "memo": param.memo,
             "address": param.address,
             "pin": param.pin,
-            "otp_code": param.otp,
+            "two_fa_code": param.twoFaCode,
             "gateway_name": param.gatewayName,
-            "memo": param.memo
+            "two_fa_channel": param.twoFaType.rawValue
         ]
     }
 
@@ -33,24 +34,27 @@ public extension CreateAssetWhitelistAddressOperation {
         public let tag: String
         public let memo: String?
         public let address: String
+        public let twoFaType: TwoFAChannelType
+        public let twoFaCode: String
         public let pin: String
-        public let otp: String
-        public let gatewayName: String?
+        public let gatewayName: String
 
         public init(assetUUID: String,
                     tag: String,
                     memo: String?,
                     address: String,
-                    gatewayName: String?,
-                    pin: String,
-                    otp: String) {
+                    twoFaType: TwoFAChannelType,
+                    twoFaCode: String,
+                    gatewayName: String,
+                    pin: String) {
             self.assetUUID = assetUUID
             self.tag = tag
             self.memo = memo
             self.address = address
             self.gatewayName = gatewayName
             self.pin = pin
-            self.otp = otp
+            self.twoFaCode = twoFaCode
+            self.twoFaType = twoFaType
         }
     }
 }

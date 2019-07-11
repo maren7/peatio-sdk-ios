@@ -5,11 +5,6 @@ public enum VerificationChannelType: String, Codable {
     case sms = "SMS"
 }
 
-public enum TwoFaChannelType: String, Codable {
-    case sms = "SMS"
-    case ga = "GA"
-}
-
 public enum TwoFAChannelType: String, Codable {
     case email = "EMAIL"
     case sms = "SMS"

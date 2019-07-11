@@ -36,7 +36,7 @@ public extension CreateWithdrawalOperation {
         public let amountContentFee: String
         public let targetAddress: String
         public let assetPin: String?
-        public let twoFaChannel: TwoFaChannelType?
+        public let twoFaChannel: TwoFAChannelType?
         public let twoFaCode: String?
         public let gatewayName: String?
         public let memo: String?
@@ -47,7 +47,7 @@ public extension CreateWithdrawalOperation {
                     amountContentFee: String,
                     targetAddress: String,
                     assetPin: String?,
-                    twoFaChannel: TwoFaChannelType?,
+                    twoFaChannel: TwoFAChannelType?,
                     twoFaCode: String?,
                     gatewayName: String,
                     memo: String?,
