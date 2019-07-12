@@ -3,7 +3,7 @@ import Foundation
 public final class InspectAddressOperation: RequestOperation {
     public typealias ResultData = InspectAddressResult
 
-    public lazy private(set) var path: String = "/api/uc/v1/me/inspect_address"
+    public lazy private(set) var path: String = "/api/uc/v2/me/inspect_address"
 
     public var requestParams: [String: Any?]? {
         return [
