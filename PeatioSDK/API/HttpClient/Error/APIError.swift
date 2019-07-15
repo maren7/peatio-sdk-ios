@@ -1,10 +1,14 @@
 import Foundation
 
-public struct APIError: LocalizedError {
+public struct APIError: LocalizedError, Hashable {
     public let code: Int64
     public let message: String
     public let response: HTTPURLResponse?
     public let data: Data?
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(code)
+    }
 
     public var dataJSONValue: Any? {
         guard let data = data, let result = try? JSONSerialization.jsonObject(with: data, options: []) else {

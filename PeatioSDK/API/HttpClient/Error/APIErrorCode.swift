@@ -9,6 +9,11 @@ public extension APIError {
         case invalidPin = 40104
         case requireOtp = 40001
         case unauthenticated = 40004
+        case jwtExpired = 40106
+        case accountIsFrozen = 40107
+        case userLocationChanged = 40108
+        case jwtInvalid = 40109
+        case unknownSession = 40110
         case invalidTwoFaVerification = 40306
         case tooManyRequest = 42901
         case customerUnexist = 40007
@@ -17,5 +22,9 @@ public extension APIError {
         case kycIdentityExisted = 40017
         case kycIdentityFormatError = 42212
         case kycIdentityUnmatch = 42201
+    }
+
+    static var sessionInvalidCodes: Set<APIError.Code> {
+        return [.unauthenticated, .jwtExpired, .jwtInvalid, .userLocationChanged, .accountIsFrozen, .unknownSession]
     }
 }

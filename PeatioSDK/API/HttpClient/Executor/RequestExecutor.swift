@@ -108,6 +108,12 @@ open class RequestExecutor: HTTPRequestExecutor {
             if let decodingError = e as? DecodingError {
                 detail = decodingError.peatio_debugDescription
             }
+
+            if httpResponse.statusCode != 200 {
+                let httpError = APIError(code: Int64(httpResponse.statusCode), message: "Error: \(httpResponse.statusCode)", response: httpResponse, data: data)
+                return .failure(.network(httpError))
+            }
+
             let invalidResponse = APIError.invalid(httpResponse, supplement: "Grained deserialization failed, detail: \(detail)")
             return .failure(.api(invalidResponse))
         }
