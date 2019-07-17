@@ -22,6 +22,7 @@ public extension APIError {
         case kycIdentityExisted = 40017
         case kycIdentityFormatError = 42212
         case kycIdentityUnmatch = 42201
+        case hciValidationTokenInvalid = 40309
     }
 
     static var sessionInvalidCodes: Set<APIError.Code> {
