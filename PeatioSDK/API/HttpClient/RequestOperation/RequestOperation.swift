@@ -5,7 +5,7 @@ public protocol RequestOperation {
     associatedtype ResultData: Decodable
 
     var absoluteURL: URL? { get }
-    var additionalHeaders: [String: String]? { get }
+    var additionalHeaders: [String: String?]? { get }
     var contentType: RequestContentType { get }
     var decodeInjection: ((Data) -> ResultData?)? { get }
     var httpMethod: HTTPMethod { get }
@@ -23,7 +23,7 @@ extension RequestOperation {
         return nil
     }
 
-    public var  additionalHeaders: [String: String]? {
+    public var additionalHeaders: [String: String?]? {
         return nil
     }
 

@@ -23,7 +23,7 @@ public final class RequestGenerator {
             urlRequest.setValue($0.value, forHTTPHeaderField: $0.key)
         }
 
-        operation.additionalHeaders?.forEach {
+        operation.additionalHeaders?.compactMapValues { $0 }.forEach {
             urlRequest.setValue($0.value, forHTTPHeaderField: $0.key)
         }
 

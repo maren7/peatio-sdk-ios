@@ -5,6 +5,10 @@ public final class LoginOperation: RequestOperation {
 
     public let path: String = "/api/uc/v2/login"
 
+    public var additionalHeaders: [String : String?]? {
+        return ["x-validation": param.hciCode]
+    }
+
     public let httpMethod: HTTPMethod = .post
 
     public let param: Param
@@ -29,17 +33,20 @@ public extension LoginOperation {
         public let nationCode: String?
         public let identity: String
         public let password: String
+        public let hciCode: String
 
         public init(twoFaChannel: TwoFAChannelType?,
                     twoFaCode: String?,
                     nationCode: String?,
                     identity: String,
-                    password: String) {
+                    password: String,
+                    hciCode: String) {
             self.twoFaChannel = twoFaChannel
             self.twoFaCode = twoFaCode
             self.nationCode = nationCode
             self.identity = identity
             self.password = password
+            self.hciCode = hciCode
         }
     }
 }
