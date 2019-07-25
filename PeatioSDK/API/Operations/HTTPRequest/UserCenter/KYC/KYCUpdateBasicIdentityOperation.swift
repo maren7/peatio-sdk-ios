@@ -66,6 +66,6 @@ public extension KYCUpdateBasicIdentityOperation {
         public let advancedAcceptedAt: Date?
         public let expireAt: Date?
         public let docType: IdentityType?
-        public let state: IdentityState
+        public let state: KycState
     }
 }

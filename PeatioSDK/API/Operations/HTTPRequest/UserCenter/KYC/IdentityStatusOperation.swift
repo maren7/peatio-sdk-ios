@@ -26,7 +26,7 @@ public extension IdentityStatusOperation {
     }
 }
 
-public enum IdentityState: String, Codable {
+public enum KycState: String, Codable {
     case pending = "PENDING"
     case submitted = "SUBMITTED"
     case accepted = "ACCEPTED"
@@ -50,7 +50,7 @@ public extension IdentityStatusOperation {
         public let advancedAcceptedAt: Date?
         public let expireAt: Date?
         public let docType: IdentityType?
-        public let state: IdentityState
+        public let state: KycState
         public let faceidTryAgain: Bool
     }
 }
