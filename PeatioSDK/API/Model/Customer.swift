@@ -10,6 +10,7 @@ public struct Customer: Codable {
     public let twoFactorEnabled: Bool
     public let assetPinEnabled: Bool
     public let isWithdrawalEnabled: Bool
+    public let isOtpEnabled: Bool
     public let isTradeEnabled: Bool
     public let kycState: KycState
 }
