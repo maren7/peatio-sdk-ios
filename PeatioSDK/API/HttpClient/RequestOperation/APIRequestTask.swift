@@ -6,7 +6,19 @@ public struct APIRequestTask {
     public let path: String
     public let parameters: [String: Any]?
 
-    let sessionTask: URLSessionTask
+    public let sessionTask: URLSessionTask
+
+    public init(method: HTTPMethod,
+                url: URL,
+                path: String,
+                parameters: [String: Any]?,
+                sessionTask: URLSessionTask) {
+        self.method = method
+        self.url = url
+        self.path = path
+        self.parameters = parameters
+        self.sessionTask = sessionTask
+    }
 }
 
 extension APIRequestTask: Cancellable {
