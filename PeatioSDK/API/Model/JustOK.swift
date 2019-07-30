@@ -1,3 +1,5 @@
 import Foundation
 
-public struct JustOK: Codable { }
+public struct JustOK: Codable {
+    public init() { }
+}
