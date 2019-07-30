@@ -1,6 +1,6 @@
 import Foundation
 
-extension Error {
+public extension Error {
     var peatio_debugDescription: String {
         guard let deError = self as? DecodingError else {
             return localizedDescription
