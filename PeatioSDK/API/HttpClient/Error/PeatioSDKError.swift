@@ -41,6 +41,12 @@ public enum PeatioSDKError {
     }
 }
 
+extension PeatioSDKError: SpecificallyCodeIdentifier {
+    public var specifyCode: Int64 {
+        return Int64(code)
+    }
+}
+
 extension PeatioSDKError: LocalizedError {
     public var errorDescription: String? {
         switch self {
