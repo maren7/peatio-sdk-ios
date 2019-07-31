@@ -19,10 +19,6 @@ public struct APIError: LocalizedError, Hashable {
         }
         return result
     }
-
-    public static func generate(by code: APIError.Code) -> APIError {
-        return APIError(code: code.rawValue, message: "", response: nil, data: nil)
-    }
 }
 
 extension APIError: CustomDebugStringConvertible, CustomStringConvertible {

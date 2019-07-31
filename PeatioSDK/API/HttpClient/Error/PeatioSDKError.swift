@@ -39,6 +39,10 @@ public enum PeatioSDKError {
             return error.localizedDescription
         }
     }
+
+    public static func generate(by code: APIError.Code) -> PeatioSDKError {
+        return .api(APIError(code: code.rawValue, message: "", response: nil, data: nil))
+    }
 }
 
 extension PeatioSDKError: SpecificallyIdentifier {
