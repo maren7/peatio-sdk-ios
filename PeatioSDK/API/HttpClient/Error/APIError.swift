@@ -1,6 +1,9 @@
 import Foundation
 
 public struct APIError: LocalizedError, Hashable {
+    public var _code: Int {
+        return Int(code)
+    }
     public let code: Int64
     public let message: String
     public let response: HTTPURLResponse?
