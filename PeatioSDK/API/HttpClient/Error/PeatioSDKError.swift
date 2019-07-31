@@ -41,9 +41,16 @@ public enum PeatioSDKError {
     }
 }
 
-extension PeatioSDKError: SpecificallyCodeIdentifier {
-    public var specifyCode: Int64 {
-        return Int64(code)
+extension PeatioSDKError: SpecificallyIdentifier {
+    public var specifyIdentifier: ObjectIdentifier {
+        let uniquIdentifierString: String
+        switch self {
+        case .api(let error):
+            uniquIdentifierString = "peatio-sdk-error-\(error.code)"
+        case .network(let error):
+            uniquIdentifierString = "peatio-network-error-\(error._code)"
+        }
+        return ObjectIdentifier(uniquIdentifierString as NSString)
     }
 }
 

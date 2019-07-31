@@ -2,7 +2,7 @@ import Foundation
 
 public protocol HTTPRequestExecutor {
 
-    associatedtype ErrorType: Swift.Error & SpecificallyCodeIdentifier
+    associatedtype ErrorType: Swift.Error & SpecificallyIdentifier
 
     @discardableResult
     func request<O>(_ operation: O, debug: Bool, completion: @escaping (Result<O.ResultData, ErrorType>) -> Void) -> APIRequestTask where O: RequestOperation
@@ -10,6 +10,6 @@ public protocol HTTPRequestExecutor {
     static func buildResult<O>(operation: O, data: Data?, error: Swift.Error?, response: URLResponse?) -> Result<O.ResultData, ErrorType> where O: RequestOperation
 }
 
-public protocol SpecificallyCodeIdentifier {
-    var specifyCode: Int64 { get }
+public protocol SpecificallyIdentifier {
+    var specifyIdentifier: ObjectIdentifier { get }
 }
