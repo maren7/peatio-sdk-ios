@@ -46,7 +46,7 @@ public enum PeatioSDKError {
 }
 
 extension PeatioSDKError: SpecificallyIdentifier {
-    public var specifyIdentifier: ObjectIdentifier {
+    public var specifyIdentifier: String {
         let uniquIdentifierString: String
         switch self {
         case .api(let error):
@@ -54,7 +54,7 @@ extension PeatioSDKError: SpecificallyIdentifier {
         case .network(let error):
             uniquIdentifierString = "peatio-network-error-\(error._code)"
         }
-        return ObjectIdentifier(uniquIdentifierString as NSString)
+        return uniquIdentifierString
     }
 }
 

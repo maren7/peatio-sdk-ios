@@ -28,9 +28,3 @@ final class PeatioIdentifier: Hashable, CustomDebugStringConvertible {
         return lhs.hashValue == rhs.hashValue
     }
 }
-
-extension PeatioIdentifier {
-    convenience init(_ x: String) {
-        self.init(x as NSString)
-    }
-}

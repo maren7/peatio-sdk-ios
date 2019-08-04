@@ -11,5 +11,5 @@ public protocol HTTPRequestExecutor {
 }
 
 public protocol SpecificallyIdentifier {
-    var specifyIdentifier: ObjectIdentifier { get }
+    var specifyIdentifier: String { get }
 }
