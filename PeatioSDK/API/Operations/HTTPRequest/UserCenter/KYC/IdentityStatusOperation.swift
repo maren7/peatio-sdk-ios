@@ -52,6 +52,7 @@ public extension IdentityStatusOperation {
         public let docType: IdentityType?
         public let state: KycState
         public let faceidTryAgain: Bool
+        public let reseaons: [String]
     }
 }
 
