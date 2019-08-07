@@ -15,5 +15,7 @@ public final class SubmitAdvancedKYCOperation: RequestOperation {
 }
 
 public extension SubmitAdvancedKYCOperation {
-    struct Param: Equatable {}
+    struct Param: Equatable {
+        public init() {}
+    }
 }

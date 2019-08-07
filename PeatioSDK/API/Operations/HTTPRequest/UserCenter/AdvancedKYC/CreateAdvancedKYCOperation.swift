@@ -15,7 +15,9 @@ public final class CreateAdvancedKYCOperation: RequestOperation {
 }
 
 public extension CreateAdvancedKYCOperation {
-    struct Param: Equatable {}
+    struct Param: Equatable {
+        public init() {}
+    }
 
     struct Result: Codable {
         public let selfieUploadToken: AttchmentQNTokenInfo
