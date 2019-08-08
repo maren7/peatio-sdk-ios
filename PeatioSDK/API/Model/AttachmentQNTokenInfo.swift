@@ -1,6 +1,6 @@
 import Foundation
 
-public struct AttchmentQNTokenInfo: Codable {
+public struct AttachmentQNTokenInfo: Codable {
     public let fileName: String
     public let token: String
 
