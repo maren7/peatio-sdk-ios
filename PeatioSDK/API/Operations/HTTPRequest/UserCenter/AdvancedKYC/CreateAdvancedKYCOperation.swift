@@ -21,7 +21,7 @@ public extension CreateAdvancedKYCOperation {
 
     struct Result: Codable {
         public let selfieUploadToken: AttachmentQNTokenInfo
-        public let videoUploadToken: AttachmentQNTokenInfo
+        public let advVideoUploadToken: AttachmentQNTokenInfo
         public let pledgeText: String
     }
 }
