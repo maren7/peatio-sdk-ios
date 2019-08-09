@@ -52,7 +52,22 @@ public extension IdentityStatusOperation {
         public let docType: IdentityType?
         public let state: KycState
         public let faceidTryAgain: Bool
-        public let reseaons: [String]
+        public let reasons: [String]
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            self.nation = try container.decode(Optional<String>.self, forKey: .nation)
+            self.name = try container.decode(Optional<String>.self, forKey: .name)
+            self.docNumber = try container.decode(Optional<String>.self, forKey: .docNumber)
+            self.basicAcceptedAt = try container.decode(Optional<Date>.self, forKey: .basicAcceptedAt)
+            self.advancedAcceptedAt = try container.decode(Optional<Date>.self, forKey: .advancedAcceptedAt)
+            self.expireAt = try container.decode(Optional<Date>.self, forKey: .expireAt)
+            let docString = try? container.decode(String.self, forKey: .docType)
+            self.docType = IdentityType(rawValue: docString ?? "")
+            self.state = try container.decode(KycState.self, forKey: .state)
+            self.faceidTryAgain = try container.decode(Bool.self, forKey: .faceidTryAgain)
+            self.reasons = try container.decode([String].self, forKey: .reasons)
+        }
     }
 }
 
