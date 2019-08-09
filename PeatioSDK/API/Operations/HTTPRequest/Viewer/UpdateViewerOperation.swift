@@ -5,7 +5,7 @@ public final class UpdateViewerOperation: RequestOperation {
 
     public let path: String = "/api/uc/v2/me/profile"
 
-    public let httpMethod: HTTPMethod = .patch
+    public let httpMethod: HTTPMethod = .put
 
     public var requestParams: [String: Any?]? {
         return ["name": param.name, "locale": param.locale]
