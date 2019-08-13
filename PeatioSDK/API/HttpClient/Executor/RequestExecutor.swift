@@ -91,7 +91,7 @@ open class RequestExecutor: HTTPRequestExecutor {
             if let error = error {
                 return .failure(.network(error))
             } else {
-                let invalidResponse = APIError.invalid(httpResponse, supplement: "no data")
+                let invalidResponse = APIError.invalid(httpResponse, message: "no data")
                 return .failure(.api(invalidResponse))
             }
         }
@@ -104,26 +104,17 @@ open class RequestExecutor: HTTPRequestExecutor {
         do {
             grainedResult = try requestDecoder.decode(RequestOperationResult<O.ResultData>.self, from: data)
         } catch let e {
-            var detail: String = e.localizedDescription
-            if let decodingError = e as? DecodingError {
-                detail = decodingError.peatio_debugDescription
-            }
-
             if httpResponse.statusCode != 200 {
                 let httpError = APIError(code: Int64(httpResponse.statusCode), message: "Error: \(httpResponse.statusCode)", response: httpResponse, data: data)
                 return .failure(.network(httpError))
             }
 
-            let invalidResponse = APIError.invalid(httpResponse, supplement: "Grained deserialization failed, detail: \(detail)")
+            let invalidResponse = APIError.deserializeFailed(httpResponse, message: "* " + e.peatio_debugDescription, data: data)
             return .failure(.api(invalidResponse))
         }
 
         guard grainedResult.isSuccessful else {
-            if let requestError = error {
-                return .failure(.network(requestError))
-            }
-            let supplement = grainedResult.decodeDataError?.peatio_debugDescription ?? "null"
-            let error = APIError(code: grainedResult.code, message: grainedResult.message + "  ,supplement: \(supplement)", response: httpResponse, data: data)
+            let error = APIError(code: grainedResult.code, message: grainedResult.message, response: httpResponse, data: data)
             return .failure(.api(error))
         }
 

@@ -41,12 +41,11 @@ extension APIError: CustomDebugStringConvertible, CustomStringConvertible {
 }
 
 extension APIError {
-    static func invalid(_ response: HTTPURLResponse, supplement: String = "") -> APIError {
-        let appendMessage = supplement.isEmpty ? "" : " supplement: \(supplement)"
-        return APIError(code: APIError.Code.invalidRequest.rawValue, message: "invalid response" + appendMessage, response: response, data: nil)
+    static func invalid(_ response: HTTPURLResponse, message: String? = nil) -> APIError {
+        return APIError(code: APIError.Code.invalidRequest.rawValue, message: message ?? "invalid response", response: response, data: nil)
     }
 
     static func deserializeFailed(_ response: HTTPURLResponse, message: String, data: Data?) -> APIError {
-        return APIError(code: APIError.Code.deserializeFailed.rawValue, message: message, response: response, data: data)
+        return APIError(code: APIError.Code.deserializeFailed.rawValue, message: "Deserialize failed " + message, response: response, data: data)
     }
 }

@@ -29,7 +29,7 @@ extension RequestOperationResult: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.code = try container.decode(Int64.self, forKey: .code)
         self.message = (try? container.decode(String.self, forKey: .message)) ?? ""
-        var pageTokenValue = (try? container.decode(Optional<String>.self, forKey: .pageToken)) ?? nil
+        var pageTokenValue = try? container.decode(String.self, forKey: .pageToken) 
         if pageTokenValue == "" {
             pageTokenValue = nil
         }
