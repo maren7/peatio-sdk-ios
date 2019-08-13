@@ -14,6 +14,11 @@ public extension APIError {
         case userLocationChanged = 40108
         case jwtInvalid = 40109
         case unknownSession = 40110
+        case deviceNeedAuthorized = 40111
+        case deviceUnAuthorized = 40112
+        case loginAttemptAlert = 40113
+        case loginAttemptForbidden = 40314
+        case userForbidden = 40399
         case invalidTwoFaVerification = 40306
         case tooManyRequest = 42901
         case customerUnexist = 40007
