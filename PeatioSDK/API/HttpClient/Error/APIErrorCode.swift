@@ -15,7 +15,6 @@ public extension APIError {
         case jwtInvalid = 40109
         case unknownSession = 40110
         case deviceNeedAuthorized = 40111
-        case deviceUnAuthorized = 40112
         case loginAttemptAlert = 40113
         case loginAttemptForbidden = 40314
         case userForbidden = 40399
