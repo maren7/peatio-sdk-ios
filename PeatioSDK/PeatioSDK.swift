@@ -36,6 +36,10 @@ public final class PeatioSDK {
         httpExecutor.customerHeaders["user-agent"] = ua
     }
 
+    public static func setDeviceID(_ deviceID: String) {
+        httpExecutor.customerHeaders["X-DEVICE-ID"] = deviceID
+    }
+
     // MARK: - HTTP Request
     public static func execute<O>(_ operation: O, deubg: Bool = false, completion: @escaping (Result<O.ResultData, PeatioSDKError>) -> Void) -> APIRequestTask where O: RequestOperation {
         let requireDebug: Bool
