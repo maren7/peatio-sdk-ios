@@ -3,28 +3,24 @@ import Foundation
 public struct Account: Codable {
 
     private enum CodingKeys: String, CodingKey {
-        case id
-        case customerID = "customerId"
         case balance
         case lockedBalance
         case asset
+        case estimatedBtc
     }
 
-    public let id: Int
-    public let customerID: Int
     public let balance: String
     public let lockedBalance: String
     public let asset: Asset
+    public let estimatedBtc: String?
 
-    public init(id: Int,
-                customerID: Int,
-                balance: String,
+    public init(balance: String,
                 lockedBalance: String,
-                asset: Asset) {
-        self.id = id
-        self.customerID = customerID
+                asset: Asset,
+                estimatedBtc: String?) {
         self.balance = balance
         self.lockedBalance = lockedBalance
         self.asset = asset
+        self.estimatedBtc = estimatedBtc
     }
 }

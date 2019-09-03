@@ -19,6 +19,17 @@
 		347154E62292CFA90041F48C /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E32292CFA90041F48C /* Oxygen-Light.ttf */; };
 		347154E72292CFA90041F48C /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 347154E42292CFA90041F48C /* Oxygen-Bold.ttf */; };
 		3471553A2293D5DC0041F48C /* VerifyCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347155392293D5DC0041F48C /* VerifyCodeOperation.swift */; };
+		347BE964231E0C9F0066C540 /* CreateTransfersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE963231E0C9F0066C540 /* CreateTransfersOperation.swift */; };
+		347BE966231E0CB90066C540 /* TransfersHistoryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE965231E0CB90066C540 /* TransfersHistoryOperation.swift */; };
+		347BE968231E0CC70066C540 /* PaymentListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE967231E0CC70066C540 /* PaymentListOperation.swift */; };
+		347BE96A231E0CD60066C540 /* CreatePaymentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE969231E0CD60066C540 /* CreatePaymentOperation.swift */; };
+		347BE96C231E0CE90066C540 /* UpdatePaymentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE96B231E0CE90066C540 /* UpdatePaymentOperation.swift */; };
+		347BE96E231E0CFB0066C540 /* PaymentDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE96D231E0CFB0066C540 /* PaymentDetailOperation.swift */; };
+		347BE970231E0D4B0066C540 /* SwitchPaymentVisibledOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE96F231E0D4B0066C540 /* SwitchPaymentVisibledOperation.swift */; };
+		347BE972231E136F0066C540 /* PaymentPictureUploadURLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE971231E136F0066C540 /* PaymentPictureUploadURLOperation.swift */; };
+		347BE974231E231F0066C540 /* OTCAccountsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE973231E231F0066C540 /* OTCAccountsOperation.swift */; };
+		347BE976231E240F0066C540 /* SpotAccountsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE975231E240F0066C540 /* SpotAccountsOperation.swift */; };
+		347BE978231E32B30066C540 /* AccountsSummaryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BE977231E32B30066C540 /* AccountsSummaryOperation.swift */; };
 		34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */; };
 		34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9DE228ACC14004311CA /* VerificationResult.swift */; };
 		34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */; };
@@ -247,6 +258,17 @@
 		347154E32292CFA90041F48C /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		347154E42292CFA90041F48C /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
 		347155392293D5DC0041F48C /* VerifyCodeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeOperation.swift; sourceTree = "<group>"; };
+		347BE963231E0C9F0066C540 /* CreateTransfersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransfersOperation.swift; sourceTree = "<group>"; };
+		347BE965231E0CB90066C540 /* TransfersHistoryOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersHistoryOperation.swift; sourceTree = "<group>"; };
+		347BE967231E0CC70066C540 /* PaymentListOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListOperation.swift; sourceTree = "<group>"; };
+		347BE969231E0CD60066C540 /* CreatePaymentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentOperation.swift; sourceTree = "<group>"; };
+		347BE96B231E0CE90066C540 /* UpdatePaymentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePaymentOperation.swift; sourceTree = "<group>"; };
+		347BE96D231E0CFB0066C540 /* PaymentDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailOperation.swift; sourceTree = "<group>"; };
+		347BE96F231E0D4B0066C540 /* SwitchPaymentVisibledOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchPaymentVisibledOperation.swift; sourceTree = "<group>"; };
+		347BE971231E136F0066C540 /* PaymentPictureUploadURLOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPictureUploadURLOperation.swift; sourceTree = "<group>"; };
+		347BE973231E231F0066C540 /* OTCAccountsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTCAccountsOperation.swift; sourceTree = "<group>"; };
+		347BE975231E240F0066C540 /* SpotAccountsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotAccountsOperation.swift; sourceTree = "<group>"; };
+		347BE977231E32B30066C540 /* AccountsSummaryOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsSummaryOperation.swift; sourceTree = "<group>"; };
 		34A8E9DC228AC8D0004311CA /* GetVerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVerificationsOperation.swift; sourceTree = "<group>"; };
 		34A8E9DE228ACC14004311CA /* VerificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		34A8E9E0228ACCA7004311CA /* VerificationsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsOperation.swift; sourceTree = "<group>"; };
@@ -540,9 +562,36 @@
 			path = DateFormatter;
 			sourceTree = "<group>";
 		};
+		347BE962231E0C2C0066C540 /* OTC */ = {
+			isa = PBXGroup;
+			children = (
+				347BE963231E0C9F0066C540 /* CreateTransfersOperation.swift */,
+				347BE965231E0CB90066C540 /* TransfersHistoryOperation.swift */,
+				347BE967231E0CC70066C540 /* PaymentListOperation.swift */,
+				347BE969231E0CD60066C540 /* CreatePaymentOperation.swift */,
+				347BE96B231E0CE90066C540 /* UpdatePaymentOperation.swift */,
+				347BE96D231E0CFB0066C540 /* PaymentDetailOperation.swift */,
+				347BE96F231E0D4B0066C540 /* SwitchPaymentVisibledOperation.swift */,
+				347BE971231E136F0066C540 /* PaymentPictureUploadURLOperation.swift */,
+			);
+			path = OTC;
+			sourceTree = "<group>";
+		};
+		347BE979231E3C3C0066C540 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				347BE973231E231F0066C540 /* OTCAccountsOperation.swift */,
+				347BE975231E240F0066C540 /* SpotAccountsOperation.swift */,
+				347BE977231E32B30066C540 /* AccountsSummaryOperation.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		34A8E9DB228AC876004311CA /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				347BE962231E0C2C0066C540 /* OTC */,
+				347BE979231E3C3C0066C540 /* Account */,
 				4889154622FA766900186C9E /* AdvancedKYC */,
 				48ECBE6022C0AF39001D206A /* Rouse */,
 				48A236E922A7DDF6001E8E67 /* KYC */,
@@ -1399,6 +1448,7 @@
 				FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */,
 				48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */,
 				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
+				347BE968231E0CC70066C540 /* PaymentListOperation.swift in Sources */,
 				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
 				484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */,
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
@@ -1409,6 +1459,7 @@
 				487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */,
 				48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */,
 				4889154D22FA795600186C9E /* AttachmentQNTokenInfo.swift in Sources */,
+				347BE978231E32B30066C540 /* AccountsSummaryOperation.swift in Sources */,
 				FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */,
 				342BB91F22C782E8004427F8 /* KYCSubmitInfoOperation.swift in Sources */,
 				48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */,
@@ -1427,6 +1478,7 @@
 				484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */,
 				484D467D21E6F88700E7C3E2 /* Address.swift in Sources */,
 				487F158321DC980A008CDB03 /* String+Base64.swift in Sources */,
+				347BE976231E240F0066C540 /* SpotAccountsOperation.swift in Sources */,
 				FDCC082D21CA487C009105DD /* TradePatch.swift in Sources */,
 				487C7E0E21E5DC4600BC8D8C /* Gateway.swift in Sources */,
 				FDD37BD021BA65FA0027DEBD /* Asset.swift in Sources */,
@@ -1435,8 +1487,10 @@
 				FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */,
 				484D469321E7534500E7C3E2 /* DepositItem.swift in Sources */,
 				48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */,
+				347BE96E231E0CFB0066C540 /* PaymentDetailOperation.swift in Sources */,
 				484D469521E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift in Sources */,
 				34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */,
+				347BE970231E0D4B0066C540 /* SwitchPaymentVisibledOperation.swift in Sources */,
 				34A8EA17228BE394004311CA /* ResetPinOperation.swift in Sources */,
 				3471553A2293D5DC0041F48C /* VerifyCodeOperation.swift in Sources */,
 				484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */,
@@ -1450,6 +1504,7 @@
 				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
 				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
+				347BE96A231E0CD60066C540 /* CreatePaymentOperation.swift in Sources */,
 				487C7E0A21E5DB4800BC8D8C /* AssetAccountOperation.swift in Sources */,
 				487C7DE621E34BBC00BC8D8C /* AssetPairTradeOperation.swift in Sources */,
 				34A8E9DF228ACC14004311CA /* VerificationResult.swift in Sources */,
@@ -1483,6 +1538,7 @@
 				484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */,
 				FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */,
 				48AF8002227FDCCC00A848A6 /* ViewerProfileOperation.swift in Sources */,
+				347BE974231E231F0066C540 /* OTCAccountsOperation.swift in Sources */,
 				484D469121E74FEA00E7C3E2 /* WithdrawalItem.swift in Sources */,
 				FDCC083921CB3F25009105DD /* AccountPatch.swift in Sources */,
 				48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */,
@@ -1524,15 +1580,19 @@
 				48AF8004227FDD0C00A848A6 /* UpdateViewerOperation.swift in Sources */,
 				487F159421DDE015008CDB03 /* CandleSubscription.swift in Sources */,
 				48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */,
+				347BE964231E0C9F0066C540 /* CreateTransfersOperation.swift in Sources */,
+				347BE972231E136F0066C540 /* PaymentPictureUploadURLOperation.swift in Sources */,
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
+				347BE966231E0CB90066C540 /* TransfersHistoryOperation.swift in Sources */,
 				341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */,
 				48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */,
 				487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */,
 				FDD37BD621BA69420027DEBD /* Depth.swift in Sources */,
 				487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */,
 				34A8E9FF228AE10E004311CA /* RebindEmailOperation.swift in Sources */,
+				347BE96C231E0CE90066C540 /* UpdatePaymentOperation.swift in Sources */,
 				48DAF8642265B17B006D3598 /* Banner.swift in Sources */,
 				347154D6229252810041F48C /* Theme.swift in Sources */,
 				484D468521E730FB00E7C3E2 /* ViewerOrdersOperation.swift in Sources */,
@@ -1733,6 +1793,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56JA33DT6;
 				INFOPLIST_FILE = PeatioSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1753,6 +1814,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56JA33DT6;
 				INFOPLIST_FILE = PeatioSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
