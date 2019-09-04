@@ -15,7 +15,6 @@ public final class SwitchPaymentVisibledOperation: RequestOperation {
 }
 
 public extension SwitchPaymentVisibledOperation {
-    
     enum PaymentVisibleState: String, Codable {
         case enable
         case disable
@@ -24,5 +23,10 @@ public extension SwitchPaymentVisibledOperation {
     struct Param: Equatable {
         public let id: Int
         public let state: PaymentVisibleState
+        
+        public init(id: Int, state: PaymentVisibleState) {
+            self.id = id
+            self.state = state
+        }
     }
 }

@@ -15,6 +15,10 @@ public final class PaymentDetailOperation: RequestOperation {
 public extension PaymentDetailOperation {
     struct Param: Equatable {
         public let id: Int
+        
+        public init(id: Int) {
+            self.id = id
+        }
     }
     
     struct Result: Codable {

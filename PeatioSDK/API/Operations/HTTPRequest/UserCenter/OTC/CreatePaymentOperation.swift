@@ -27,13 +27,31 @@ public final class CreatePaymentOperation: RequestOperation {
 
 public extension CreatePaymentOperation {
     struct Param: Equatable {
-        let method: PaymentMethodType
-        let account: String
-        let accountName: String
-        let bank: String?
-        let bankExt: String?
-        let picturePath: String?
-        let twoFaChannel: TwoFAChannelType
-        let twoFaCode: String
+        public let method: PaymentMethodType
+        public let account: String
+        public let accountName: String
+        public let bank: String?
+        public let bankExt: String?
+        public let picturePath: String?
+        public let twoFaChannel: TwoFAChannelType
+        public let twoFaCode: String
+        
+        public init(method: PaymentMethodType,
+                    account: String,
+                    accountName: String,
+                    bank: String?,
+                    bankExt: String?,
+                    picturePath: String?,
+                    twoFaChannel: TwoFAChannelType,
+                    twoFaCode: String) {
+            self.method = method
+            self.account = account
+            self.accountName = accountName
+            self.bank = bank
+            self.bankExt = bankExt
+            self.picturePath = picturePath
+            self.twoFaCode = twoFaCode
+            self.twoFaChannel = twoFaChannel
+        }
     }
 }

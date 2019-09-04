@@ -1,9 +1,13 @@
 import Foundation
 
 public final class TransfersHistoryOperation: RequestOperation {
-    public typealias ResultData = TransfersHistoryOperation.Result
+    public typealias ResultData = [TransfersHistoryOperation.Result]
     
-    public lazy private(set) var path: String = "/api/uc/v2/me/payments/\(String(describing: param.assetUuid))"
+    public lazy private(set) var path: String = "/api/uc/v2/me/transfers"
+    
+    public var requestParams: [String : Any?]? {
+        return ["asset_uuid": param.assetUuid]
+    }
     
     public let param: Param
     
@@ -14,12 +18,11 @@ public final class TransfersHistoryOperation: RequestOperation {
 
 public extension TransfersHistoryOperation {
     struct Param: Equatable {
-        public let assetUuid: String?
-        public let direction: TransferDirection?
-        public let startTime: String?
-        public let endTime: String?
-        public let size: Int?
-        public let pageToken: String?
+        public let assetUuid: String
+        
+        public init(assetUuid: String) {
+            self.assetUuid = assetUuid
+        }
     }
     
     struct Result: Codable {

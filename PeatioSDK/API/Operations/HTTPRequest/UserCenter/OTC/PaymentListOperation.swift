@@ -1,7 +1,7 @@
 import Foundation
 
 public final class PaymentListOperation: RequestOperation {
-    public typealias ResultData = PaymentListOperation.Result
+    public typealias ResultData = [PaymentListOperation.Result]
     
     public let path: String = "/api/uc/v2/me/payments"
     
@@ -22,7 +22,6 @@ public enum PaymentState: String, Codable {
     case ON
     case OFF
 }
-
 
 public extension PaymentListOperation {
     struct Param: Equatable {

@@ -30,5 +30,13 @@ public extension CreateTransfersOperation {
         public let assetUuid: String
         public let direction: TransferDirection
         public let amount: String
+        
+        public init(assetUuid: String,
+                    direction: TransferDirection,
+                    amount: String) {
+            self.assetUuid = assetUuid
+            self.direction = direction
+            self.amount = amount
+        }
     }
 }
