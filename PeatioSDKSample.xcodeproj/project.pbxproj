@@ -80,6 +80,7 @@
 		486146E421CBA3B4006F7DF4 /* MockWSTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486146E321CBA3B4006F7DF4 /* MockWSTransport.swift */; };
 		4861A13D21D235AE0047D662 /* ContiguousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861A13C21D235AE0047D662 /* ContiguousTask.swift */; };
 		486416B821D37E3B003853BB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486416B721D37E3B003853BB /* APIError.swift */; };
+		4864D4602320BD0500AC3CBA /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4864D45F2320BD0500AC3CBA /* Payment.swift */; };
 		486E8C192284117B00F78DC8 /* WebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487598D521E0D2E700EB045D /* WebSocketObserver.swift */; };
 		486E8C1A2284117B00F78DC8 /* InerWebSocketObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56FA6821C9DEA8006F7E9A /* InerWebSocketObserver.swift */; };
 		486E8C1B2284117B00F78DC8 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
@@ -319,6 +320,7 @@
 		486146E321CBA3B4006F7DF4 /* MockWSTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWSTransport.swift; sourceTree = "<group>"; };
 		4861A13C21D235AE0047D662 /* ContiguousTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousTask.swift; sourceTree = "<group>"; };
 		486416B721D37E3B003853BB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		4864D45F2320BD0500AC3CBA /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		487598D521E0D2E700EB045D /* WebSocketObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketObserver.swift; sourceTree = "<group>"; };
 		487598D721E0D79100EB045D /* HTTPRequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestExecutor.swift; sourceTree = "<group>"; };
 		4879445521F9660B00617417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -857,6 +859,7 @@
 				48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */,
 				48DAF8632265B17B006D3598 /* Banner.swift */,
 				48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */,
+				4864D45F2320BD0500AC3CBA /* Payment.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -1502,6 +1505,7 @@
 				4889154A22FA76C800186C9E /* SubmitAdvancedKYCOperation.swift in Sources */,
 				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
 				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
+				4864D4602320BD0500AC3CBA /* Payment.swift in Sources */,
 				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
 				347BE96A231E0CD60066C540 /* CreatePaymentOperation.swift in Sources */,
