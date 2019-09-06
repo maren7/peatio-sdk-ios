@@ -7,7 +7,7 @@ public final class TransfersHistoryOperation: RequestOperation {
     
     public var requestParams: [String : Any?]? {
         return [
-            "state": param.state.rawValue
+            "asset_uuid": param.assetUuid
         ]
     }
     
@@ -20,8 +20,8 @@ public final class TransfersHistoryOperation: RequestOperation {
 
 public extension TransfersHistoryOperation {
     struct Param: Equatable {
-        public let assetUuid: String
-
+        public let assetUuid: Strin
+        
         public init(assetUuid: String) {
             self.assetUuid = assetUuid
         }
