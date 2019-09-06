@@ -20,19 +20,14 @@ public final class CreateTransfersOperation: RequestOperation {
     }
 }
 
-public enum TransferDirection: String, Codable {
-    case toOTC = "EXCHANGE_TO_OTC"
-    case toExchange = "OTC_TO_EXCHANGE"
-}
-
 public extension CreateTransfersOperation {
     struct Param: Equatable {
         public let assetUuid: String
-        public let direction: TransferDirection
+        public let direction: Transfer.Direction
         public let amount: String
         
         public init(assetUuid: String,
-                    direction: TransferDirection,
+                    direction: Transfer.Direction,
                     amount: String) {
             self.assetUuid = assetUuid
             self.direction = direction
