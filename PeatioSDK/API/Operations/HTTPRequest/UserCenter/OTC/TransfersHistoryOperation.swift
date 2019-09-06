@@ -20,7 +20,7 @@ public final class TransfersHistoryOperation: RequestOperation {
 
 public extension TransfersHistoryOperation {
     struct Param: Equatable {
-        public let assetUuid: Strin
+        public let assetUuid: String
         
         public init(assetUuid: String) {
             self.assetUuid = assetUuid
