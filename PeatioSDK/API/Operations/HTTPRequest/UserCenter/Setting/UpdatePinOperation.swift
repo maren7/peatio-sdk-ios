@@ -16,8 +16,8 @@ public final class UpdatePinOperation: RequestOperation {
     public var requestParams: [String: Any?]? {
         return ["two_fa_channel": param.twoFaType.rawValue,
                 "two_fa_code": param.twoFaCode,
-                "asset_pin": param.assetPin,
-                "old_asset_pin": param.oldAssetPin]
+                "encrypted_asset_pin": param.encryptedAssetPin,
+                "encrypted_old_asset_pin": param.encryptedOldAssetPin]
     }
 }
 
@@ -25,8 +25,8 @@ public extension UpdatePinOperation {
     struct Param: Equatable {
         public let twoFaType: TwoFAChannelType
         public let twoFaCode: String
-        public let assetPin: String
-        public let oldAssetPin: String
+        public let encryptedAssetPin: String
+        public let encryptedOldAssetPin: String
 
         public init(twoFaType: TwoFAChannelType,
                     twoFaCode: String,
@@ -34,8 +34,8 @@ public extension UpdatePinOperation {
                     oldAssetPin: String) {
             self.twoFaCode = twoFaCode
             self.twoFaType = twoFaType
-            self.assetPin = assetPin
-            self.oldAssetPin = oldAssetPin
+            self.encryptedAssetPin = Encryptor.encrypt(string: assetPin)
+            self.encryptedOldAssetPin = Encryptor.encrypt(string: oldAssetPin)
         }
     }
 }

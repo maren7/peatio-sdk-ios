@@ -37,7 +37,7 @@ public final class RegisterOperation: RequestOperation {
                 "nation_code": param.nationCode,
                 "mobile": param.mobile,
                 "verification_code": param.verificationCode,
-                "password": param.password,
+                "encrypted_password": param.encryptedPassword,
                 "verification_token": param.verificationToken,
                 "invitation_code": param.invitationCode]
     }
@@ -56,7 +56,7 @@ public extension RegisterOperation {
         public let nationCode: String?
         public let mobile: String?
         public let verificationCode: String?
-        public let password: String?
+        public let encryptedPassword: String?
         public let verificationToken: String?
         public let invitationCode: String?
 
@@ -74,7 +74,13 @@ public extension RegisterOperation {
             self.nationCode = nationCode
             self.mobile = mobile
             self.verificationCode = verificationCode
-            self.password = password
+            let encrypt: String?
+            if let password = password {
+                encrypt = Encryptor.encrypt(string: password)
+            } else {
+                encrypt = nil
+            }
+            self.encryptedPassword = encrypt
             self.verificationToken = verificationToken
             self.invitationCode = invitationCode
         }

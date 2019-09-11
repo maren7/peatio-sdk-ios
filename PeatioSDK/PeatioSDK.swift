@@ -40,6 +40,14 @@ public final class PeatioSDK {
         httpExecutor.customerHeaders["X-DEVICE-ID"] = deviceID
     }
 
+    public static func setEncrypt(pubkey: String) {
+        Encryptor.register(pubKeyString: pubkey)
+    }
+
+    public static func encrypt(string: String) -> String {
+        return Encryptor.encrypt(string: string)
+    }
+
     // MARK: - HTTP Request
     public static func execute<O>(_ operation: O, deubg: Bool = false, completion: @escaping (Result<O.ResultData, PeatioSDKError>) -> Void) -> APIRequestTask where O: RequestOperation {
         let requireDebug: Bool

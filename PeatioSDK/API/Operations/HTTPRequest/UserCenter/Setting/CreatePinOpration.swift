@@ -16,7 +16,7 @@ public final class CreatePinOperation: RequestOperation {
     public var requestParams: [String: Any?]? {
         return ["two_fa_channel": param.twoFaChannel.rawValue,
                 "two_fa_code": param.twoFaCode,
-                "asset_pin": param.assetPin]
+                "encrypted_asset_pin": param.encryptedAssetPin]
     }
 }
 
@@ -24,14 +24,14 @@ public extension CreatePinOperation {
     struct Param: Equatable {
         public let twoFaChannel: TwoFAChannelType
         public let twoFaCode: String
-        public let assetPin: String
+        public let encryptedAssetPin: String
 
         public init(twoFaChannel: TwoFAChannelType,
                     twoFaCode: String,
                     assetPin: String) {
             self.twoFaCode = twoFaCode
             self.twoFaChannel = twoFaChannel
-            self.assetPin = assetPin
+            self.encryptedAssetPin = Encryptor.encrypt(string: assetPin)
         }
     }
 }

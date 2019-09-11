@@ -22,7 +22,7 @@ public final class LoginOperation: RequestOperation {
                 "two_fa_code": param.twoFaCode,
                 "nation_code": param.nationCode,
                 "identity": param.identity,
-                "password": param.password]
+                "encrypted_password": param.encryptedPassword]
     }
 }
 
@@ -32,7 +32,7 @@ public extension LoginOperation {
         public let twoFaCode: String?
         public let nationCode: String?
         public let identity: String
-        public let password: String
+        public let encryptedPassword: String
         public let hciCode: String
 
         public init(twoFaChannel: TwoFAChannelType?,
@@ -45,7 +45,7 @@ public extension LoginOperation {
             self.twoFaCode = twoFaCode
             self.nationCode = nationCode
             self.identity = identity
-            self.password = password
+            self.encryptedPassword = Encryptor.encrypt(string: password)
             self.hciCode = hciCode
         }
     }

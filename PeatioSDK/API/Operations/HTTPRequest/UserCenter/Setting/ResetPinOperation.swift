@@ -15,19 +15,19 @@ public final class ResetPinOperation: RequestOperation {
 
     public var requestParams: [String: Any?]? {
         return ["token": param.token,
-                "asset_pin": param.assetPin]
+                "encrypted_asset_pin": param.encryptedAssetPin]
     }
 }
 
 public extension ResetPinOperation {
     struct Param: Equatable {
         public let token: String
-        public let assetPin: String
+        public let encryptedAssetPin: String
 
         public init(token: String,
                     assetPin: String) {
             self.token = token
-            self.assetPin = assetPin
+            self.encryptedAssetPin = Encryptor.encrypt(string: assetPin)
         }
     }
 }
