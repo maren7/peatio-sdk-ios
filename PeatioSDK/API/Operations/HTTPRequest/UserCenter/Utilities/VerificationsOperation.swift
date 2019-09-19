@@ -13,6 +13,10 @@ public final class VerificationsOperation: RequestOperation {
         self.param = param
     }
 
+    public var additionalHeaders: [String : String?]? {
+        return ["x-validation": param.hciCode]
+    }
+
     public var requestParams: [String: Any?]? {
         return ["channel": param.channel.rawValue,
                 "type": param.type.rawValue,
@@ -31,19 +35,22 @@ public extension VerificationsOperation {
         public let nationCode: String?
         public let mobile: String?
         public let token: String?
+        public let hciCode: String?
 
         public init(channel: VerificationChannelType,
                     type: VerificationType,
                     email: String?,
                     nationCode: String?,
                     mobile: String?,
-                    token: String?) {
+                    token: String?,
+                    hciCode: String?) {
             self.channel = channel
             self.type = type
             self.email = email
             self.nationCode = nationCode
             self.mobile = mobile
             self.token = token
+            self.hciCode = hciCode
         }
     }
 }
