@@ -11,6 +11,7 @@
 		341453E522C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */; };
 		341453E722C628600087C98D /* KYCBizTokenOpration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E622C628600087C98D /* KYCBizTokenOpration.swift */; };
 		341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */; };
+		3423BD902331F876002AED6A /* OrderListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423BD8F2331F876002AED6A /* OrderListState.swift */; };
 		342BB91F22C782E8004427F8 /* KYCSubmitInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */; };
 		347154D6229252810041F48C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D5229252810041F48C /* Theme.swift */; };
 		347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D922929EE20041F48C /* UIColor+Hex.swift */; };
@@ -253,6 +254,7 @@
 		341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCUpdateBasicIdentityOperation.swift; sourceTree = "<group>"; };
 		341453E622C628600087C98D /* KYCBizTokenOpration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBizTokenOpration.swift; sourceTree = "<group>"; };
 		341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCFaceIDVerifyOperation.swift; sourceTree = "<group>"; };
+		3423BD8F2331F876002AED6A /* OrderListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListState.swift; sourceTree = "<group>"; };
 		342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCSubmitInfoOperation.swift; sourceTree = "<group>"; };
 		347154D5229252810041F48C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		347154D922929EE20041F48C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -838,6 +840,7 @@
 		487F158021DC96A1008CDB03 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3423BD8F2331F876002AED6A /* OrderListState.swift */,
 				48FFE85421C8EAE400EE85C0 /* PeatioToken.swift */,
 				484D467C21E6F88700E7C3E2 /* Address.swift */,
 				FDD37B9B21BA1C610027DEBD /* Page.swift */,
@@ -1597,6 +1600,7 @@
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
+				3423BD902331F876002AED6A /* OrderListState.swift in Sources */,
 				347BE966231E0CB90066C540 /* TransfersHistoryOperation.swift in Sources */,
 				341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */,
 				48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */,
