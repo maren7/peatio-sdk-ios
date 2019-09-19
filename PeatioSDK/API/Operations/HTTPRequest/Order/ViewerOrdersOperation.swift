@@ -23,6 +23,12 @@ public final class ViewerOrdersOperation: RequestOperation {
 }
 
 public extension ViewerOrdersOperation {
+    enum OrderListState: String, Codable {
+        case pending = "PENDING"
+        case closed = "CLOSED"
+        case filled = "FILLED"
+    }
+    
     struct Param: Equatable {
 
         public let assetPairUUID: String?
