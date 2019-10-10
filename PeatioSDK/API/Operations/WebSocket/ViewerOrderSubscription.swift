@@ -22,9 +22,13 @@ public struct ViewerOrderSubscription: SubscriptionOperation {
     }
 }
 
-extension ViewerOrderSubscription {
-    public struct Param: Equatable {
-        let assetPair: String
+public extension ViewerOrderSubscription {
+     struct Param: Equatable {
+        public let assetPair: String
+
+        public init(assetPair: String) {
+            self.assetPair = assetPair
+        }
     }
 }
 
