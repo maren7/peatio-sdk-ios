@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Peatio"
-  spec.version      = "0.9.10"
+  spec.version      = "0.9.11"
   spec.summary      = "PeatioSDK iOS version."
   spec.homepage     = "https://github.com/peatio/peatio-sdk-ios"
   spec.license      = "LICENSE"

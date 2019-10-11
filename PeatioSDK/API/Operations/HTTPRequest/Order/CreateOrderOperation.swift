@@ -1,7 +1,7 @@
 import Foundation
 
 public final class CreateOrderOperation: RequestOperation {
-    public typealias ResultData = JustOK
+    public typealias ResultData = Order
 
     public let path: String = "/api/xn/v1/me/orders"
 
