@@ -48,6 +48,10 @@ public final class PeatioSDK {
         return Encryptor.encrypt(string: string)
     }
 
+    public static func reset() {
+        apiClient.reset()
+    }
+
     // MARK: - HTTP Request
     public static func execute<O>(_ operation: O, deubg: Bool = false, completion: @escaping (Result<O.ResultData, PeatioSDKError>) -> Void) -> APIRequestTask where O: RequestOperation {
         let requireDebug: Bool

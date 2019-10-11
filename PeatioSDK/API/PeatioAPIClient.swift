@@ -26,6 +26,11 @@ class PeatioAPIClient {
         observer = InnerWebSocketObserver(endpoint: wsEndpoint)
         executor = RequestExecutor(endpoint: apiEndpoint)
     }
+
+    func reset() {
+        observer.reset()
+        executor.reset()
+    }
 }
 
 extension PeatioAPIClient {

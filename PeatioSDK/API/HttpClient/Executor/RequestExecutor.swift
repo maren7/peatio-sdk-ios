@@ -19,7 +19,7 @@ open class RequestExecutor: HTTPRequestExecutor {
     open var customerHeaders: [String: String] = [:]
     public let endpoint: URL
 
-    let session: URLSession
+    private var session: URLSession
 
     var token: PeatioToken? {
         didSet {
@@ -40,6 +40,14 @@ open class RequestExecutor: HTTPRequestExecutor {
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
         self.endpoint = endpoint
         self.session = URLSession(configuration: config)
+    }
+
+    func reset() {
+        session.invalidateAndCancel()
+
+        let config = URLSessionConfiguration.default
+        config.requestCachePolicy = .reloadIgnoringLocalCacheData
+        session = URLSession(configuration: config)
     }
 
     @discardableResult

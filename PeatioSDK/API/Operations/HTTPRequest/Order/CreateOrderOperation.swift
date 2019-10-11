@@ -30,21 +30,22 @@ public extension CreateOrderOperation {
 
         public let assetPairUUID: String
         public let amount: String
-        public let price: String
+        public let price: String?
         public let hidden: Bool
         public let side: OrderSide
         public let type: OrderType
 
         public init(assetPairUUID: String,
                     amount: String,
-                    price: String,
-                    side: OrderSide) {
+                    price: String?,
+                    side: OrderSide,
+                    type: OrderType) {
             self.assetPairUUID = assetPairUUID
             self.amount = amount
             self.price = price
             self.hidden = false
             self.side = side
-            self.type = .limit
+            self.type = type
         }
     }
 }
