@@ -51,6 +51,7 @@ private extension OrderPatch {
         self.price = wsObject.price
         self.amount = wsObject.amount
         self.filledAmount = wsObject.filledAmount
+        self.avgDealPrice = wsObject.avgDealPrice
         self.insertedAt = wsObject.createdAt.date
         self.side = wsObject.side == .ask ? .ask : .bid
 

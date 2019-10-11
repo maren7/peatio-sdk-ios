@@ -13,6 +13,7 @@ public struct OrderPatch {
     public let price: String
     public let amount: String
     public let filledAmount: String
+    public let avgDealPrice: String
     public let insertedAt: Date
     public let side: OrderSide
     public let state: State
@@ -22,6 +23,7 @@ public struct OrderPatch {
                 price: String,
                 amount: String,
                 filledAmount: String,
+                avgDealPrice: String,
                 insertedAt: Date,
                 side: OrderSide,
                 state: State) {
@@ -30,6 +32,7 @@ public struct OrderPatch {
         self.price = price
         self.amount = amount
         self.filledAmount = filledAmount
+        self.avgDealPrice = avgDealPrice
         self.insertedAt = insertedAt
         self.side = side
         self.state = state
