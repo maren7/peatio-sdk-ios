@@ -16,7 +16,7 @@ public struct AssetPair: Codable {
     }
 
     public struct AssetSupplement: Codable {
-        let scale: Int
+        public let scale: Int
     }
 
     public let uuid: String
