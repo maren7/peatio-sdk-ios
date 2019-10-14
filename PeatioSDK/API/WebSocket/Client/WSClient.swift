@@ -62,6 +62,8 @@ final class WSClient {
     /// - Parameter task: data observe task
     func add(task: InnerWebSocketTask) {
         scheduler.add(task: task)
+        guard status == .awaiting && networkEnabled else { return }
+        connect()
     }
 
     /// Change client's authentication status
