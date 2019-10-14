@@ -44,8 +44,16 @@ public final class PeatioSDK {
         Encryptor.register(pubKeyString: pubkey)
     }
 
+    public static func setWebSocketNetwork(enabled: Bool) {
+        apiClient.observer.wsClient.networkEnabled = enabled
+    }
+
     public static func encrypt(string: String) -> String {
         return Encryptor.encrypt(string: string)
+    }
+
+    public static func observeStatus(handler: ((WebSocketStatus) -> Void)?) {
+        apiClient.observeStatus(handler: handler)
     }
 
     public static func reset() {

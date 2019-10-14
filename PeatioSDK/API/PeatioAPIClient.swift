@@ -27,6 +27,10 @@ class PeatioAPIClient {
         executor = RequestExecutor(endpoint: apiEndpoint)
     }
 
+    func observeStatus(handler: ((WebSocketStatus) -> Void)?) {
+        observer.observeStatus(handler: handler)
+    }
+
     func reset() {
         observer.reset()
         executor.reset()

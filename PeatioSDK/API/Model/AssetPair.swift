@@ -8,9 +8,15 @@ public struct AssetPair: Codable {
         case baseScale
         case quoteScale
         case baseAssetUUID = "baseAssetUuid"
+        case baseAssetSupplement = "baseAsset"
+        case quoteAssetSupplement = "quoteAsset"
         case quoteAssetUUID = "quoteAssetUuid"
         case minQuoteValue
         case ticker
+    }
+
+    public struct AssetSupplement: Codable {
+        let scale: Int
     }
 
     public let uuid: String
@@ -18,6 +24,8 @@ public struct AssetPair: Codable {
     public let baseScale: Int
     public let quoteScale: Int
     public let baseAssetUUID: String
+    public let baseAssetSupplement: AssetSupplement
+    public let quoteAssetSupplement: AssetSupplement
     public let quoteAssetUUID: String
     public let minQuoteValue: String
     public var ticker: Ticker

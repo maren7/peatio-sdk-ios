@@ -29,8 +29,10 @@ class WSClientTests: XCTestCase {
 
     func testOnConnect() {
         let connectFlag = XCTestExpectation(description: "connected")
-        client.onConnect = {
-            connectFlag.fulfill()
+        client.onStatus = { status in
+            if status == .connected {
+                connectFlag.fulfill()
+            }
         }
 
         client.connect()
@@ -42,12 +44,14 @@ class WSClientTests: XCTestCase {
         let connectFlag = XCTestExpectation(description: "connected")
         let disConnectFlag = XCTestExpectation(description: "disConnected")
 
-        client.onConnect = {
-            connectFlag.fulfill()
-        }
+        client.onStatus = { status in
+            if status == .connected {
+                connectFlag.fulfill()
+            }
 
-        client.onDisConnect = { _ in
-            disConnectFlag.fulfill()
+            if status == .awaiting {
+                disConnectFlag.fulfill()
+            }
         }
 
         client.connect()

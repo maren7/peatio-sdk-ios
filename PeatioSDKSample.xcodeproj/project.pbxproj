@@ -155,6 +155,7 @@
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
 		48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */; };
 		48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5499922AF8D090062E28F /* WebSocketStatus.swift */; };
+		48F9D9B5235460C400492A34 /* WebSocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5499922AF8D090062E28F /* WebSocketStatus.swift */; };
 		48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */; };
 		48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */; };
 		48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */; };
@@ -1645,6 +1646,7 @@
 				486E8C28228411A400F78DC8 /* Cancellable.swift in Sources */,
 				485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */,
 				486E8C2B2284121C00F78DC8 /* ISO8601DateFormatter+iso8601.swift in Sources */,
+				48F9D9B5235460C400492A34 /* WebSocketStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1861,7 +1863,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.13;
+				MARKETING_VERSION = 0.9.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1894,7 +1896,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.13;
+				MARKETING_VERSION = 0.9.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1911,6 +1913,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56JA33DT6;
 				INFOPLIST_FILE = PeatioSDKTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1932,6 +1935,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56JA33DT6;
 				INFOPLIST_FILE = PeatioSDKTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (

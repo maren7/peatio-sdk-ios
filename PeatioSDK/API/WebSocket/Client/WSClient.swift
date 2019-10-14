@@ -17,11 +17,10 @@ final class WSClient {
 
     /// manually set network enabled
     /// if the network enabled from falst to true, it would try to connect if necessarry
-    var networkEnabled: Bool = true {
+    var networkEnabled: Bool = false {
         didSet {
-            if networkEnabled && !oldValue {
-                connect()
-            }
+            guard networkEnabled else { return }
+            connect()
         }
     }
 
@@ -76,7 +75,7 @@ final class WSClient {
     /// manually connect the transport
     /// It would cancel the connect retry if it has
     func connect() {
-        guard !dataTransport.isConnected else { return }
+        guard !dataTransport.isConnected && networkEnabled else { return }
         status = .connecting
         retryItem?.cancel()
         dataTransport.connect()
