@@ -1,3 +1,5 @@
 import Foundation
 
-protocol PageDecodable: Decodable {}
+protocol PageDecodable: Decodable {
+    var nextToken: String? { get set }
+}

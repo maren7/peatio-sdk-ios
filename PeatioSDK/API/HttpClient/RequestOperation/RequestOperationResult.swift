@@ -5,7 +5,6 @@ struct RequestOperationResult<T: Decodable> {
     let message: String
     var data: T?
     var decodeDataError: Error?
-    let pageToken: String?
     
     var isSuccessful: Bool {
         return isSucceedCode(code)
@@ -33,7 +32,6 @@ extension RequestOperationResult: Decodable {
         if pageTokenValue == "" {
             pageTokenValue = nil
         }
-        self.pageToken = pageTokenValue
         
         guard isSucceedCode(code) else {
             self.data = nil
@@ -41,7 +39,8 @@ extension RequestOperationResult: Decodable {
         }
         
         if let pageType = T.self as? PageDecodable.Type {
-            let val = try pageType.init(from: decoder)
+            var val = try pageType.init(from: decoder)
+            val.nextToken = pageTokenValue
             self.data = val as? T
         } else {
             do {
@@ -61,11 +60,6 @@ extension RequestOperationResult where T == JustOK {
         let code = try container.decode(Int64.self, forKey: .code)
         self.code = code
         self.message = (try? container.decode(String.self, forKey: .message)) ?? ""
-        var pageTokenValue = (try? container.decode(Optional<String>.self, forKey: .pageToken)) ?? nil
-        if pageTokenValue == "" {
-            pageTokenValue = nil
-        }
-        self.pageToken = pageTokenValue
         self.data = code == 0 ? JustOK() : nil
     }
 }
