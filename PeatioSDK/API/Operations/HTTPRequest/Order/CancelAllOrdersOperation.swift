@@ -3,13 +3,14 @@ import Foundation
 public final class CancelAllOrdersOperation: RequestOperation {
     public typealias ResultData = BatchCancelOrderResult
 
-    public lazy private(set) var path: String = "/api/xn/v1/me/orders/cancel"
+    public var path: String {
+        guard let assetPairUUID = param.assetPairUUID, !assetPairUUID.isEmpty else {
+            return "/api/xn/v1/me/orders/cancel"
+        }
+        return "/api/xn/v1/me/orders/cancel?asset_pair_uuid=\(assetPairUUID)"
+    }
 
     public let httpMethod: HTTPMethod = .post
-
-    public var requestParams: [String : Any?]? {
-        return ["asset_pair_uuid": param.assetPairUUID]
-    }
 
     public let param: Param
 
