@@ -11,8 +11,11 @@ public final class RequestGenerator {
         if let absoluteURL = operation.absoluteURL {
             requestURL = absoluteURL
         } else {
-            guard let baseURL = baseURL else { throw BuildError.invalidURL }
-            requestURL = baseURL.appendingPathComponent(operation.path)
+            guard let baseURL = baseURL,
+                let decodedURLString = baseURL.appendingPathComponent(operation.path).absoluteString.removingPercentEncoding,
+                let decodeURL = URL(string: decodedURLString)
+            else { throw BuildError.invalidURL }
+            requestURL = decodeURL
         }
 
         var urlRequest = URLRequest(url: requestURL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: operation.timeoutInterval)
