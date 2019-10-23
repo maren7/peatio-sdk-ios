@@ -54,6 +54,11 @@
 		4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01B21F1E48300775AC9 /* PriceItem.swift */; };
 		4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */; };
 		481CFFA52295311B000DA86F /* Peatio.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 481CFFA42295311B000DA86F /* Peatio.podspec */; };
+		483E297323603CFB0084181B /* WithdrawalsQuotaOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297223603CFB0084181B /* WithdrawalsQuotaOperation.swift */; };
+		483E297523603FE10084181B /* KYCQuotaRuleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297423603FE10084181B /* KYCQuotaRuleOperation.swift */; };
+		483E2977236041DB0084181B /* QuotaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E2976236041DB0084181B /* QuotaRule.swift */; };
+		483E297A23604BC20084181B /* ViewerVipInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297923604BC20084181B /* ViewerVipInfoOperation.swift */; };
+		483E297C23604CAA0084181B /* VIPInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297B23604CAA0084181B /* VIPInfo.swift */; };
 		484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */; };
 		484D467D21E6F88700E7C3E2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467C21E6F88700E7C3E2 /* Address.swift */; };
 		484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */; };
@@ -298,6 +303,11 @@
 		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
 		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
 		481CFFA42295311B000DA86F /* Peatio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Peatio.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		483E297223603CFB0084181B /* WithdrawalsQuotaOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalsQuotaOperation.swift; sourceTree = "<group>"; };
+		483E297423603FE10084181B /* KYCQuotaRuleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCQuotaRuleOperation.swift; sourceTree = "<group>"; };
+		483E2976236041DB0084181B /* QuotaRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaRule.swift; sourceTree = "<group>"; };
+		483E297923604BC20084181B /* ViewerVipInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerVipInfoOperation.swift; sourceTree = "<group>"; };
+		483E297B23604CAA0084181B /* VIPInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPInfo.swift; sourceTree = "<group>"; };
 		484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerAccountSubscription.swift; sourceTree = "<group>"; };
 		484D467C21E6F88700E7C3E2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAddressOperation.swift; sourceTree = "<group>"; };
@@ -600,6 +610,7 @@
 		34A8E9DB228AC876004311CA /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				483E2978236049850084181B /* VIP */,
 				347BE962231E0C2C0066C540 /* OTC */,
 				347BE979231E3C3C0066C540 /* Account */,
 				4889154622FA766900186C9E /* AdvancedKYC */,
@@ -692,6 +703,14 @@
 			path = Whitelist;
 			sourceTree = "<group>";
 		};
+		483E2978236049850084181B /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				483E297923604BC20084181B /* ViewerVipInfoOperation.swift */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
 		4843CD3321D729A4003352A3 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +790,7 @@
 				484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */,
 				484D469421E75E0D00E7C3E2 /* ViewerWithdrawalsOperation.swift */,
 				484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */,
+				483E297223603CFB0084181B /* WithdrawalsQuotaOperation.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -869,6 +889,8 @@
 				48AF8005227FDEFA00A848A6 /* InspectAddressResult.swift */,
 				4864D45F2320BD0500AC3CBA /* Payment.swift */,
 				4864D4612322097D00AC3CBA /* Transfer.swift */,
+				483E2976236041DB0084181B /* QuotaRule.swift */,
+				483E297B23604CAA0084181B /* VIPInfo.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -969,6 +991,7 @@
 				341453E622C628600087C98D /* KYCBizTokenOpration.swift */,
 				341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */,
 				342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */,
+				483E297423603FE10084181B /* KYCQuotaRuleOperation.swift */,
 			);
 			path = KYC;
 			sourceTree = "<group>";
@@ -1464,8 +1487,10 @@
 				347BE968231E0CC70066C540 /* PaymentListOperation.swift in Sources */,
 				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
 				484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */,
+				483E297523603FE10084181B /* KYCQuotaRuleOperation.swift in Sources */,
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
 				48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */,
+				483E297323603CFB0084181B /* WithdrawalsQuotaOperation.swift in Sources */,
 				FDD372B421B4D0E10027DEBD /* PeatioSDKError.swift in Sources */,
 				487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */,
 				487F158D21DCBFE6008CDB03 /* WebSocketError.swift in Sources */,
@@ -1491,6 +1516,7 @@
 				FDD37BD821BA6B360027DEBD /* Order.swift in Sources */,
 				484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */,
 				484D467D21E6F88700E7C3E2 /* Address.swift in Sources */,
+				483E297A23604BC20084181B /* ViewerVipInfoOperation.swift in Sources */,
 				487F158321DC980A008CDB03 /* String+Base64.swift in Sources */,
 				347BE976231E240F0066C540 /* SpotAccountsOperation.swift in Sources */,
 				FDCC082D21CA487C009105DD /* TradePatch.swift in Sources */,
@@ -1499,6 +1525,7 @@
 				4889154822FA768800186C9E /* CreateAdvancedKYCOperation.swift in Sources */,
 				487C7E0821E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift in Sources */,
 				FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */,
+				483E2977236041DB0084181B /* QuotaRule.swift in Sources */,
 				484D469321E7534500E7C3E2 /* DepositItem.swift in Sources */,
 				48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */,
 				347BE96E231E0CFB0066C540 /* PaymentDetailOperation.swift in Sources */,
@@ -1542,6 +1569,7 @@
 				FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */,
 				484D46A521EC690600E7C3E2 /* Customer.swift in Sources */,
 				34A8E9F2228AD90B004311CA /* LoginOpration.swift in Sources */,
+				483E297C23604CAA0084181B /* VIPInfo.swift in Sources */,
 				487598D621E0D2E700EB045D /* WebSocketObserver.swift in Sources */,
 				484D468321E7296800E7C3E2 /* JustOK.swift in Sources */,
 				48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */,
@@ -1867,7 +1895,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.20;
+				MARKETING_VERSION = 0.9.21;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1900,7 +1928,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.20;
+				MARKETING_VERSION = 0.9.21;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

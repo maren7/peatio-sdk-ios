@@ -1,11 +1,3 @@
-//
-//  KYCSubmitInfoOperation.swift
-//  PeatioSDK
-//
-//  Created by caoyuan on 2019/6/29.
-//  Copyright © 2019 Peatio Inc. All rights reserved.
-//
-
 import Foundation
 
 public final class KYCSubmitInfoOperation: RequestOperation {

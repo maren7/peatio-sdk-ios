@@ -1,11 +1,3 @@
-//
-//  KYCUpdateBasicIdentityOperation.swift
-//  PeatioSDK
-//
-//  Created by caoyuan on 2019/6/28.
-//  Copyright © 2019 Peatio Inc. All rights reserved.
-//
-
 import Foundation
 
 public final class KYCUpdateBasicIdentityOperation: RequestOperation {
