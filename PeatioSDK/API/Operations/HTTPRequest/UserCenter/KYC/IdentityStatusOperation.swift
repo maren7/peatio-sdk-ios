@@ -53,6 +53,7 @@ public extension IdentityStatusOperation {
         public let state: KycState
         public let faceidTryAgain: Bool
         public let reasons: [String]
+        public let isInvalid: Bool
 
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -67,6 +68,7 @@ public extension IdentityStatusOperation {
             self.state = try container.decode(KycState.self, forKey: .state)
             self.faceidTryAgain = try container.decode(Bool.self, forKey: .faceidTryAgain)
             self.reasons = try container.decode([String].self, forKey: .reasons)
+            self.isInvalid = try container.decode(Bool.self, forKey: .isInvalid)
         }
     }
 }

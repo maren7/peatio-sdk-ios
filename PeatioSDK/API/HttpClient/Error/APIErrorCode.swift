@@ -29,6 +29,7 @@ public extension APIError {
         case hciValidationTokenInvalid = 40309
         case otcUserInitialUnfinishedOrForbidden = 40315
         case balanceNotEnough = 42213
+        case paymentCannotDeleted = 400215
     }
 
     static var sessionInvalidCodes: Set<APIError.Code> {

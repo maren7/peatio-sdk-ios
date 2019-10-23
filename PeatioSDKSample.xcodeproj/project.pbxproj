@@ -11,6 +11,7 @@
 		341453E522C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */; };
 		341453E722C628600087C98D /* KYCBizTokenOpration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E622C628600087C98D /* KYCBizTokenOpration.swift */; };
 		341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */; };
+		341DD8CC235DD2A4004E1A2F /* DeletePaymentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341DD8CB235DD2A4004E1A2F /* DeletePaymentOperation.swift */; };
 		342BB91F22C782E8004427F8 /* KYCSubmitInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */; };
 		347154D6229252810041F48C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D5229252810041F48C /* Theme.swift */; };
 		347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347154D922929EE20041F48C /* UIColor+Hex.swift */; };
@@ -254,6 +255,7 @@
 		341453E422C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCUpdateBasicIdentityOperation.swift; sourceTree = "<group>"; };
 		341453E622C628600087C98D /* KYCBizTokenOpration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCBizTokenOpration.swift; sourceTree = "<group>"; };
 		341453E822C6296E0087C98D /* KYCFaceIDVerifyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCFaceIDVerifyOperation.swift; sourceTree = "<group>"; };
+		341DD8CB235DD2A4004E1A2F /* DeletePaymentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletePaymentOperation.swift; sourceTree = "<group>"; };
 		342BB91E22C782E8004427F8 /* KYCSubmitInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCSubmitInfoOperation.swift; sourceTree = "<group>"; };
 		347154D5229252810041F48C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		347154D922929EE20041F48C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -576,6 +578,7 @@
 				347BE965231E0CB90066C540 /* TransfersHistoryOperation.swift */,
 				347BE967231E0CC70066C540 /* PaymentListOperation.swift */,
 				347BE969231E0CD60066C540 /* CreatePaymentOperation.swift */,
+				341DD8CB235DD2A4004E1A2F /* DeletePaymentOperation.swift */,
 				347BE96B231E0CE90066C540 /* UpdatePaymentOperation.swift */,
 				347BE96D231E0CFB0066C540 /* PaymentDetailOperation.swift */,
 				347BE96F231E0D4B0066C540 /* SwitchPaymentVisibledOperation.swift */,
@@ -1563,6 +1566,7 @@
 				484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */,
 				487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */,
 				487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */,
+				341DD8CC235DD2A4004E1A2F /* DeletePaymentOperation.swift in Sources */,
 				48FFE84F21C8EAB300EE85C0 /* websocket.pb.swift in Sources */,
 				34A8E9E3228ACFAA004311CA /* RegisterOperation.swift in Sources */,
 				487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */,
@@ -1863,7 +1867,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.19;
+				MARKETING_VERSION = 0.9.20;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1896,7 +1900,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.19;
+				MARKETING_VERSION = 0.9.20;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
