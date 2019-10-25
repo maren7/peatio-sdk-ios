@@ -59,6 +59,8 @@
 		483E2977236041DB0084181B /* QuotaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E2976236041DB0084181B /* QuotaRule.swift */; };
 		483E297A23604BC20084181B /* ViewerVipInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297923604BC20084181B /* ViewerVipInfoOperation.swift */; };
 		483E297C23604CAA0084181B /* VIPInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297B23604CAA0084181B /* VIPInfo.swift */; };
+		483E297E2362D3130084181B /* TopAssetPairsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297D2362D3130084181B /* TopAssetPairsOperation.swift */; };
+		483E29802362D4D70084181B /* BatchAssetPairOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E297F2362D4D70084181B /* BatchAssetPairOperation.swift */; };
 		484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */; };
 		484D467D21E6F88700E7C3E2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467C21E6F88700E7C3E2 /* Address.swift */; };
 		484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */; };
@@ -74,7 +76,7 @@
 		484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */; };
 		484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */; };
 		484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469C21E8892100E7C3E2 /* APIErrorCode.swift */; };
-		484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */; };
+		484D469F21E8B7CF00E7C3E2 /* DecodingError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469E21E8B7CF00E7C3E2 /* DecodingError+Extension.swift */; };
 		484D46A121EC3F9800E7C3E2 /* Decodable+Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */; };
 		484D46A521EC690600E7C3E2 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A421EC690600E7C3E2 /* Customer.swift */; };
 		485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */; };
@@ -308,6 +310,8 @@
 		483E2976236041DB0084181B /* QuotaRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaRule.swift; sourceTree = "<group>"; };
 		483E297923604BC20084181B /* ViewerVipInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerVipInfoOperation.swift; sourceTree = "<group>"; };
 		483E297B23604CAA0084181B /* VIPInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPInfo.swift; sourceTree = "<group>"; };
+		483E297D2362D3130084181B /* TopAssetPairsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAssetPairsOperation.swift; sourceTree = "<group>"; };
+		483E297F2362D4D70084181B /* BatchAssetPairOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchAssetPairOperation.swift; sourceTree = "<group>"; };
 		484D467A21E6F87000E7C3E2 /* ViewerAccountSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerAccountSubscription.swift; sourceTree = "<group>"; };
 		484D467C21E6F88700E7C3E2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		484D467E21E6F8EE00E7C3E2 /* DepositAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAddressOperation.swift; sourceTree = "<group>"; };
@@ -323,7 +327,7 @@
 		484D469621E75FD600E7C3E2 /* ViewerDepositsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerDepositsOperation.swift; sourceTree = "<group>"; };
 		484D469821E85FE900E7C3E2 /* CreateWithdrawalOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWithdrawalOperation.swift; sourceTree = "<group>"; };
 		484D469C21E8892100E7C3E2 /* APIErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorCode.swift; sourceTree = "<group>"; };
-		484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError + Extension.swift"; sourceTree = "<group>"; };
+		484D469E21E8B7CF00E7C3E2 /* DecodingError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError+Extension.swift"; sourceTree = "<group>"; };
 		484D46A021EC3F9800E7C3E2 /* Decodable+Overlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Overlap.swift"; sourceTree = "<group>"; };
 		484D46A421EC690600E7C3E2 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSchedulerTests.swift; sourceTree = "<group>"; };
@@ -554,6 +558,7 @@
 		347154EF2292D0FC0041F48C /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				483E29812362D5E70084181B /* Error */,
 				347154E82292D01B0041F48C /* UIColor */,
 				347154E92292D0430041F48C /* UIFont */,
 				347154EC2292D09E0041F48C /* String */,
@@ -711,13 +716,20 @@
 			path = VIP;
 			sourceTree = "<group>";
 		};
+		483E29812362D5E70084181B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				484D469E21E8B7CF00E7C3E2 /* DecodingError+Extension.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		4843CD3321D729A4003352A3 /* Error */ = {
 			isa = PBXGroup;
 			children = (
 				FDD372B321B4D0E10027DEBD /* PeatioSDKError.swift */,
 				486416B721D37E3B003853BB /* APIError.swift */,
 				484D469C21E8892100E7C3E2 /* APIErrorCode.swift */,
-				484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -745,6 +757,8 @@
 				487C7E0721E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift */,
 				487C7E0F21E5FE4000BC8D8C /* AddFavoriteAssetPairOperation.swift */,
 				487C7E1121E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift */,
+				483E297D2362D3130084181B /* TopAssetPairsOperation.swift */,
+				483E297F2362D4D70084181B /* BatchAssetPairOperation.swift */,
 			);
 			path = AssetPair;
 			sourceTree = "<group>";
@@ -1491,6 +1505,7 @@
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
 				48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */,
 				483E297323603CFB0084181B /* WithdrawalsQuotaOperation.swift in Sources */,
+				483E29802362D4D70084181B /* BatchAssetPairOperation.swift in Sources */,
 				FDD372B421B4D0E10027DEBD /* PeatioSDKError.swift in Sources */,
 				487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */,
 				487F158D21DCBFE6008CDB03 /* WebSocketError.swift in Sources */,
@@ -1591,7 +1606,7 @@
 				48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */,
 				FDD37B9A21BA105A0027DEBD /* URLRequest+Curl.swift in Sources */,
 				347154DC22929F800041F48C /* UIFont+Custom.swift in Sources */,
-				484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */,
+				484D469F21E8B7CF00E7C3E2 /* DecodingError+Extension.swift in Sources */,
 				487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */,
 				487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */,
 				341DD8CC235DD2A4004E1A2F /* DeletePaymentOperation.swift in Sources */,
@@ -1609,6 +1624,7 @@
 				487F159021DCE404008CDB03 /* TickersSubscription.swift in Sources */,
 				347154DA22929EE20041F48C /* UIColor+Hex.swift in Sources */,
 				486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */,
+				483E297E2362D3130084181B /* TopAssetPairsOperation.swift in Sources */,
 				FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */,
 				341453E522C6235F0087C98D /* KYCUpdateBasicIdentityOperation.swift in Sources */,
 				34A8E9FD228ADF49004311CA /* BindEmailOperation.swift in Sources */,
@@ -1895,7 +1911,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.21;
+				MARKETING_VERSION = 0.9.22;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1928,7 +1944,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.21;
+				MARKETING_VERSION = 0.9.22;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
