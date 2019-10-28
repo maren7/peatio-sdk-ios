@@ -29,8 +29,8 @@ public extension WithdrawalsQuotaOperation {
     }
 
     struct QuotaInfo: Codable {
-        public let total: String
-        public let used: String
-        public let remain: String
+        public let total: String?
+        public let used: String?
+        public let remain: String?
     }
 }
