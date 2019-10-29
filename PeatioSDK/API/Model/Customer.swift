@@ -13,4 +13,5 @@ public struct Customer: Codable {
     public let isOtpEnabled: Bool
     public let isTradeEnabled: Bool
     public let kycState: KycState
+    public let isInvalid: Bool
 }
