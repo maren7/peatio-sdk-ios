@@ -30,6 +30,7 @@ public extension APIError {
         case otcUserInitialUnfinishedOrForbidden = 40315
         case balanceNotEnough = 42213
         case paymentCannotDeleted = 400215
+        case paymentIsBeingUsed = 40316
     }
 
     static var sessionInvalidCodes: Set<APIError.Code> {
