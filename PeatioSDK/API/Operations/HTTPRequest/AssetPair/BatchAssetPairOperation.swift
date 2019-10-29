@@ -9,7 +9,7 @@ public final class BatchAssetPairOperation: RequestOperation {
 
     public var requestParams: [String : Any?]? {
         return [
-                   "asset_pair_uuids": param.assetPairUUIDs
+            "asset_pair_uuids": param.assetPairUUIDs?.joined(separator: ",")
                ]
     }
 
