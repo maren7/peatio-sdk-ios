@@ -1,7 +1,7 @@
 import Foundation
 
 public final class BatchAssetPairOperation: RequestOperation {
-    public typealias ResultData = AssetPair
+    public typealias ResultData = [AssetPair]
 
     public lazy private(set) var path: String = "/api/xn/v1/asset_pairs"
 
