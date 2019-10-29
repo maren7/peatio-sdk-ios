@@ -1,7 +1,7 @@
 import Foundation
 
 public final class ViewerVipInfoOperation: RequestOperation {
-    public typealias ResultData = [QuotaRule]
+    public typealias ResultData = [VIPInfo]
 
     public var path: String = "/api/uc/v2/vips"
 
