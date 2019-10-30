@@ -1,7 +1,7 @@
 import Foundation
 
-public final class TopAssetPairsOperation: RequestOperation {
-    public typealias ResultData = [AssetPair]
+public final class TopAssetOperation: RequestOperation {
+    public typealias ResultData = TopAssetExchangeInfo
 
     public let path: String = "/api/xn/v1/top_assets"
 
@@ -12,7 +12,7 @@ public final class TopAssetPairsOperation: RequestOperation {
     }
 }
 
-public extension TopAssetPairsOperation {
+public extension TopAssetOperation {
     struct Param: Equatable {
         public init() { }
     }
