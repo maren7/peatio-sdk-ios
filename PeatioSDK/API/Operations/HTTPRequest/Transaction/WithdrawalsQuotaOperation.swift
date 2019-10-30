@@ -31,6 +31,6 @@ public extension WithdrawalsQuotaOperation {
     struct QuotaInfo: Codable {
         public let total: String?
         public let used: String?
-        public let c: String?
+        public let remaining: String?
     }
 }
