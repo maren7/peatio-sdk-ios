@@ -6,10 +6,11 @@ public struct VIPInfo: Codable {
     public let volume: String
     public let makerFeeRate: Decimal
     public let takerFeeRate: Decimal
-    public let quote: String
+    public let quota: String
     public let quotaSymbol: String
     public let isHighestQuota: Bool
-    public let isCurrentValue: Bool
+
+    public let isCurrentLevel: Bool
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -34,9 +35,9 @@ public struct VIPInfo: Codable {
         }
         self.takerFeeRate = takerFee
 
-        self.quote = try container.decode(String.self, forKey: .quote)
+        self.quota = try container.decode(String.self, forKey: .quota)
         self.quotaSymbol = try container.decode(String.self, forKey: .quotaSymbol)
-        self.isCurrentValue = try container.decode(Bool.self, forKey: .isCurrentValue)
+        self.isCurrentLevel = try container.decode(Bool.self, forKey: .isCurrentLevel)
         self.isHighestQuota = try container.decode(Bool.self, forKey: .isHighestQuota)
     }
 }
