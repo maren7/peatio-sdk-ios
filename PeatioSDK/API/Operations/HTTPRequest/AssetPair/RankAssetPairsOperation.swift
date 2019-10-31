@@ -7,6 +7,12 @@ public final class RankAssetPairsOperation: RequestOperation {
 
     public let param: Param
 
+    public var requestParams: [String : Any?]? {
+        return [
+            "limit": param.limit
+        ]
+    }
+
     public init(param: Param) {
         self.param = param
     }
@@ -14,6 +20,10 @@ public final class RankAssetPairsOperation: RequestOperation {
 
 public extension RankAssetPairsOperation {
     struct Param: Equatable {
-        public init() { }
+        public let limit: Int
+
+        public init(limit: Int) {
+            self.limit = limit
+        }
     }
 }
