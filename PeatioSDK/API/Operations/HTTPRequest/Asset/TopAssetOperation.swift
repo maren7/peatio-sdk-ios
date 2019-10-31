@@ -1,7 +1,7 @@
 import Foundation
 
 public final class TopAssetOperation: RequestOperation {
-    public typealias ResultData = TopAssetExchangeInfo
+    public typealias ResultData = [TopAssetExchangeInfo]
 
     public let path: String = "/api/xn/v1/top_assets"
 
