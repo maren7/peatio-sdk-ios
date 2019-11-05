@@ -67,7 +67,7 @@ open class RequestExecutor: HTTPRequestExecutor {
                     case .success(let value):
                         resultInfo = "\n\(value)\n\n"
                     case .failure(let error):
-                        resultInfo = "\n\(error.localizedDescription)\n\n\t"
+                        resultInfo = "\n\(formateSDKError(error, detail: true))\n\n\t"
                     }
                     let tail = "\t=========== Execution Finished ================\n\t"
                     Log.debug(header + subT1 + requestInfo + subT2 + resultInfo + tail)
