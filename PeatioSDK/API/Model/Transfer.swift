@@ -3,8 +3,10 @@ import Foundation
 public struct Transfer: Codable {
 
     public enum Direction: String, Codable {
-        case toOTC = "EXCHANGE_TO_OTC"
-        case toExchange = "OTC_TO_EXCHANGE"
+        case exchangeToOTC = "EXCHANGE_TO_OTC"
+        case OTCToExchange = "OTC_TO_EXCHANGE"
+        case exchangeToCoffer = "EXCHANGE_TO_COFFER"
+        case cofferToExchange = "COFFER_TO_EXCHANGE"
     }
 
     public enum State: String, Codable {

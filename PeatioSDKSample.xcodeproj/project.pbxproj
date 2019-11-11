@@ -51,6 +51,16 @@
 		34A8EA23228BED7D004311CA /* CreateOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */; };
 		34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */; };
 		34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA28228BF24D004311CA /* VerificationType.swift */; };
+		34D6E37A237000D1005480BD /* InvestmentsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E379237000D1005480BD /* InvestmentsOperation.swift */; };
+		34D6E37C237000F1005480BD /* InvestmentDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E37B237000F1005480BD /* InvestmentDetailOperation.swift */; };
+		34D6E37E23700101005480BD /* UpdateInvestmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E37D23700101005480BD /* UpdateInvestmentOperation.swift */; };
+		34D6E3822370013F005480BD /* CancelInvestmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E3812370013F005480BD /* CancelInvestmentOperation.swift */; };
+		34D6E38423700165005480BD /* CancelInvestmentDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E38323700165005480BD /* CancelInvestmentDetailOperation.swift */; };
+		34D6E386237001B5005480BD /* ProfitsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E385237001B5005480BD /* ProfitsOperation.swift */; };
+		34D6E38823700F7F005480BD /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E38723700F7F005480BD /* Investment.swift */; };
+		34D6E38A2370156B005480BD /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E3892370156B005480BD /* Pagination.swift */; };
+		34EA5EF9237429AB00D40C4F /* CofferAccountsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EA5EF8237429AB00D40C4F /* CofferAccountsOperation.swift */; };
+		34EA5EFB23742A7600D40C4F /* CofferAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EA5EFA23742A7600D40C4F /* CofferAccount.swift */; };
 		4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01B21F1E48300775AC9 /* PriceItem.swift */; };
 		4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */; };
 		481CFFA52295311B000DA86F /* Peatio.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 481CFFA42295311B000DA86F /* Peatio.podspec */; };
@@ -163,6 +173,7 @@
 		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
 		48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */; };
+		48EE3A0C23791703001296A1 /* AccountSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EE3A0B23791703001296A1 /* AccountSummary.swift */; };
 		48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5499922AF8D090062E28F /* WebSocketStatus.swift */; };
 		48F9D9B5235460C400492A34 /* WebSocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5499922AF8D090062E28F /* WebSocketStatus.swift */; };
 		48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */; };
@@ -303,6 +314,16 @@
 		34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOtpOperation.swift; sourceTree = "<group>"; };
 		34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateOtpOperation.swift; sourceTree = "<group>"; };
 		34A8EA28228BF24D004311CA /* VerificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationType.swift; sourceTree = "<group>"; };
+		34D6E379237000D1005480BD /* InvestmentsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentsOperation.swift; sourceTree = "<group>"; };
+		34D6E37B237000F1005480BD /* InvestmentDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDetailOperation.swift; sourceTree = "<group>"; };
+		34D6E37D23700101005480BD /* UpdateInvestmentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInvestmentOperation.swift; sourceTree = "<group>"; };
+		34D6E3812370013F005480BD /* CancelInvestmentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelInvestmentOperation.swift; sourceTree = "<group>"; };
+		34D6E38323700165005480BD /* CancelInvestmentDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelInvestmentDetailOperation.swift; sourceTree = "<group>"; };
+		34D6E385237001B5005480BD /* ProfitsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitsOperation.swift; sourceTree = "<group>"; };
+		34D6E38723700F7F005480BD /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
+		34D6E3892370156B005480BD /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		34EA5EF8237429AB00D40C4F /* CofferAccountsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofferAccountsOperation.swift; sourceTree = "<group>"; };
+		34EA5EFA23742A7600D40C4F /* CofferAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofferAccount.swift; sourceTree = "<group>"; };
 		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
 		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
 		481CFFA42295311B000DA86F /* Peatio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Peatio.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -392,6 +413,7 @@
 		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
 		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
 		48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouseElderUserOperation.swift; sourceTree = "<group>"; };
+		48EE3A0B23791703001296A1 /* AccountSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummary.swift; sourceTree = "<group>"; };
 		48F5499922AF8D090062E28F /* WebSocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketStatus.swift; sourceTree = "<group>"; };
 		48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
 		48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
@@ -610,6 +632,7 @@
 				347BE973231E231F0066C540 /* OTCAccountsOperation.swift */,
 				347BE975231E240F0066C540 /* SpotAccountsOperation.swift */,
 				347BE977231E32B30066C540 /* AccountsSummaryOperation.swift */,
+				34EA5EF8237429AB00D40C4F /* CofferAccountsOperation.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -685,6 +708,19 @@
 				34A8EA28228BF24D004311CA /* VerificationType.swift */,
 			);
 			name = Verification;
+			sourceTree = "<group>";
+		};
+		34D6E3762370009B005480BD /* Coffer */ = {
+			isa = PBXGroup;
+			children = (
+				34D6E379237000D1005480BD /* InvestmentsOperation.swift */,
+				34D6E37B237000F1005480BD /* InvestmentDetailOperation.swift */,
+				34D6E37D23700101005480BD /* UpdateInvestmentOperation.swift */,
+				34D6E3812370013F005480BD /* CancelInvestmentOperation.swift */,
+				34D6E38323700165005480BD /* CancelInvestmentDetailOperation.swift */,
+				34D6E385237001B5005480BD /* ProfitsOperation.swift */,
+			);
+			path = Coffer;
 			sourceTree = "<group>";
 		};
 		39DC711FE6BC94A6C3F45216 /* Pods */ = {
@@ -851,6 +887,7 @@
 		487C7DE421E34B8E00BC8D8C /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				34D6E3762370009B005480BD /* Coffer */,
 				34A8E9DB228AC876004311CA /* UserCenter */,
 				48AF8007227FDF5800A848A6 /* Address */,
 				48AF8000227FDCB900A848A6 /* Viewer */,
@@ -907,6 +944,10 @@
 				4864D4612322097D00AC3CBA /* Transfer.swift */,
 				483E2976236041DB0084181B /* QuotaRule.swift */,
 				483E297B23604CAA0084181B /* VIPInfo.swift */,
+				34D6E38723700F7F005480BD /* Investment.swift */,
+				34D6E3892370156B005480BD /* Pagination.swift */,
+				34EA5EFA23742A7600D40C4F /* CofferAccount.swift */,
+				48EE3A0B23791703001296A1 /* AccountSummary.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -1500,6 +1541,7 @@
 				34A8E9E1228ACCA7004311CA /* VerificationsOperation.swift in Sources */,
 				FDD37B9021B8C8EE0027DEBD /* Candle.swift in Sources */,
 				48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */,
+				34D6E38423700165005480BD /* CancelInvestmentDetailOperation.swift in Sources */,
 				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
 				347BE968231E0CC70066C540 /* PaymentListOperation.swift in Sources */,
 				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
@@ -1541,6 +1583,7 @@
 				487C7E0E21E5DC4600BC8D8C /* Gateway.swift in Sources */,
 				FDD37BD021BA65FA0027DEBD /* Asset.swift in Sources */,
 				4889154822FA768800186C9E /* CreateAdvancedKYCOperation.swift in Sources */,
+				34D6E37E23700101005480BD /* UpdateInvestmentOperation.swift in Sources */,
 				487C7E0821E5CB6C00BC8D8C /* FavoriteAssetPairsOperation.swift in Sources */,
 				FDD37BD421BA68BA0027DEBD /* Market.swift in Sources */,
 				483E2977236041DB0084181B /* QuotaRule.swift in Sources */,
@@ -1555,9 +1598,11 @@
 				484D469721E75FD600E7C3E2 /* ViewerDepositsOperation.swift in Sources */,
 				4861A13D21D235AE0047D662 /* ContiguousTask.swift in Sources */,
 				484D468721E733BB00E7C3E2 /* OrderType.swift in Sources */,
+				34D6E37C237000F1005480BD /* InvestmentDetailOperation.swift in Sources */,
 				487C7DFA21E4771B00BC8D8C /* AllMarketsOperation.swift in Sources */,
 				484D467F21E6F8EE00E7C3E2 /* DepositAddressOperation.swift in Sources */,
 				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
+				34EA5EF9237429AB00D40C4F /* CofferAccountsOperation.swift in Sources */,
 				4889154A22FA76C800186C9E /* SubmitAdvancedKYCOperation.swift in Sources */,
 				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
 				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
@@ -1595,7 +1640,10 @@
 				34A8E9F6228ADBF2004311CA /* LogoutOperation.swift in Sources */,
 				4861311F21EDA85800E62D4E /* AssetDetailOperation.swift in Sources */,
 				48AF7FFF227FDC8000A848A6 /* AssetsOperation.swift in Sources */,
+				34D6E3822370013F005480BD /* CancelInvestmentOperation.swift in Sources */,
 				FDCC083321CB36ED009105DD /* PriceLevel.swift in Sources */,
+				34D6E37A237000D1005480BD /* InvestmentsOperation.swift in Sources */,
+				34EA5EFB23742A7600D40C4F /* CofferAccount.swift in Sources */,
 				FDD372AC21B4CCBF0027DEBD /* HTTPMethod.swift in Sources */,
 				484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */,
 				488AAC972328C83C0034781C /* Encrptor.swift in Sources */,
@@ -1609,12 +1657,15 @@
 				FDD372B021B4CE610027DEBD /* RequestExecutor.swift in Sources */,
 				48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */,
 				FDD37B9A21BA105A0027DEBD /* URLRequest+Curl.swift in Sources */,
+				34D6E38A2370156B005480BD /* Pagination.swift in Sources */,
 				347154DC22929F800041F48C /* UIFont+Custom.swift in Sources */,
 				484D469F21E8B7CF00E7C3E2 /* DecodingError+Extension.swift in Sources */,
 				487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */,
 				487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */,
 				341DD8CC235DD2A4004E1A2F /* DeletePaymentOperation.swift in Sources */,
+				48EE3A0C23791703001296A1 /* AccountSummary.swift in Sources */,
 				48FFE84F21C8EAB300EE85C0 /* websocket.pb.swift in Sources */,
+				34D6E38823700F7F005480BD /* Investment.swift in Sources */,
 				34A8E9E3228ACFAA004311CA /* RegisterOperation.swift in Sources */,
 				487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */,
 				48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */,
@@ -1650,6 +1701,7 @@
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
+				34D6E386237001B5005480BD /* ProfitsOperation.swift in Sources */,
 				347BE966231E0CB90066C540 /* TransfersHistoryOperation.swift in Sources */,
 				341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */,
 				48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */,
@@ -1915,7 +1967,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.36;
+				MARKETING_VERSION = 0.9.37;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1948,7 +2000,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.36;
+				MARKETING_VERSION = 0.9.37;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
