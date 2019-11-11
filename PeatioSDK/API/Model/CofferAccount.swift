@@ -2,6 +2,14 @@ import Foundation
 
 public struct CofferAccount: Codable {
 
+    private enum CodingKeys: String, CodingKey {
+        case balance
+        case lockedBalance
+        case asset
+        case estimatedBtc
+        case totalProfit
+    }
+
     public let balance: String
     public let lockedBalance: String
     public let asset: Asset
