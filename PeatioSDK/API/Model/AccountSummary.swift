@@ -13,5 +13,5 @@ public struct AccountSummary: Codable {
     public let cofferTotalEstimatedBtc: String
     public let cofferTotalLockedEstimatedBtc: String
     public let cofferTotalProfitEstimatedBtc: String
-    public let Distribution: [Distribution]
+    public let distribution: [Distribution]
 }
