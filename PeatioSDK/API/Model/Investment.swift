@@ -9,8 +9,8 @@ public struct Investment: Codable {
         case cancelSettled = "CANCEL_SETTLED"
         case quickCancelSettled = "QUICK_CANCEL_SETTLED"
         case finished = "FINISHED"
-        case canceled = "CANCELED"
-        case quickCanceled = "QUICK_CANCELED"
+        case canceled = "CANCELLED"
+        case quickCanceled = "QUICK_CANCELLED"
     }
     
     public let id: Int
