@@ -61,6 +61,7 @@
 		34D6E38A2370156B005480BD /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E3892370156B005480BD /* Pagination.swift */; };
 		34EA5EF9237429AB00D40C4F /* CofferAccountsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EA5EF8237429AB00D40C4F /* CofferAccountsOperation.swift */; };
 		34EA5EFB23742A7600D40C4F /* CofferAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EA5EFA23742A7600D40C4F /* CofferAccount.swift */; };
+		480ED8B023863EF0005F334F /* CheckUpdateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480ED8AF23863EF0005F334F /* CheckUpdateOperation.swift */; };
 		4819D01C21F1E48400775AC9 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01B21F1E48300775AC9 /* PriceItem.swift */; };
 		4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */; };
 		481CFFA52295311B000DA86F /* Peatio.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 481CFFA42295311B000DA86F /* Peatio.podspec */; };
@@ -324,6 +325,7 @@
 		34D6E3892370156B005480BD /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		34EA5EF8237429AB00D40C4F /* CofferAccountsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofferAccountsOperation.swift; sourceTree = "<group>"; };
 		34EA5EFA23742A7600D40C4F /* CofferAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofferAccount.swift; sourceTree = "<group>"; };
+		480ED8AF23863EF0005F334F /* CheckUpdateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpdateOperation.swift; sourceTree = "<group>"; };
 		4819D01B21F1E48300775AC9 /* PriceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
 		4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceItemOperation.swift; sourceTree = "<group>"; };
 		481CFFA42295311B000DA86F /* Peatio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Peatio.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -746,6 +748,14 @@
 			path = Whitelist;
 			sourceTree = "<group>";
 		};
+		480ED8AE23863E95005F334F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				480ED8AF23863EF0005F334F /* CheckUpdateOperation.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		483E2978236049850084181B /* VIP */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +897,7 @@
 		487C7DE421E34B8E00BC8D8C /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				480ED8AE23863E95005F334F /* App */,
 				34D6E3762370009B005480BD /* Coffer */,
 				34A8E9DB228AC876004311CA /* UserCenter */,
 				48AF8007227FDF5800A848A6 /* Address */,
@@ -1550,6 +1561,7 @@
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
 				48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */,
 				483E297323603CFB0084181B /* WithdrawalsQuotaOperation.swift in Sources */,
+				480ED8B023863EF0005F334F /* CheckUpdateOperation.swift in Sources */,
 				483E29802362D4D70084181B /* BatchAssetPairOperation.swift in Sources */,
 				FDD372B421B4D0E10027DEBD /* PeatioSDKError.swift in Sources */,
 				487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */,
@@ -1967,7 +1979,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.41;
+				MARKETING_VERSION = 0.9.42;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2000,7 +2012,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.41;
+				MARKETING_VERSION = 0.9.42;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
