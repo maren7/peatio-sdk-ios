@@ -113,7 +113,7 @@ extension WSClient: WebSocketTransportDelegate {
     func transportDidDisconnect(transport: WebSocketTransport, error: Error?) {
         scheduler.offline()
         status = .awaiting
-        guard error != nil else { return }
+//        guard error != nil else { return }
         reconnect()
     }
 

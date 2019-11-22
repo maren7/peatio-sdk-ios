@@ -106,4 +106,5 @@ public struct Profit: Codable {
     public let symbol: String
     public let rate: String
     public let amount: String
+    public let manageFee: String?
 }
