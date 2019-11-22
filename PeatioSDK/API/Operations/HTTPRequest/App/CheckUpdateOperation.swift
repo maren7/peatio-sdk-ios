@@ -51,7 +51,7 @@ public extension CheckUpdateOperation {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             let nestContainer = try container.nestedContainer(keyedBy: UpdateInfoKeys.self, forKey: .updateInfo)
             self.build = try nestContainer.decode(Int.self, forKey: .build)
-            self.version = try nestContainer.decode(String.self, forKey: .build)
+            self.version = try nestContainer.decode(String.self, forKey: .version)
             self.description = try nestContainer.decode(String.self, forKey: .description)
             self.downloadUrl = try nestContainer.decode(String.self, forKey: .downloadUrl)
             self.isMandatory = try nestContainer.decode(Bool.self, forKey: .isMandatory)
