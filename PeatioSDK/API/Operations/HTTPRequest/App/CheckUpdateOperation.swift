@@ -63,8 +63,8 @@ public extension CheckUpdateOperation {
     struct Param: Equatable {
 
         public enum Channel: String {
-            case appStore
-            case appCenter
+            case appStore = "APP_STORE"
+            case appCenter = "APP_CENTER"
         }
 
         public let build: String
