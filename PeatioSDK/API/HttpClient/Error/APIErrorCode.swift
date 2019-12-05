@@ -7,6 +7,7 @@ public extension APIError {
         case emailOrPasswordError = 40102
         case invalidOtp = 40103
         case invalidPin = 40104
+        case invalidElderPassword = 40105
         case requireOtp = 40001
         case unauthenticated = 40004
         case jwtExpired = 40106
