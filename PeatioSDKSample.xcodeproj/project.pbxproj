@@ -157,6 +157,7 @@
 		4889154A22FA76C800186C9E /* SubmitAdvancedKYCOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889154922FA76C800186C9E /* SubmitAdvancedKYCOperation.swift */; };
 		4889154D22FA795600186C9E /* AttachmentQNTokenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889154C22FA795600186C9E /* AttachmentQNTokenInfo.swift */; };
 		488AAC972328C83C0034781C /* Encrptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488AAC962328C83C0034781C /* Encrptor.swift */; };
+		489B2EAA239A644400EAEE03 /* HomeLayoutOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B2EA9239A644400EAEE03 /* HomeLayoutOperation.swift */; };
 		48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A236EC22A7E7C3001E8E67 /* DateTools.swift */; };
 		48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A33A2922A004590060BBDE /* FeeRateOperation.swift */; };
 		48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */; };
@@ -398,6 +399,7 @@
 		4889154922FA76C800186C9E /* SubmitAdvancedKYCOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAdvancedKYCOperation.swift; sourceTree = "<group>"; };
 		4889154C22FA795600186C9E /* AttachmentQNTokenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentQNTokenInfo.swift; sourceTree = "<group>"; };
 		488AAC962328C83C0034781C /* Encrptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encrptor.swift; sourceTree = "<group>"; };
+		489B2EA9239A644400EAEE03 /* HomeLayoutOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayoutOperation.swift; sourceTree = "<group>"; };
 		48A236EC22A7E7C3001E8E67 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTools.swift; sourceTree = "<group>"; };
 		48A33A2922A004590060BBDE /* FeeRateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeRateOperation.swift; sourceTree = "<group>"; };
 		48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWhitelistAddressesOperation.swift; sourceTree = "<group>"; };
@@ -752,6 +754,7 @@
 			isa = PBXGroup;
 			children = (
 				480ED8AF23863EF0005F334F /* CheckUpdateOperation.swift */,
+				489B2EA9239A644400EAEE03 /* HomeLayoutOperation.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1721,6 +1724,7 @@
 				FDD37BD621BA69420027DEBD /* Depth.swift in Sources */,
 				487B70C021F6C46F0091EC29 /* RequestContentType.swift in Sources */,
 				34A8E9FF228AE10E004311CA /* RebindEmailOperation.swift in Sources */,
+				489B2EAA239A644400EAEE03 /* HomeLayoutOperation.swift in Sources */,
 				347BE96C231E0CE90066C540 /* UpdatePaymentOperation.swift in Sources */,
 				48DAF8642265B17B006D3598 /* Banner.swift in Sources */,
 				347154D6229252810041F48C /* Theme.swift in Sources */,
@@ -1979,7 +1983,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.55;
+				MARKETING_VERSION = 0.9.56;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2012,7 +2016,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.55;
+				MARKETING_VERSION = 0.9.56;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
