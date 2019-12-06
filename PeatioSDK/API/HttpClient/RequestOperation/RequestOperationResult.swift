@@ -37,8 +37,10 @@ extension RequestOperationResult: Decodable {
             self.data = nil
             return
         }
-        
-        if let pageType = T.self as? PageDecodable.Type {
+
+        if T.self as? JustOK.Type != nil {
+            self.data = JustOK() as? T
+        } else  if let pageType = T.self as? PageDecodable.Type {
             var val = try pageType.init(from: decoder)
             val.nextToken = pageTokenValue
             self.data = val as? T
