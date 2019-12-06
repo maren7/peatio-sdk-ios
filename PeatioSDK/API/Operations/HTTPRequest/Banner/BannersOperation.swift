@@ -7,7 +7,7 @@ public final class BannersOperation: RequestOperation {
 
     public var requestParams: [String: Any?]? {
         return [
-            "kind": "MOBILE",
+            "kind": param.kind.rawValue,
             "locale": param.locale
         ]
     }
