@@ -49,16 +49,13 @@ public extension ResetPasswordTokenOperation {
     struct PasswordResult: Codable {
         public let resetPasswordToken: String
         public let twoFaVerified: Bool
-        public let verificationToken: String
         public let channels: [TwoFAChannelPrompt]
 
         public init(resetPasswordToken: String,
                     twoFaVerified: Bool,
-                    verificationToken: String,
                     channels: [TwoFAChannelPrompt]) {
             self.resetPasswordToken = resetPasswordToken
             self.twoFaVerified = twoFaVerified
-            self.verificationToken = verificationToken
             self.channels = channels
         }
     }
