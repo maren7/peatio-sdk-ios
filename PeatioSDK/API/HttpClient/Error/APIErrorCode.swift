@@ -17,6 +17,7 @@ public extension APIError {
         case unknownSession = 40110
         case deviceNeedAuthorized = 40111
         case loginAttemptAlert = 40113
+        case withdrawalDisabledAfterResetPassword = 40310
         case loginAttemptForbidden = 40314
         case userForbidden = 40399
         case invalidTwoFaVerification = 40306
