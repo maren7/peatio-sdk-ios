@@ -23,10 +23,18 @@ public final class BannersOperation: RequestOperation {
 
 public extension BannersOperation {
     struct Param: Equatable {
-        public let locale: String
 
-        public init(locale: String) {
+        public enum Kind: String {
+            case top = "MOBILE"
+            case middle = "mobile_middle"
+        }
+
+        public let locale: String
+        public let kind: Kind
+
+        public init(kind: Kind, locale: String) {
             self.locale = locale
+            self.kind = kind
         }
     }
 }
