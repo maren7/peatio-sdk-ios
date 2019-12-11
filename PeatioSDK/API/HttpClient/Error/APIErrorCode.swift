@@ -19,6 +19,8 @@ public extension APIError {
         case loginAttemptAlert = 40113
         case withdrawalDisabledAfterResetPassword = 40310
         case loginAttemptForbidden = 40314
+        case exceedWithdrawQuota = 40320
+        case deiniedWithdrawByOTCWithdrawRisk = 40321
         case userForbidden = 40399
         case invalidTwoFaVerification = 40306
         case tooManyRequest = 42901
