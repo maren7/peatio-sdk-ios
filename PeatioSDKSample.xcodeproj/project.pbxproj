@@ -171,7 +171,6 @@
 		48AF800B2280207800A848A6 /* RefreshSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */; };
 		48C2CC2723699695003FDA1A /* TopAssetExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2CC2623699695003FDA1A /* TopAssetExchangeInfo.swift */; };
 		48DAF8642265B17B006D3598 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8632265B17B006D3598 /* Banner.swift */; };
-		48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8652265B203006D3598 /* BannersOperation.swift */; };
 		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
 		48ECBE6222C0AF62001D206A /* RouseElderUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */; };
@@ -413,7 +412,6 @@
 		48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshSessionOperation.swift; sourceTree = "<group>"; };
 		48C2CC2623699695003FDA1A /* TopAssetExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAssetExchangeInfo.swift; sourceTree = "<group>"; };
 		48DAF8632265B17B006D3598 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		48DAF8652265B203006D3598 /* BannersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersOperation.swift; sourceTree = "<group>"; };
 		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
 		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
 		48ECBE6122C0AF62001D206A /* RouseElderUserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouseElderUserOperation.swift; sourceTree = "<group>"; };
@@ -906,7 +904,6 @@
 				48AF8007227FDF5800A848A6 /* Address */,
 				48AF8000227FDCB900A848A6 /* Viewer */,
 				4808142B227826AB00BCF09F /* Whitelist */,
-				48DAF8622265B168006D3598 /* Banner */,
 				4861311D21EDA82600E62D4E /* Asset */,
 				4861311C21EDA81400E62D4E /* Transaction */,
 				4861311B21EDA80300E62D4E /* Session */,
@@ -1093,14 +1090,6 @@
 				48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */,
 			);
 			path = Address;
-			sourceTree = "<group>";
-		};
-		48DAF8622265B168006D3598 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				48DAF8652265B203006D3598 /* BannersOperation.swift */,
-			);
-			path = Banner;
 			sourceTree = "<group>";
 		};
 		48ECBE6022C0AF39001D206A /* Rouse */ = {
@@ -1586,7 +1575,6 @@
 				48FFE85021C8EAB300EE85C0 /* PeatioObjectIdentifier.swift in Sources */,
 				487C7E1221E5FF5800BC8D8C /* RemoveFavoriteAssetPairOperation.swift in Sources */,
 				34A8EA11228BC639004311CA /* ResetPasswordOperation.swift in Sources */,
-				48DAF8662265B203006D3598 /* BannersOperation.swift in Sources */,
 				FDD37B7E21B783F10027DEBD /* Log.swift in Sources */,
 				FDD37BD821BA6B360027DEBD /* Order.swift in Sources */,
 				484D467B21E6F87000E7C3E2 /* ViewerAccountSubscription.swift in Sources */,
@@ -1983,7 +1971,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.57;
+				MARKETING_VERSION = 0.9.58;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2016,7 +2004,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.57;
+				MARKETING_VERSION = 0.9.58;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

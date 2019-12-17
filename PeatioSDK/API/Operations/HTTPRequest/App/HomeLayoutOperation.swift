@@ -30,6 +30,8 @@ public extension HomeLayoutOperation {
         public struct Config: Decodable {
             public let especiallyAssetPairUuids: [String]
             public let quickEntries: [Entry]
+            public let banners: [Banner]
+            public let middle_banners: [Banner]
         }
 
         public let configs: Config
