@@ -51,6 +51,22 @@
 		34A8EA23228BED7D004311CA /* CreateOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */; };
 		34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */; };
 		34A8EA29228BF24D004311CA /* VerificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8EA28228BF24D004311CA /* VerificationType.swift */; };
+		34AC995723B3476100C2B538 /* AssetsAccountsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995623B3476100C2B538 /* AssetsAccountsOperation.swift */; };
+		34AC996323B3477F00C2B538 /* MarginRepaymentInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995923B3477E00C2B538 /* MarginRepaymentInfoOperation.swift */; };
+		34AC996423B3477F00C2B538 /* MarginLoanInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995A23B3477E00C2B538 /* MarginLoanInfoOperation.swift */; };
+		34AC996523B3477F00C2B538 /* MarginLoanOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995B23B3477E00C2B538 /* MarginLoanOrdersOperation.swift */; };
+		34AC996623B3477F00C2B538 /* MarginRepaymentDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995C23B3477F00C2B538 /* MarginRepaymentDetailOperation.swift */; };
+		34AC996723B3477F00C2B538 /* MarginMarketsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995D23B3477F00C2B538 /* MarginMarketsOperation.swift */; };
+		34AC996823B3477F00C2B538 /* MarginLoanOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995E23B3477F00C2B538 /* MarginLoanOperation.swift */; };
+		34AC996923B3477F00C2B538 /* MarginRepaymentOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC995F23B3477F00C2B538 /* MarginRepaymentOrdersOperation.swift */; };
+		34AC996A23B3477F00C2B538 /* MarginAccountsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC996023B3477F00C2B538 /* MarginAccountsOperation.swift */; };
+		34AC996B23B3477F00C2B538 /* MarginRepaymentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC996123B3477F00C2B538 /* MarginRepaymentOperation.swift */; };
+		34AC996C23B3477F00C2B538 /* MarginAccountDetailsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC996223B3477F00C2B538 /* MarginAccountDetailsOperation.swift */; };
+		34AC996E23B347D300C2B538 /* MarginMarketAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC996D23B347D300C2B538 /* MarginMarketAccount.swift */; };
+		34AC997023B347DF00C2B538 /* MarginAssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC996F23B347DF00C2B538 /* MarginAssetPair.swift */; };
+		34AC997223B347EB00C2B538 /* MarginLoanOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC997123B347EB00C2B538 /* MarginLoanOrder.swift */; };
+		34AC997423B347F600C2B538 /* MarginRepaymentOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC997323B347F600C2B538 /* MarginRepaymentOrder.swift */; };
+		34AC997623B34C5200C2B538 /* MarginAccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC997523B34C5200C2B538 /* MarginAccountDetail.swift */; };
 		34D6E37A237000D1005480BD /* InvestmentsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E379237000D1005480BD /* InvestmentsOperation.swift */; };
 		34D6E37C237000F1005480BD /* InvestmentDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E37B237000F1005480BD /* InvestmentDetailOperation.swift */; };
 		34D6E37E23700101005480BD /* UpdateInvestmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6E37D23700101005480BD /* UpdateInvestmentOperation.swift */; };
@@ -315,6 +331,22 @@
 		34A8EA22228BED7D004311CA /* CreateOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOtpOperation.swift; sourceTree = "<group>"; };
 		34A8EA26228BEE5B004311CA /* UpdateOtpOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateOtpOperation.swift; sourceTree = "<group>"; };
 		34A8EA28228BF24D004311CA /* VerificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationType.swift; sourceTree = "<group>"; };
+		34AC995623B3476100C2B538 /* AssetsAccountsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsAccountsOperation.swift; sourceTree = "<group>"; };
+		34AC995923B3477E00C2B538 /* MarginRepaymentInfoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginRepaymentInfoOperation.swift; sourceTree = "<group>"; };
+		34AC995A23B3477E00C2B538 /* MarginLoanInfoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginLoanInfoOperation.swift; sourceTree = "<group>"; };
+		34AC995B23B3477E00C2B538 /* MarginLoanOrdersOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginLoanOrdersOperation.swift; sourceTree = "<group>"; };
+		34AC995C23B3477F00C2B538 /* MarginRepaymentDetailOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginRepaymentDetailOperation.swift; sourceTree = "<group>"; };
+		34AC995D23B3477F00C2B538 /* MarginMarketsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginMarketsOperation.swift; sourceTree = "<group>"; };
+		34AC995E23B3477F00C2B538 /* MarginLoanOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginLoanOperation.swift; sourceTree = "<group>"; };
+		34AC995F23B3477F00C2B538 /* MarginRepaymentOrdersOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginRepaymentOrdersOperation.swift; sourceTree = "<group>"; };
+		34AC996023B3477F00C2B538 /* MarginAccountsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginAccountsOperation.swift; sourceTree = "<group>"; };
+		34AC996123B3477F00C2B538 /* MarginRepaymentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginRepaymentOperation.swift; sourceTree = "<group>"; };
+		34AC996223B3477F00C2B538 /* MarginAccountDetailsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginAccountDetailsOperation.swift; sourceTree = "<group>"; };
+		34AC996D23B347D300C2B538 /* MarginMarketAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginMarketAccount.swift; sourceTree = "<group>"; };
+		34AC996F23B347DF00C2B538 /* MarginAssetPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginAssetPair.swift; sourceTree = "<group>"; };
+		34AC997123B347EB00C2B538 /* MarginLoanOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginLoanOrder.swift; sourceTree = "<group>"; };
+		34AC997323B347F600C2B538 /* MarginRepaymentOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginRepaymentOrder.swift; sourceTree = "<group>"; };
+		34AC997523B34C5200C2B538 /* MarginAccountDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginAccountDetail.swift; sourceTree = "<group>"; };
 		34D6E379237000D1005480BD /* InvestmentsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentsOperation.swift; sourceTree = "<group>"; };
 		34D6E37B237000F1005480BD /* InvestmentDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDetailOperation.swift; sourceTree = "<group>"; };
 		34D6E37D23700101005480BD /* UpdateInvestmentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInvestmentOperation.swift; sourceTree = "<group>"; };
@@ -712,6 +744,23 @@
 			name = Verification;
 			sourceTree = "<group>";
 		};
+		34AC995823B3477200C2B538 /* Margin */ = {
+			isa = PBXGroup;
+			children = (
+				34AC996223B3477F00C2B538 /* MarginAccountDetailsOperation.swift */,
+				34AC996023B3477F00C2B538 /* MarginAccountsOperation.swift */,
+				34AC995A23B3477E00C2B538 /* MarginLoanInfoOperation.swift */,
+				34AC995E23B3477F00C2B538 /* MarginLoanOperation.swift */,
+				34AC995B23B3477E00C2B538 /* MarginLoanOrdersOperation.swift */,
+				34AC995D23B3477F00C2B538 /* MarginMarketsOperation.swift */,
+				34AC995C23B3477F00C2B538 /* MarginRepaymentDetailOperation.swift */,
+				34AC995923B3477E00C2B538 /* MarginRepaymentInfoOperation.swift */,
+				34AC996123B3477F00C2B538 /* MarginRepaymentOperation.swift */,
+				34AC995F23B3477F00C2B538 /* MarginRepaymentOrdersOperation.swift */,
+			);
+			path = Margin;
+			sourceTree = "<group>";
+		};
 		34D6E3762370009B005480BD /* Coffer */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,6 +913,7 @@
 				4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */,
 				4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */,
 				48AF7FFE227FDC8000A848A6 /* AssetsOperation.swift */,
+				34AC995623B3476100C2B538 /* AssetsAccountsOperation.swift */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -898,6 +948,7 @@
 		487C7DE421E34B8E00BC8D8C /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				34AC995823B3477200C2B538 /* Margin */,
 				480ED8AE23863E95005F334F /* App */,
 				34D6E3762370009B005480BD /* Coffer */,
 				34A8E9DB228AC876004311CA /* UserCenter */,
@@ -959,6 +1010,11 @@
 				34D6E3892370156B005480BD /* Pagination.swift */,
 				34EA5EFA23742A7600D40C4F /* CofferAccount.swift */,
 				48EE3A0B23791703001296A1 /* AccountSummary.swift */,
+				34AC996D23B347D300C2B538 /* MarginMarketAccount.swift */,
+				34AC996F23B347DF00C2B538 /* MarginAssetPair.swift */,
+				34AC997123B347EB00C2B538 /* MarginLoanOrder.swift */,
+				34AC997323B347F600C2B538 /* MarginRepaymentOrder.swift */,
+				34AC997523B34C5200C2B538 /* MarginAccountDetail.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -1546,8 +1602,10 @@
 				48A33A2A22A004590060BBDE /* FeeRateOperation.swift in Sources */,
 				34D6E38423700165005480BD /* CancelInvestmentDetailOperation.swift in Sources */,
 				484D469921E85FE900E7C3E2 /* CreateWithdrawalOperation.swift in Sources */,
+				34AC996423B3477F00C2B538 /* MarginLoanInfoOperation.swift in Sources */,
 				347BE968231E0CC70066C540 /* PaymentListOperation.swift in Sources */,
 				34A8EA13228BC771004311CA /* CreatePinOpration.swift in Sources */,
+				34AC996C23B3477F00C2B538 /* MarginAccountDetailsOperation.swift in Sources */,
 				484D469D21E8892100E7C3E2 /* APIErrorCode.swift in Sources */,
 				483E297523603FE10084181B /* KYCQuotaRuleOperation.swift in Sources */,
 				486146DC21CBA214006F7DF4 /* WebSocketTransport.swift in Sources */,
@@ -1607,7 +1665,10 @@
 				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
 				34EA5EF9237429AB00D40C4F /* CofferAccountsOperation.swift in Sources */,
 				4889154A22FA76C800186C9E /* SubmitAdvancedKYCOperation.swift in Sources */,
+				34AC997423B347F600C2B538 /* MarginRepaymentOrder.swift in Sources */,
 				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
+				34AC996723B3477F00C2B538 /* MarginMarketsOperation.swift in Sources */,
+				34AC996823B3477F00C2B538 /* MarginLoanOperation.swift in Sources */,
 				FDD37BDE21BA7B1F0027DEBD /* Date+iso8601.swift in Sources */,
 				48C2CC2723699695003FDA1A /* TopAssetExchangeInfo.swift in Sources */,
 				4864D4602320BD0500AC3CBA /* Payment.swift in Sources */,
@@ -1622,6 +1683,7 @@
 				34A8EA27228BEE5B004311CA /* UpdateOtpOperation.swift in Sources */,
 				484D46A121EC3F9800E7C3E2 /* Decodable+Overlap.swift in Sources */,
 				34A8EA0B228BBD3A004311CA /* UpdatePasswordOperation.swift in Sources */,
+				34AC997223B347EB00C2B538 /* MarginLoanOrder.swift in Sources */,
 				341453E722C628600087C98D /* KYCBizTokenOpration.swift in Sources */,
 				FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */,
 				34A8EA21228BED18004311CA /* ResetOtpOperation.swift in Sources */,
@@ -1639,6 +1701,7 @@
 				483E297C23604CAA0084181B /* VIPInfo.swift in Sources */,
 				487598D621E0D2E700EB045D /* WebSocketObserver.swift in Sources */,
 				484D468321E7296800E7C3E2 /* JustOK.swift in Sources */,
+				34AC995723B3476100C2B538 /* AssetsAccountsOperation.swift in Sources */,
 				48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */,
 				34A8E9F6228ADBF2004311CA /* LogoutOperation.swift in Sources */,
 				4861311F21EDA85800E62D4E /* AssetDetailOperation.swift in Sources */,
@@ -1650,14 +1713,17 @@
 				FDD372AC21B4CCBF0027DEBD /* HTTPMethod.swift in Sources */,
 				484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */,
 				488AAC972328C83C0034781C /* Encrptor.swift in Sources */,
+				34AC997023B347DF00C2B538 /* MarginAssetPair.swift in Sources */,
 				FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */,
 				48AF8002227FDCCC00A848A6 /* ViewerProfileOperation.swift in Sources */,
 				347BE974231E231F0066C540 /* OTCAccountsOperation.swift in Sources */,
 				484D469121E74FEA00E7C3E2 /* WithdrawalItem.swift in Sources */,
 				FDCC083921CB3F25009105DD /* AccountPatch.swift in Sources */,
 				48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */,
+				34AC996E23B347D300C2B538 /* MarginMarketAccount.swift in Sources */,
 				FDD37BCE21BA65190027DEBD /* AssetPair.swift in Sources */,
 				FDD372B021B4CE610027DEBD /* RequestExecutor.swift in Sources */,
+				34AC996A23B3477F00C2B538 /* MarginAccountsOperation.swift in Sources */,
 				48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */,
 				FDD37B9A21BA105A0027DEBD /* URLRequest+Curl.swift in Sources */,
 				34D6E38A2370156B005480BD /* Pagination.swift in Sources */,
@@ -1674,6 +1740,7 @@
 				48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */,
 				48FFE85121C8EAB300EE85C0 /* WSClient.swift in Sources */,
 				341453E322C6216A0087C98D /* IdentityStatusOperation.swift in Sources */,
+				34AC996923B3477F00C2B538 /* MarginRepaymentOrdersOperation.swift in Sources */,
 				487F159F21DE0000008CDB03 /* RequestOperation.swift in Sources */,
 				487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */,
 				48AF800B2280207800A848A6 /* RefreshSessionOperation.swift in Sources */,
@@ -1700,12 +1767,16 @@
 				487F159421DDE015008CDB03 /* CandleSubscription.swift in Sources */,
 				48F5499A22AF8D090062E28F /* WebSocketStatus.swift in Sources */,
 				347BE964231E0C9F0066C540 /* CreateTransfersOperation.swift in Sources */,
+				34AC996B23B3477F00C2B538 /* MarginRepaymentOperation.swift in Sources */,
 				347BE972231E136F0066C540 /* PaymentPictureUploadURLOperation.swift in Sources */,
 				48FFE85221C8EAB300EE85C0 /* WebSocketConstant.swift in Sources */,
 				FDCC083121CB35A6009105DD /* DepthPatch.swift in Sources */,
 				34A8E9DD228AC8D0004311CA /* GetVerificationsOperation.swift in Sources */,
 				34D6E386237001B5005480BD /* ProfitsOperation.swift in Sources */,
+				34AC997623B34C5200C2B538 /* MarginAccountDetail.swift in Sources */,
 				347BE966231E0CB90066C540 /* TransfersHistoryOperation.swift in Sources */,
+				34AC996323B3477F00C2B538 /* MarginRepaymentInfoOperation.swift in Sources */,
+				34AC996523B3477F00C2B538 /* MarginLoanOrdersOperation.swift in Sources */,
 				341453E922C6296E0087C98D /* KYCFaceIDVerifyOperation.swift in Sources */,
 				48A236ED22A7E7C3001E8E67 /* DateTools.swift in Sources */,
 				487C7DF621E3922D00BC8D8C /* AssetPairCandleOperation.swift in Sources */,
@@ -1717,6 +1788,7 @@
 				48DAF8642265B17B006D3598 /* Banner.swift in Sources */,
 				347154D6229252810041F48C /* Theme.swift in Sources */,
 				484D468521E730FB00E7C3E2 /* ViewerOrdersOperation.swift in Sources */,
+				34AC996623B3477F00C2B538 /* MarginRepaymentDetailOperation.swift in Sources */,
 				FDCC083521CB3AE4009105DD /* OrderPatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1971,7 +2043,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.59;
+				MARKETING_VERSION = 0.9.60;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2004,7 +2076,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.59;
+				MARKETING_VERSION = 0.9.60;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

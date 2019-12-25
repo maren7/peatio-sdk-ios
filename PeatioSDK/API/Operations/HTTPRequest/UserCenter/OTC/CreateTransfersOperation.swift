@@ -10,7 +10,9 @@ public final class CreateTransfersOperation: RequestOperation {
     public var requestParams: [String : Any?]? {
         return ["asset_uuid": param.assetUuid,
                 "direction": param.direction.rawValue,
-                "amount": param.amount]
+                "amount": param.amount,
+                "from_market_uuid": param.fromMarketUuid,
+                "to_market_uuid": param.toMarketUuid]
     }
     
     public let param: Param
@@ -25,13 +27,19 @@ public extension CreateTransfersOperation {
         public let assetUuid: String
         public let direction: Transfer.Direction
         public let amount: String
+        public let fromMarketUuid: String?
+        public let toMarketUuid: String?
         
         public init(assetUuid: String,
                     direction: Transfer.Direction,
-                    amount: String) {
+                    amount: String,
+                    fromMarketUuid: String?,
+                    toMarketUuid: String?) {
             self.assetUuid = assetUuid
             self.direction = direction
             self.amount = amount
+            self.fromMarketUuid = fromMarketUuid
+            self.toMarketUuid = toMarketUuid
         }
     }
 }

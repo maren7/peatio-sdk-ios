@@ -7,6 +7,9 @@ public struct Transfer: Codable {
         case OTCToExchange = "OTC_TO_EXCHANGE"
         case exchangeToCoffer = "EXCHANGE_TO_COFFER"
         case cofferToExchange = "COFFER_TO_EXCHANGE"
+        case marginToMargin = "MARGIN_TO_MARGIN"
+        case spotToMargin = "SPOT_TO_MARGIN"
+        case marginToSpot = "MARGIN_TO_SPOT"
     }
 
     public enum State: String, Codable {
