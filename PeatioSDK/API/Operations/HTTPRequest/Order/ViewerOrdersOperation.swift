@@ -11,7 +11,8 @@ public final class ViewerOrdersOperation: RequestOperation {
             "type": param.type?.rawValue,
             "state": param.state.rawValue,
             "asset_pair_uuid": param.assetPairUUID,
-            "page_token": param.pageToken
+            "page_token": param.pageToken,
+            "bu": param.accountType?.rawValue
         ]
     }
 
@@ -36,17 +37,20 @@ public extension ViewerOrdersOperation {
         public let state: OrderListState
         public let pageToken: String?
         public let type: OrderType?
+        public let accountType: OrderAccountType?
 
         public init(assetPairUUID: String?,
                     limit: Int,
                     state: OrderListState,
                     pageToken: String?,
-                    type: OrderType?) {
+                    type: OrderType?,
+                    accountType: OrderAccountType?) {
             self.assetPairUUID = assetPairUUID
             self.limit = limit
             self.state = state
             self.pageToken = pageToken
             self.type = type
+            self.accountType = accountType
         }
     }
 }

@@ -14,7 +14,8 @@ public final class CreateOrderOperation: RequestOperation {
             "asset_pair_uuid": param.assetPairUUID,
             "price": param.price,
             "side": param.side.rawValue,
-            "hidden": param.hidden
+            "hidden": param.hidden,
+            "bu": param.accountType.rawValue
         ]
     }
 
@@ -34,18 +35,21 @@ public extension CreateOrderOperation {
         public let hidden: Bool
         public let side: OrderSide
         public let type: OrderType
+        public let accountType: OrderAccountType
 
         public init(assetPairUUID: String,
                     amount: String,
                     price: String?,
                     side: OrderSide,
-                    type: OrderType) {
+                    type: OrderType,
+                    accountType: OrderAccountType) {
             self.assetPairUUID = assetPairUUID
             self.amount = amount
             self.price = price
             self.hidden = false
             self.side = side
             self.type = type
+            self.accountType = accountType
         }
     }
 }

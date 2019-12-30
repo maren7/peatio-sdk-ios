@@ -23,6 +23,6 @@ public struct MarginAccount: Codable {
     public let lockedBalance: String
     public let loanBalance: String
     public let interest: String
-    public let assetScale: String
+    public let assetScale: Int
     public let transferableAmount: String
 }

@@ -15,6 +15,7 @@ public struct Order: Codable {
         case insertedAt
         case updatedAt
         case type
+        case accountType = "bu"
     }
 
     public let id: Int
@@ -23,6 +24,7 @@ public struct Order: Codable {
     public let state: State
     public let side: OrderSide
     public let type: OrderType
+    public let accountType: OrderAccountType
     public let price: String
     public let amount: String
     public let stopPrice: String
@@ -47,6 +49,7 @@ public extension Order {
             case baseAssetID = "baseAssetId"
             case quoteAssetID = "quoteAssetId"
             case minQuoteValue
+            case leverage
         }
 
         public let id: String
@@ -56,5 +59,6 @@ public extension Order {
         public let baseAssetID: String
         public let quoteAssetID: String
         public let minQuoteValue: String
+        public let leverage: Int
     }
 }
