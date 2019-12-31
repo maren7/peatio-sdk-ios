@@ -11,6 +11,8 @@ import Foundation
 public struct MarginMarketAccountPatch {
     public let name: String
     public let riskRate: String
+    public let liquidationPrice: String
+    
     public let baseAssetSymbol: String
     public let baseBanlance: String
     public let baseLockedBalance: String

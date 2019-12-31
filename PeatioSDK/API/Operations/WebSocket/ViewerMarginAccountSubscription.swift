@@ -42,6 +42,7 @@ private extension MarginMarketAccountPatch {
     init(_ wsObject: PeatioMarginMarketAccount) {
         self.name = wsObject.name
         self.riskRate = wsObject.riskRate
+        self.liquidationPrice = wsObject.liquidationPrice
         
         self.baseAssetSymbol = wsObject.base.asset
         self.baseBanlance = wsObject.base.balance
