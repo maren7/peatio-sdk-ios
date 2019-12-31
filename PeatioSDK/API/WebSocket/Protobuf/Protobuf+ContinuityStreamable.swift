@@ -4,7 +4,7 @@ enum ContinuityStreamType {
     case depth
     case account
     case candle(String)
-    case order
+    case order(PeatioBusinessUnit)
     case ticker
     case trade
 }
@@ -19,8 +19,8 @@ extension ContinuityStreamType: Hashable, CustomDebugStringConvertible, CustomSt
             type = "account"
         case .candle(let v):
             type = "candle+\(v)"
-        case .order:
-            type = "order"
+        case .order(let v):
+            type = "order+\(v.rawValue)"
         case .ticker:
             type = "ticker"
         case .trade:
@@ -148,7 +148,7 @@ extension PeatioSubscribeViewerOrdersRequest: _ContinuityStreamRequest {
         return [market]
     }
 
-    var continuityStreamType: ContinuityStreamType { return .order }
+    var continuityStreamType: ContinuityStreamType { return .order(businessUnit) }
 }
 
 extension PeatioSubscribeViewerAccountsRequest: _ContinuityStreamRequest {
@@ -243,6 +243,7 @@ extension PeatioResponse {
              .candleUpdate,
              .orderUpdate,
              .listMarketsResponse,
+             .marginAccountUpdate,
              .pong:
             return false
         case .tickersSnapshot,
@@ -250,7 +251,8 @@ extension PeatioResponse {
              .depthSnapshot,
              .accountsSnapshot,
              .candlesSnapshot,
-             .ordersSnapshot:
+             .ordersSnapshot,
+             .marginAccountsSnapshot:
             return true
         }
     }
@@ -284,7 +286,9 @@ extension PeatioResponse {
              .accountsSnapshot,
              .candlesSnapshot,
              .ordersSnapshot,
-             .listMarketsResponse:
+             .listMarketsResponse,
+             .marginAccountUpdate,
+             .marginAccountsSnapshot:
             return nil
         }
     }
@@ -342,7 +346,7 @@ extension PeatioAccountUpdate: _ContinuityUpdateResponse {
 
 extension PeatioOrderUpdate: _ContinuityUpdateResponse {
     var streamType: ContinuityStreamType {
-        return .order
+        return .order(order.businessUnit)
     }
 
     var symbol: String {
