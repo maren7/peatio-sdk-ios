@@ -15,6 +15,7 @@ public struct ViewerOrderSubscription: SubscriptionOperation {
     public func buildTask(onReceive: @escaping (WebSocketEvent<ViewerOrderSubscription>) -> Void) -> WebSocketTask {
         var subscribe = PeatioSubscribeViewerOrdersRequest()
         subscribe.market = params.assetPair
+        subscribe.businessUnit = params.type == .spot ? .spot : .margin
         let task = ContiguousTask<ViewerOrderSubscription>(subTemplate: subscribe,
                                                            unsubTemplate: PeatioUnsubscribeViewerOrdersRequest())
         task.onRecieve = onReceive
@@ -25,9 +26,11 @@ public struct ViewerOrderSubscription: SubscriptionOperation {
 public extension ViewerOrderSubscription {
      struct Param: Equatable {
         public let assetPair: String
+        public let type: OrderAccountType
 
-        public init(assetPair: String) {
+        public init(assetPair: String, type: OrderAccountType) {
             self.assetPair = assetPair
+            self.type = type
         }
     }
 }
@@ -54,6 +57,7 @@ private extension OrderPatch {
         self.avgDealPrice = wsObject.avgDealPrice
         self.insertedAt = wsObject.createdAt.date
         self.side = wsObject.side == .ask ? .ask : .bid
+        self.type = wsObject.businessUnit == .spot ? .spot : .margin
 
         self.state = {
             switch wsObject.state {

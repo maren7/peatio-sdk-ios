@@ -7,6 +7,7 @@ enum ContinuityStreamType {
     case order(PeatioBusinessUnit)
     case ticker
     case trade
+    case marginAccount
 }
 
 extension ContinuityStreamType: Hashable, CustomDebugStringConvertible, CustomStringConvertible {
@@ -25,6 +26,8 @@ extension ContinuityStreamType: Hashable, CustomDebugStringConvertible, CustomSt
             type = "ticker"
         case .trade:
             type = "trade"
+        case .marginAccount:
+            type = "marginAccount"
         }
         return "Continuity Stream Type: " + type
     }
@@ -159,6 +162,14 @@ extension PeatioSubscribeViewerAccountsRequest: _ContinuityStreamRequest {
     var continuityStreamType: ContinuityStreamType { return .account }
 }
 
+extension PeatioSubscribeViewerMarginAccountsRequest: _ContinuityStreamRequest {
+    var symbols: Set<String> {
+        return ["1"]
+    }
+
+    var continuityStreamType: ContinuityStreamType { return .marginAccount }
+}
+
 // MARK: Unsubscribe
 
 protocol UnsubscribeGeneralUpdate {
@@ -198,8 +209,6 @@ extension PeatioUnsubscribeMarketsTickerRequest: UnsubscribeGeneralUpdate {
         set { markets = Array(newValue) }
         get { return Set(markets) }
     }
-
-    var symbolPath: WritableKeyPath<PeatioRequest, Set<String>> { return \PeatioRequest.unsubscribeMarketsTickerRequest.symbols }
 }
 
 extension PeatioUnsubscribeViewerAccountsRequest: UnsubscribeGeneralUpdate {
@@ -207,8 +216,13 @@ extension PeatioUnsubscribeViewerAccountsRequest: UnsubscribeGeneralUpdate {
         set { }
         get { return []              }
     }
+}
 
-    var symbolPath: WritableKeyPath<PeatioRequest, Set<String>> { return \PeatioRequest.unsubscribeViewerAccountsRequest.symbols }
+extension PeatioUnsubscribeViewerMarginAccountsRequest: UnsubscribeGeneralUpdate {
+    var symbols: Set<String> {
+        set { }
+        get { return [] }
+    }
 }
 
 private func getSingleSymbol(_ symbols: Set<String>) -> String {

@@ -17,6 +17,7 @@ public struct OrderPatch {
     public let insertedAt: Date
     public let side: OrderSide
     public let state: State
+    public let type: OrderAccountType
 
     public init(id: String,
                 assetPairName: String,
@@ -26,7 +27,8 @@ public struct OrderPatch {
                 avgDealPrice: String,
                 insertedAt: Date,
                 side: OrderSide,
-                state: State) {
+                state: State,
+                type: OrderAccountType) {
         self.id = id
         self.assetPairName = assetPairName
         self.price = price
@@ -36,5 +38,6 @@ public struct OrderPatch {
         self.insertedAt = insertedAt
         self.side = side
         self.state = state
+        self.type = type
     }
 }

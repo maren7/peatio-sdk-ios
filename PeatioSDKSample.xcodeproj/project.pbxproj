@@ -187,6 +187,8 @@
 		48AF8009227FDF9900A848A6 /* InspectAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */; };
 		48AF800B2280207800A848A6 /* RefreshSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */; };
 		48C2CC2723699695003FDA1A /* TopAssetExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2CC2623699695003FDA1A /* TopAssetExchangeInfo.swift */; };
+		48D423F223BB39A9009CD89F /* ViewerMarginAccountSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D423F123BB39A9009CD89F /* ViewerMarginAccountSubscription.swift */; };
+		48D423F423BB3A43009CD89F /* MarginMarketAccountPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D423F323BB3A43009CD89F /* MarginMarketAccountPatch.swift */; };
 		48DAF8642265B17B006D3598 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAF8632265B17B006D3598 /* Banner.swift */; };
 		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
@@ -445,6 +447,8 @@
 		48AF8008227FDF9900A848A6 /* InspectAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectAddressOperation.swift; sourceTree = "<group>"; };
 		48AF800A2280207800A848A6 /* RefreshSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshSessionOperation.swift; sourceTree = "<group>"; };
 		48C2CC2623699695003FDA1A /* TopAssetExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAssetExchangeInfo.swift; sourceTree = "<group>"; };
+		48D423F123BB39A9009CD89F /* ViewerMarginAccountSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerMarginAccountSubscription.swift; sourceTree = "<group>"; };
+		48D423F323BB3A43009CD89F /* MarginMarketAccountPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginMarketAccountPatch.swift; sourceTree = "<group>"; };
 		48DAF8632265B17B006D3598 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
 		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
@@ -1031,6 +1035,7 @@
 				FDCC083021CB35A6009105DD /* DepthPatch.swift */,
 				FDCC083421CB3AE4009105DD /* OrderPatch.swift */,
 				FDCC083821CB3F25009105DD /* AccountPatch.swift */,
+				48D423F323BB3A43009CD89F /* MarginMarketAccountPatch.swift */,
 			);
 			name = Patch;
 			sourceTree = "<group>";
@@ -1089,6 +1094,7 @@
 				487F159321DDE015008CDB03 /* CandleSubscription.swift */,
 				487F159521DDE209008CDB03 /* DepthSubscription.swift */,
 				487F159721DDE4A0008CDB03 /* ViewerOrderSubscription.swift */,
+				48D423F123BB39A9009CD89F /* ViewerMarginAccountSubscription.swift */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -1714,6 +1720,7 @@
 				FDCC083321CB36ED009105DD /* PriceLevel.swift in Sources */,
 				34D6E37A237000D1005480BD /* InvestmentsOperation.swift in Sources */,
 				34EA5EFB23742A7600D40C4F /* CofferAccount.swift in Sources */,
+				48D423F423BB3A43009CD89F /* MarginMarketAccountPatch.swift in Sources */,
 				FDD372AC21B4CCBF0027DEBD /* HTTPMethod.swift in Sources */,
 				484D468F21E7488600E7C3E2 /* CreateOrderOperation.swift in Sources */,
 				488AAC972328C83C0034781C /* Encrptor.swift in Sources */,
@@ -1741,6 +1748,7 @@
 				34D6E38823700F7F005480BD /* Investment.swift in Sources */,
 				34A8E9E3228ACFAA004311CA /* RegisterOperation.swift in Sources */,
 				487598D821E0D79100EB045D /* HTTPRequestExecutor.swift in Sources */,
+				48D423F223BB39A9009CD89F /* ViewerMarginAccountSubscription.swift in Sources */,
 				48FFE84E21C8EAB300EE85C0 /* Protobuf+ContinuityStreamable.swift in Sources */,
 				48FFE85121C8EAB300EE85C0 /* WSClient.swift in Sources */,
 				341453E322C6216A0087C98D /* IdentityStatusOperation.swift in Sources */,
@@ -2047,7 +2055,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.64;
+				MARKETING_VERSION = 0.9.65;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2080,7 +2088,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9.64;
+				MARKETING_VERSION = 0.9.65;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peatio.PeatioSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
