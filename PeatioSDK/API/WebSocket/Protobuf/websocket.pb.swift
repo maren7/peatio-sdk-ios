@@ -1175,6 +1175,7 @@ struct PeatioCandle {
     case hour12 // = 8
     case day1 // = 9
     case week1 // = 10
+    case month1 // = 11
     case UNRECOGNIZED(Int)
 
     init() {
@@ -1194,6 +1195,7 @@ struct PeatioCandle {
       case 8: self = .hour12
       case 9: self = .day1
       case 10: self = .week1
+      case 11: self = .month1
       default: self = .UNRECOGNIZED(rawValue)
       }
     }
@@ -1211,6 +1213,7 @@ struct PeatioCandle {
       case .hour12: return 8
       case .day1: return 9
       case .week1: return 10
+      case .month1: return 11
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -1238,6 +1241,7 @@ extension PeatioCandle.Period: CaseIterable {
     .hour12,
     .day1,
     .week1,
+    .month1,
   ]
 }
 
@@ -3433,6 +3437,7 @@ extension PeatioCandle.Period: SwiftProtobuf._ProtoNameProviding {
     8: .same(proto: "HOUR12"),
     9: .same(proto: "DAY1"),
     10: .same(proto: "WEEK1"),
+    11: .same(proto: "MONTH1"),
   ]
 }
 
@@ -3845,14 +3850,14 @@ extension PeatioUnsubscribeViewerOrdersRequest: SwiftProtobuf.Message, SwiftProt
   static let protoMessageName: String = "UnsubscribeViewerOrdersRequest"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "market"),
-    13: .standard(proto: "business_unit"),
+    2: .standard(proto: "business_unit"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       switch fieldNumber {
       case 1: try decoder.decodeSingularStringField(value: &self.market)
-      case 13: try decoder.decodeSingularEnumField(value: &self.businessUnit)
+      case 2: try decoder.decodeSingularEnumField(value: &self.businessUnit)
       default: break
       }
     }
@@ -3863,7 +3868,7 @@ extension PeatioUnsubscribeViewerOrdersRequest: SwiftProtobuf.Message, SwiftProt
       try visitor.visitSingularStringField(value: self.market, fieldNumber: 1)
     }
     if self.businessUnit != .spot {
-      try visitor.visitSingularEnumField(value: self.businessUnit, fieldNumber: 13)
+      try visitor.visitSingularEnumField(value: self.businessUnit, fieldNumber: 2)
     }
     try unknownFields.traverse(visitor: &visitor)
   }

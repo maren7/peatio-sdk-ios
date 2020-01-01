@@ -66,6 +66,8 @@ extension PeatioCandle.Period {
             return "day1"
         case .week1:
             return "week1"
+        case .month1:
+            return "month1"
         case .UNRECOGNIZED:
             assertionFailure("this period should not be subscribe or unsub")
             return "unrecognized"
