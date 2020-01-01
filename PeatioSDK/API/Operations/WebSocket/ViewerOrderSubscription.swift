@@ -1,17 +1,17 @@
 import Foundation
 
 public struct ViewerOrderSubscription: SubscriptionOperation {
-
+    
     public typealias Snapshot = [OrderPatch]
-
+    
     public typealias Update = OrderPatch
-
+    
     public let params: Param
-
+    
     public init(params: Param) {
         self.params = params
     }
-
+    
     public func buildTask(onReceive: @escaping (WebSocketEvent<ViewerOrderSubscription>) -> Void) -> WebSocketTask {
         var subscribe = PeatioSubscribeViewerOrdersRequest()
         subscribe.market = params.assetPair
@@ -24,10 +24,10 @@ public struct ViewerOrderSubscription: SubscriptionOperation {
 }
 
 public extension ViewerOrderSubscription {
-     struct Param: Equatable {
+    struct Param: Equatable {
         public let assetPair: String
         public let type: OrderAccountType
-
+        
         public init(assetPair: String, type: OrderAccountType) {
             self.assetPair = assetPair
             self.type = type
@@ -41,7 +41,7 @@ extension ViewerOrderSubscription: PeatioSubscriptionOperation {
         snapshot: { $0.map(OrderPatch.init) },
         updateKeyPath: \PeatioResponse.orderUpdate.order,
         update: OrderPatch.init)
-
+    
     static let needAuthorized: Bool = true
     static let subRequestKeyPath = \PeatioRequest.subscribeViewerOrdersRequest
     static let unsubRequestKeyPath = \PeatioRequest.unsubscribeViewerOrdersRequest
@@ -58,7 +58,7 @@ private extension OrderPatch {
         self.insertedAt = wsObject.createdAt.date
         self.side = wsObject.side == .ask ? .ask : .bid
         self.type = wsObject.businessUnit == .spot ? .spot : .margin
-
+        
         self.state = {
             switch wsObject.state {
             case .pending:
