@@ -5,8 +5,6 @@ public struct MarginMarketAccount: Codable {
     public let liquidationPrice: String
     public let profit: String
     public let profitRate: String
-    public let profitLoss: String
-    public let profitLossRate: String
     public let marketName: String
     public let marketUuid: String
     public let leverage: Int
