@@ -1,7 +1,7 @@
 import Foundation
 
 public final class MarginAccountDetailsOperation: RequestOperation {
-    public typealias ResultData = [MarginAccountDetail]
+    public typealias ResultData = Page<MarginAccountDetail>
     
     public var path: String = "/api/mg/v1/me/account/details"
     
@@ -16,7 +16,9 @@ public final class MarginAccountDetailsOperation: RequestOperation {
                 "asset_uuid": param.assetUuid,
                 "start_time": param.startTime,
                 "end_time": param.endTime,
-                "kind": param.kind?.rawValue]
+                "kind": param.kind?.rawValue,
+                "limit": param.limit,
+                "page_token": param.pageToken]
     }
 }
 
@@ -29,17 +31,23 @@ public extension MarginAccountDetailsOperation {
         public let startTime: String?
         public let endTime: String?
         public let kind: MarginAccountDetail.Kind?
+        public let limit: Int?
+        public let pageToken: String?
         
         public init(marketUuid: String?,
                     assetUuid: String?,
                     startTime: String?,
                     endTime: String?,
-                    kind: MarginAccountDetail.Kind?){
+                    kind: MarginAccountDetail.Kind?,
+                    limit: Int?,
+                    pageToken: String?){
             self.marketUuid = marketUuid
             self.assetUuid = assetUuid
             self.startTime = startTime
             self.endTime = endTime
             self.kind = kind
+            self.limit = limit
+            self.pageToken = pageToken
         }
     }
 }
