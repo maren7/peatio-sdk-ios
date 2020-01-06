@@ -4,8 +4,8 @@ target 'PeatioSDK' do
   use_frameworks!
   inhibit_all_warnings!
 
-  pod 'Starscream'
-  pod 'SwiftProtobuf'
+  pod 'Starscream', '3.1.1'
+  pod 'SwiftProtobuf', '1.7.0'
 
   target 'PeatioSDKTests' do
     inherit! :search_paths
@@ -19,7 +19,7 @@ target 'PeatioSDKSample' do
   use_frameworks!
   inhibit_all_warnings!
 
-  pod 'Starscream'
-  pod 'SwiftProtobuf'
+  pod 'Starscream', '3.1.1'
+  pod 'SwiftProtobuf', '1.7.0'
 
 end

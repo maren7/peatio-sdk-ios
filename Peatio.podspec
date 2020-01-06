@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
     'Peatio' => ['PeatioSDK/Resource/Fonts/*.ttf']
   }
  
-  spec.dependency "Starscream"
-  spec.dependency "SwiftProtobuf"
+  spec.dependency "Starscream", '3.1.1'
+  spec.dependency "SwiftProtobuf", '1.7.0'
 
 end
