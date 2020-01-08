@@ -7,7 +7,7 @@ public final class CancelAllOrdersOperation: RequestOperation {
         guard let assetPairUUID = param.assetPairUUID, !assetPairUUID.isEmpty else {
             return "/api/xn/v1/me/orders/cancel"
         }
-        return "/api/xn/v1/me/orders/cancel?asset_pair_uuid=\(assetPairUUID)"
+        return "/api/xn/v1/me/orders/cancel?asset_pair_uuid=\(assetPairUUID)&bu=\(param.accountType?.rawValue ?? "")"
     }
 
     public let httpMethod: HTTPMethod = .post
@@ -23,9 +23,12 @@ public extension CancelAllOrdersOperation {
     struct Param: Equatable {
 
         public let assetPairUUID: String?
+        public let accountType: OrderAccountType?
 
-        public init(assetPairUUID: String?) {
+        public init(assetPairUUID: String?,
+                    accountType: OrderAccountType?) {
             self.assetPairUUID = assetPairUUID
+            self.accountType = accountType
         }
     }
 }

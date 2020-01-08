@@ -35,6 +35,16 @@ public extension APIError {
         case balanceNotEnough = 42213
         case paymentCannotDeleted = 400215
         case paymentIsBeingUsed = 40316
+        case deniedWithdrawalByMarginAccountRisk = 40322
+        case marginLoanLessThanMinimumLimit = 50003
+        case marginLoanAboveMaximumLimit = 50004
+        case reachMarginLoanOrdersLimit = 50005
+        case noOpenMarginLoanOrders = 50006
+        case marginRepaymentLessThanMinimum = 50010
+        case marginAccountbalanceNotEnough = 50014
+        case marginAccountSettlement = 40305
+        case transferAmountExceededLimit = 50020
+        case abnormalTransferToAccount = 50022
     }
 
     static var sessionInvalidCodes: Set<APIError.Code> {
